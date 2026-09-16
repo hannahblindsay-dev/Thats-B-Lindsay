@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viva Fashion. Case Study | That's B Lindsay</title>
+<meta name="description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Viva Fashion. Case Study | That's B Lindsay">
+<meta property="og:description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
+<meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<meta property="og:url" content="https://thatsblindsay.com/work/viva-fashion/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Viva Fashion. Case Study | That's B Lindsay">
+<meta name="twitter:description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
+<meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/Assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/Assets/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/Assets/favicon/android-chrome-512x512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=Meow+Script&display=swap" rel="stylesheet">
@@ -172,6 +188,84 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   padding-bottom:6px; transition:color .25s ease, border-color .25s ease; }
 .back-link:hover{ color:var(--gold); border-color:var(--gold); }
 .foot-note{ position:relative; z-index:2; margin-top:70px; font-size:0.78rem; color:var(--tan); }
+
+.next-project .slider-nav-row{ display:flex; justify-content:center; gap:12px; margin-bottom:44px; position:relative; z-index:2; }
+.next-project .slider-nav-row button{ width:44px; height:44px; border-radius:50%; border:1px solid rgba(252,252,252,0.28);
+  background:transparent; color:var(--paper); font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition:background .2s ease, border-color .2s ease, transform .15s ease; }
+.next-project .slider-nav-row button:hover{ background:var(--accent); border-color:var(--accent); }
+.next-project .slider-nav-row button:active{ transform:scale(0.94); }
+.next-project .slider-nav-row button:disabled{ opacity:0.3; cursor:default; pointer-events:none; }
+.other-projects-track-wrap{ overflow-x:auto; scroll-behavior:smooth; scroll-snap-type:x mandatory; scrollbar-width:none;
+  position:relative; z-index:2; text-align:left; padding-bottom:8px; }
+.other-projects-track-wrap::-webkit-scrollbar{ display:none; }
+.other-projects-track{ display:flex; gap:24px; }
+.op-card{ flex:0 0 auto; width:290px; scroll-snap-align:start; display:block; text-decoration:none; color:var(--ink);
+  border-radius:14px; overflow:hidden; background:var(--paper); box-shadow:0 10px 26px rgba(0,0,0,0.28);
+  transition:transform .25s ease, box-shadow .25s ease; }
+.op-card:hover{ transform:translateY(-6px); box-shadow:0 18px 36px rgba(0,0,0,0.38); }
+.op-img{ position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--tan); }
+.op-img img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+.op-card:hover .op-img img{ transform:scale(1.06); }
+.op-body{ padding:18px 20px 22px; }
+.op-tag{ font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:8px; display:block; }
+.op-title{ font-family:'Fraunces', serif; font-weight:500; font-size:1.12rem; margin-bottom:8px; color:var(--ink); }
+.op-desc{ font-size:0.8rem; line-height:1.5; color:#5b5b57; font-weight:300; margin-bottom:12px; }
+.op-link{ font-size:0.74rem; font-weight:500; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+.op-card:hover .op-link{ color:var(--accent); }
+.next-project .back-link{ margin-top:54px; }
+
+/* ============ Sidebar case-study nav (pop-out tab + glass panel) ============ */
+.navG-tab{
+  position:fixed; right:0; top:50%; transform:translateY(-50%);
+  z-index:401; background:rgba(24,24,22,0.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  color:var(--gold); padding:20px 11px; border-radius:8px 0 0 8px; cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  border:1px solid rgba(255,255,255,0.14); border-right:none;
+  opacity:0; pointer-events:none; transition:opacity .4s ease, right .5s cubic-bezier(.16,1,.3,1);
+  box-shadow:-4px 0 16px rgba(0,0,0,0.28);
+}
+.navG-tab.visible{ opacity:1; pointer-events:auto; }
+.navG-tab.open{ right:212px; }
+.navG-tab .navG-tab-text{
+  writing-mode:vertical-rl; text-orientation:mixed; font-size:0.72rem;
+  letter-spacing:0.1em; text-transform:uppercase; font-weight:500;
+}
+.navG-tab .navG-tab-arrow{ font-size:0.8rem; transition:transform .4s cubic-bezier(.16,1,.3,1); color:var(--tan); }
+.navG-tab.open .navG-tab-arrow{ transform:rotate(180deg); }
+.navG-tab:hover{ background:rgba(10,10,9,1); }
+.navG-tab:hover .navG-tab-arrow{ color:var(--gold); }
+.navG{
+  position:fixed; right:0; top:0; height:100vh; width:212px; z-index:400;
+  background:rgba(24,24,22,0.96); backdrop-filter:blur(16px) saturate(140%); -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-left:1px solid rgba(255,255,255,0.12);
+  display:flex; flex-direction:column; justify-content:center; padding:0 28px;
+  transform:translateX(100%); transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.navG.open{ transform:translateX(0); }
+.navG .navG-eyebrow{
+  font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold);
+  margin-bottom:22px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.18);
+}
+.navG-list{ display:flex; flex-direction:column; }
+.navG a{
+  display:flex; align-items:baseline; gap:9px; text-decoration:none;
+  font-size:0.86rem; color:var(--tan);
+  padding:10px 0; transition:color .2s ease, padding-left .2s ease;
+}
+.navG a:hover{ color:#fff; padding-left:4px; }
+.navG a .navG-num{ font-family:'Fraunces', serif; font-style:italic; font-size:0.7rem; color:var(--orange); flex-shrink:0; width:14px; }
+.navG a.current{ color:var(--gold); font-weight:600; }
+.navG a.current .navG-num{ color:var(--gold); }
+.navG a.current::after{ content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); margin-left:auto; flex-shrink:0; }
+.navG-scrim{
+  position:fixed; inset:0; z-index:399; background:rgba(0,0,0,0);
+  pointer-events:none; transition:background .3s ease;
+}
+.navG-scrim.open{ pointer-events:auto; }
+@media (max-width: 1150px){
+  .navG-tab, .navG{ display:none; }
+}
 ::selection{ background:var(--accent); color:var(--paper); }
 
 
@@ -215,6 +309,25 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 </style>
 </head>
 <body>
+
+<div class="navG-tab" id="navGTab">
+  <span class="navG-tab-text">View Work</span>
+  <span class="navG-tab-arrow">←</span>
+</div>
+<aside class="navG" id="navG">
+  <div class="navG-eyebrow">Case Studies</div>
+  <div class="navG-list">
+    <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
+    <a href="#" class="current"><span class="navG-num">02</span>Viva Fashion</a>
+    <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
+    <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
+    <a href="/work/cza-bouwbedrijf/"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
+    <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
+    <a href="/work/email-elixir/"><span class="navG-num">07</span>Email Elixir</a>
+    <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
+  </div>
+</aside>
+<div class="navG-scrim" id="navGScrim"></div>
 
 <nav>
   <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 409 131" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="That&#x27;s B Lindsay">
@@ -558,10 +671,106 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">More Work</span>
     <h2>See what else <span class="script">That's B Lindsay</span> has built.</h2>
+    <div class="slider-nav-row">
+      <button type="button" class="op-prev" aria-label="Previous project">←</button>
+      <button type="button" class="op-next" aria-label="Next project">→</button>
+    </div>
+    <div class="other-projects-track-wrap">
+      <div class="other-projects-track">
+        <a class="op-card" href="/work/peakspring/">
+          <div class="op-img"><img src="assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Packaging · Web</span>
+            <div class="op-title">PeakSpring</div>
+            <p class="op-desc">A full brand system for an athletic wellness brand.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/van-straaten-trading/">
+          <div class="op-img"><img src="assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · B2B</span>
+            <div class="op-title">Van Straaten Trading</div>
+            <p class="op-desc">A sharper, modern visual language for a legacy trading company.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/ionlybookvip/">
+          <div class="op-img"><img src="assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Hospitality</span>
+            <div class="op-title">iOnlyBookVIP</div>
+            <p class="op-desc">A premium identity for a luxury travel concierge.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/cza-bouwbedrijf/">
+          <div class="op-img"><img src="assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Construction</span>
+            <div class="op-title">CZA Bouwbedrijf</div>
+            <p class="op-desc">Identity and brand strategy for a Dutch construction company.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/vanessa-nantes/">
+          <div class="op-img"><img src="assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Product Design</span>
+            <div class="op-title">Vanessa Nantes</div>
+            <p class="op-desc">Brand identity and packaging for a fashion and lifestyle label.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/email-elixir/">
+          <div class="op-img"><img src="assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Brand Strategy · Web</span>
+            <div class="op-title">Email Elixir</div>
+            <p class="op-desc">Brand strategy and web design for a lifecycle marketing studio.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/baliwithflow/">
+          <div class="op-img"><img src="assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Product Design</span>
+            <div class="op-title">Bali With Flow</div>
+            <p class="op-desc">A calm, considered identity for a boutique wellness retreat brand.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+      </div>
+    </div>
     <a class="back-link" href="/#work">Back to the full portfolio</a>
     <div class="foot-note">(c) 2026 That's B Lindsay. Creative Direction and Brand Strategy.</div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var track = document.querySelector('.other-projects-track-wrap');
+  var prevBtn = document.querySelector('.op-prev');
+  var nextBtn = document.querySelector('.op-next');
+  if(!track || !prevBtn || !nextBtn) return;
+  function cardStep(){
+    var card = track.querySelector('.op-card');
+    var gap = 24;
+    return card ? card.offsetWidth + gap : 314;
+  }
+  function updateButtons(){
+    prevBtn.disabled = track.scrollLeft <= 4;
+    nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+  }
+  prevBtn.addEventListener('click', function(){ track.scrollBy({ left: -cardStep()*2, behavior:'smooth' }); });
+  nextBtn.addEventListener('click', function(){ track.scrollBy({ left: cardStep()*2, behavior:'smooth' }); });
+  track.addEventListener('scroll', updateButtons);
+  window.addEventListener('load', updateButtons);
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+})();
+</script>
+
 
 
 <div class="lightbox-overlay" id="lightbox">
@@ -635,6 +844,38 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape'){ closeLightbox(); }
   });
+})();
+</script>
+
+<script>
+(function(){
+  var tab = document.getElementById('navGTab');
+  var panel = document.getElementById('navG');
+  var scrim = document.getElementById('navGScrim');
+  if(!tab || !panel || !scrim) return;
+  var isOpen = false;
+
+  function updateVisibility(){
+    var past = window.scrollY > 420;
+    tab.classList.toggle('visible', past);
+    if(!past){ closePanel(); }
+  }
+  function openPanel(){
+    isOpen = true;
+    tab.classList.add('open');
+    panel.classList.add('open');
+    scrim.classList.add('open');
+  }
+  function closePanel(){
+    isOpen = false;
+    tab.classList.remove('open');
+    panel.classList.remove('open');
+    scrim.classList.remove('open');
+  }
+  tab.addEventListener('click', function(){ isOpen ? closePanel() : openPanel(); });
+  scrim.addEventListener('click', closePanel);
+  window.addEventListener('scroll', updateVisibility);
+  window.addEventListener('load', updateVisibility);
 })();
 </script>
 </body>

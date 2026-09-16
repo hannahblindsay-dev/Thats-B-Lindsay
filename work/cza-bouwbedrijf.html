@@ -3,7 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IOnlyBookVIP. Case Study | That's B Lindsay</title>
+<title>CZA Bouwbedrijf. Case Study | That's B Lindsay</title>
+<meta name="description" content="A boutique construction partner specialising in high-end renovations, with an identity built to translate precision and discretion into calm visual language.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CZA Bouwbedrijf. Case Study | That's B Lindsay">
+<meta property="og:description" content="A boutique construction partner specialising in high-end renovations, with an identity built to translate precision and discretion into calm visual language.">
+<meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<meta property="og:url" content="https://thatsblindsay.com/work/cza-bouwbedrijf/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CZA Bouwbedrijf. Case Study | That's B Lindsay">
+<meta name="twitter:description" content="A boutique construction partner specialising in high-end renovations, with an identity built to translate precision and discretion into calm visual language.">
+<meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/Assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/Assets/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/Assets/favicon/android-chrome-512x512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=Meow+Script&display=swap" rel="stylesheet">
@@ -71,6 +87,12 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .feature-row h4{ font-size:1.02rem; font-weight:500; margin-bottom:6px; color:var(--accent-dark); }
 .feature-row p{ font-size:0.9rem; color:#6b6b66; line-height:1.55; max-width:44ch; }
 
+.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
+@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
+.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
+.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
+.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
+
 .palette-section{ background:var(--ink); color:var(--paper); }
 .palette-section .section-tag{ color:var(--gold); }
 .palette-note{ font-size:0.92rem; color:var(--tan); max-width:60ch; margin-bottom:36px; line-height:1.6; }
@@ -118,62 +140,105 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   padding-bottom:6px; transition:color .25s ease, border-color .25s ease; }
 .back-link:hover{ color:var(--gold); border-color:var(--gold); }
 .foot-note{ position:relative; z-index:2; margin-top:70px; font-size:0.78rem; color:var(--tan); }
+
+.next-project .slider-nav-row{ display:flex; justify-content:center; gap:12px; margin-bottom:44px; position:relative; z-index:2; }
+.next-project .slider-nav-row button{ width:44px; height:44px; border-radius:50%; border:1px solid rgba(252,252,252,0.28);
+  background:transparent; color:var(--paper); font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition:background .2s ease, border-color .2s ease, transform .15s ease; }
+.next-project .slider-nav-row button:hover{ background:var(--accent); border-color:var(--accent); }
+.next-project .slider-nav-row button:active{ transform:scale(0.94); }
+.next-project .slider-nav-row button:disabled{ opacity:0.3; cursor:default; pointer-events:none; }
+.other-projects-track-wrap{ overflow-x:auto; scroll-behavior:smooth; scroll-snap-type:x mandatory; scrollbar-width:none;
+  position:relative; z-index:2; text-align:left; padding-bottom:8px; }
+.other-projects-track-wrap::-webkit-scrollbar{ display:none; }
+.other-projects-track{ display:flex; gap:24px; }
+.op-card{ flex:0 0 auto; width:290px; scroll-snap-align:start; display:block; text-decoration:none; color:var(--ink);
+  border-radius:14px; overflow:hidden; background:var(--paper); box-shadow:0 10px 26px rgba(0,0,0,0.28);
+  transition:transform .25s ease, box-shadow .25s ease; }
+.op-card:hover{ transform:translateY(-6px); box-shadow:0 18px 36px rgba(0,0,0,0.38); }
+.op-img{ position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--tan); }
+.op-img img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+.op-card:hover .op-img img{ transform:scale(1.06); }
+.op-body{ padding:18px 20px 22px; }
+.op-tag{ font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:8px; display:block; }
+.op-title{ font-family:'Fraunces', serif; font-weight:500; font-size:1.12rem; margin-bottom:8px; color:var(--ink); }
+.op-desc{ font-size:0.8rem; line-height:1.5; color:#5b5b57; font-weight:300; margin-bottom:12px; }
+.op-link{ font-size:0.74rem; font-weight:500; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+.op-card:hover .op-link{ color:var(--accent); }
+.next-project .back-link{ margin-top:54px; }
+
+/* ============ Sidebar case-study nav (pop-out tab + glass panel) ============ */
+.navG-tab{
+  position:fixed; right:0; top:50%; transform:translateY(-50%);
+  z-index:401; background:rgba(24,24,22,0.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  color:var(--gold); padding:20px 11px; border-radius:8px 0 0 8px; cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  border:1px solid rgba(255,255,255,0.14); border-right:none;
+  opacity:0; pointer-events:none; transition:opacity .4s ease, right .5s cubic-bezier(.16,1,.3,1);
+  box-shadow:-4px 0 16px rgba(0,0,0,0.28);
+}
+.navG-tab.visible{ opacity:1; pointer-events:auto; }
+.navG-tab.open{ right:212px; }
+.navG-tab .navG-tab-text{
+  writing-mode:vertical-rl; text-orientation:mixed; font-size:0.72rem;
+  letter-spacing:0.1em; text-transform:uppercase; font-weight:500;
+}
+.navG-tab .navG-tab-arrow{ font-size:0.8rem; transition:transform .4s cubic-bezier(.16,1,.3,1); color:var(--tan); }
+.navG-tab.open .navG-tab-arrow{ transform:rotate(180deg); }
+.navG-tab:hover{ background:rgba(10,10,9,1); }
+.navG-tab:hover .navG-tab-arrow{ color:var(--gold); }
+.navG{
+  position:fixed; right:0; top:0; height:100vh; width:212px; z-index:400;
+  background:rgba(24,24,22,0.96); backdrop-filter:blur(16px) saturate(140%); -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-left:1px solid rgba(255,255,255,0.12);
+  display:flex; flex-direction:column; justify-content:center; padding:0 28px;
+  transform:translateX(100%); transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.navG.open{ transform:translateX(0); }
+.navG .navG-eyebrow{
+  font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold);
+  margin-bottom:22px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.18);
+}
+.navG-list{ display:flex; flex-direction:column; }
+.navG a{
+  display:flex; align-items:baseline; gap:9px; text-decoration:none;
+  font-size:0.86rem; color:var(--tan);
+  padding:10px 0; transition:color .2s ease, padding-left .2s ease;
+}
+.navG a:hover{ color:#fff; padding-left:4px; }
+.navG a .navG-num{ font-family:'Fraunces', serif; font-style:italic; font-size:0.7rem; color:var(--orange); flex-shrink:0; width:14px; }
+.navG a.current{ color:var(--gold); font-weight:600; }
+.navG a.current .navG-num{ color:var(--gold); }
+.navG a.current::after{ content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); margin-left:auto; flex-shrink:0; }
+.navG-scrim{
+  position:fixed; inset:0; z-index:399; background:rgba(0,0,0,0);
+  pointer-events:none; transition:background .3s ease;
+}
+.navG-scrim.open{ pointer-events:auto; }
+@media (max-width: 1150px){
+  .navG-tab, .navG{ display:none; }
+}
 ::selection{ background:var(--accent); color:var(--paper); }
 
 
-.spread-card img, .deliverable-card img, .instagram-card img{ cursor:zoom-in; transition:opacity .2s ease; }
-.spread-card img:hover, .deliverable-card img:hover, .instagram-card img:hover{ opacity:0.88; }
+.spread-card img, .deliverable-card img{ cursor:zoom-in; transition:opacity .2s ease; }
+.spread-card img:hover, .deliverable-card img:hover{ opacity:0.88; }
 
 .deliverables-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
 .deliverable-tag{ display:inline-block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent-dark);
   border:1px solid var(--accent); border-radius:999px; padding:4px 12px; margin-bottom:12px; }
-.deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; }
-.deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
+.deliverables-grid.bento{ display:flex; flex-direction:column; gap:20px; }
+.bento-row{ display:flex; gap:20px; }
+.bento-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
+.bento-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
 .bento-scrim{ position:absolute; left:0; right:0; bottom:0; padding:16px 18px; background:linear-gradient(0deg, rgba(0,0,0,0.6), transparent); pointer-events:none; }
 .bento-tag{ display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; border-radius:999px; padding:4px 12px;
   background:transparent; color:var(--paper); border:1px solid rgba(252,252,252,0.6); transition:background .2s ease, color .2s ease, border-color .2s ease; }
-.deliverable-card:hover .bento-tag{ background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95); }
-.deliverables-grid.bento{ display:grid; grid-template-columns:1fr 1fr 1.6fr; grid-template-rows:280px 280px; gap:20px; }
-.deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
-.deliverables-grid.bento .cell-pen{ grid-column:2; grid-row:1; }
-.deliverables-grid.bento .cell-pickup{ grid-column:1 / 3; grid-row:2; }
-.deliverables-grid.bento .cell-cards{ grid-column:3; grid-row:1 / 3; }
-@media (max-width:820px){
-  .deliverables-grid.bento{ grid-template-columns:1fr 1fr; grid-template-rows:220px 220px 300px; }
-  .deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
-  .deliverables-grid.bento .cell-pen{ grid-column:2; grid-row:1; }
-  .deliverables-grid.bento .cell-pickup{ grid-column:1 / 3; grid-row:2; }
-  .deliverables-grid.bento .cell-cards{ grid-column:1 / 3; grid-row:3; }
-}
-@media (max-width:560px){
-  .deliverables-grid.bento{ grid-template-columns:1fr; grid-template-rows:260px 260px 260px 340px; }
-  .deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
-  .deliverables-grid.bento .cell-pen{ grid-column:1; grid-row:2; }
-  .deliverables-grid.bento .cell-pickup{ grid-column:1; grid-row:3; }
-  .deliverables-grid.bento .cell-cards{ grid-column:1; grid-row:4; }
-}
-
-.cd-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.cd-grid{ display:flex; flex-direction:column; gap:20px; }
-.cd-row{ display:flex; gap:20px; height:360px; }
-.cd-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
-.cd-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
-@media (max-width:820px){ .cd-row{ flex-wrap:wrap; height:auto; } .cd-row .deliverable-card{ flex:1 1 45%; height:280px; } }
-@media (max-width:560px){ .cd-row .deliverable-card{ flex:1 1 100%; } }
-
-.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
-@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
-.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
-.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
-.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
-
-.instagram-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.instagram-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
-.instagram-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; }
-.instagram-card img{ width:100%; aspect-ratio:4/5; object-fit:cover; display:block; }
-.instagram-card:hover img{ opacity:0.9; }
-@media (max-width:720px){ .instagram-grid{ grid-template-columns:1fr 1fr; } }
-@media (max-width:520px){ .instagram-grid{ grid-template-columns:1fr; } }
+.bento-row .deliverable-card:hover .bento-tag{ background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95); }
+.bento-row.row-tall{ height:400px; }
+.bento-row.row-short{ height:300px; }
+@media (max-width:820px){ .bento-row{ flex-wrap:wrap; height:auto !important; } .bento-row .deliverable-card{ flex:1 1 45%; height:260px; } }
+@media (max-width:560px){ .bento-row .deliverable-card{ flex:1 1 100%; } }
 
 .lightbox-overlay{
   position:fixed; inset:0; z-index:1000; background:rgba(20,19,17,0.94);
@@ -194,6 +259,25 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 </style>
 </head>
 <body>
+
+<div class="navG-tab" id="navGTab">
+  <span class="navG-tab-text">View Work</span>
+  <span class="navG-tab-arrow">←</span>
+</div>
+<aside class="navG" id="navG">
+  <div class="navG-eyebrow">Case Studies</div>
+  <div class="navG-list">
+    <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
+    <a href="/work/viva-fashion/"><span class="navG-num">02</span>Viva Fashion</a>
+    <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
+    <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
+    <a href="#" class="current"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
+    <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
+    <a href="/work/email-elixir/"><span class="navG-num">07</span>Email Elixir</a>
+    <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
+  </div>
+</aside>
+<div class="navG-scrim" id="navGScrim"></div>
 
 <nav>
   <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 409 131" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="That&#x27;s B Lindsay">
@@ -217,59 +301,32 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <header class="hero">
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Full Service. Luxury Travel</div>
-    <h1>IOnlyBookVIP</h1>
-    <p class="tagline">Luxury services, handled personally.</p>
+    <div class="eyebrow"><span class="dot"></span>Brand Design. Construction</div>
+    <h1>CZA Bouwbedrijf</h1>
+    <p class="tagline">Building, redefined.</p>
     <div class="meta-row">
       <div><span>Year</span><strong>2025</strong></div>
-      <div><span>Scope</span><strong>Brand Strategy, Identity, Website</strong></div>
-      <div><span>Industry</span><strong>Ultra Luxury Travel Concierge</strong></div>
+      <div><span>Scope</span><strong>Brand Identity, Visual System</strong></div>
+      <div><span>Industry</span><strong>High End Construction</strong></div>
     </div>
-    <a class="visit-live" href="https://www.ionlybookvip.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
+    <a class="visit-live" href="https://czabouwbedrijf.nl/" target="_blank" rel="noopener">Visit live site &#8594;</a>
   </div>
 </header>
 
 <section class="section deliverables-section">
   <div class="wrap">
     <span class="section-tag">Deliverables</span>
-    <h2>Quiet wealth, held in the hand.</h2>
-    <p class="deliverables-note">The ii mark carried across the physical moments a client actually touches, from the luggage tag on the jet to the card handed over the table.</p>
+    <h2>The identity, out in the field.</h2>
+    <p class="deliverables-note">The CZA mark applied across the physical touchpoints that carry the brand on site, on the road, and in the client&#x27;s hand.</p>
     <div class="deliverables-grid bento">
-      <figure class="deliverable-card cell-tag"><img src="../assets/iv-mockup-luggagetag.png" alt="IOnlyBookVIP branded leather luggage tag on a client's bag"><div class="bento-scrim"><span class="bento-tag">Luggage Tag</span></div></figure>
-      <figure class="deliverable-card cell-pen"><img src="../assets/iv-mockup-pen.png" alt="IOnlyBookVIP branded fountain pen held over a leather desk journal"><div class="bento-scrim"><span class="bento-tag">Signature Pen</span></div></figure>
-      <figure class="deliverable-card cell-pickup"><img src="../assets/iv-mockup-pickup.png" alt="Concierge standing beside a private car, ready for pick up"><div class="bento-scrim"><span class="bento-tag">Private Pick Up</span></div></figure>
-      <figure class="deliverable-card cell-cards"><img src="../assets/iv-mockup-cards.png" alt="IOnlyBookVIP brushed metal member card and business card for Kelvin Arora, concierge and lifestyle curator"><div class="bento-scrim"><span class="bento-tag">Member &amp; Business Cards</span></div></figure>
-    </div>
-  </div>
-</section>
-
-<section class="section tight cd-section">
-  <div class="wrap">
-    <span class="section-tag">The Mood</span>
-    <h2>The world this client already lives in.</h2>
-    <p class="cd-note">The mood the identity was built to sit inside, the cabin, the lounge, the tarmac, the arrival, shot with the same restraint as the brand itself.</p>
-    <div class="cd-grid">
-      <div class="cd-row">
-        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-cabin.png" alt="Two passengers in dark sunglasses seated in a private jet cabin"></figure>
-        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-lounge.png" alt="Couple in an airport lounge with champagne, an Emirates aircraft visible through the window"></figure>
+      <div class="bento-row row-tall">
+        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/cza-mockup-van.png" alt="CZA Bouwbedrijf branded van parked at a construction site"><div class="bento-scrim"><span class="bento-tag">Vehicle Signage</span></div></figure>
+        <figure class="deliverable-card" style="flex-grow:0.801;"><img src="../assets/cza-mockup-sign.png" alt="CZA Bouwbedrijf site sign with a foreman standing beside it on a construction site"><div class="bento-scrim"><span class="bento-tag">Site Signage</span></div></figure>
       </div>
-      <div class="cd-row">
-        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-tarmac.png" alt="Private jet wing and engine on a runway at night"></figure>
-        <figure class="deliverable-card" style="flex-grow:1;"><img src="../assets/iv-cd-arrival.png" alt="Bulgari Resort Dubai entrance at night with a private car arriving"></figure>
+      <div class="bento-row row-short">
+        <figure class="deliverable-card" style="flex-grow:1.638;"><img src="../assets/cza-mockup-cards.png" alt="CZA Bouwbedrijf business cards for H. Zahedi, project developer"><div class="bento-scrim"><span class="bento-tag">Business Cards</span></div></figure>
+        <figure class="deliverable-card" style="flex-grow:2.279;"><img src="../assets/cza-mockup-building.png" alt="CZA Bouwbedrijf branded render of a completed residential building at dusk"><div class="bento-scrim"><span class="bento-tag">Project Render</span></div></figure>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section tight instagram-section">
-  <div class="wrap">
-    <span class="section-tag">Instagram</span>
-    <h2>The brand voice, built for the feed.</h2>
-    <p class="instagram-note">Three posts from the launch content set, each one leaning on the same quiet, image-led confidence as the rest of the identity.</p>
-    <div class="instagram-grid">
-      <figure class="instagram-card"><img src="../assets/iv-ig-moved.png" alt="Instagram post: You don't travel, you're moved, man reading a newspaper in a chauffeured car"></figure>
-      <figure class="instagram-card"><img src="../assets/iv-ig-champagne.png" alt="Instagram post: Champagne Flights, chardonnay pricing, first class cabin table with champagne"></figure>
-      <figure class="instagram-card"><img src="../assets/iv-ig-dinner.png" alt="Instagram post: Driver waiting, dinner booked, luxury services handled personally, Rolls-Royce outside a hotel"></figure>
     </div>
   </div>
 </section>
@@ -278,54 +335,54 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Palette</span>
     <h2>Colour, straight from the brandbook.</h2>
-    <p class="palette-note">Six named tones documented in the IOnlyBookVIP 2025 styleguide, from Registration Black through to Ultra Pure White.</p>
+    <p class="palette-note">Six named tones documented in the CZA 2025 styleguide, from Dynamic Black through to Sugar Milk.</p>
     <div class="palette-grid">
       <div class="swatch">
-      <div class="swatch-color" style="background:#000301;"></div>
+      <div class="swatch-color" style="background:#1F1D1C;"></div>
       <div class="swatch-info">
-        <div class="hex">#000301</div>
-        <div class="name">Registration Black</div>
-        <div class="note">A pure, deep black communicating discretion, privacy, and elite access.</div>
+        <div class="hex">#1F1D1C</div>
+        <div class="name">Dynamic Black</div>
+        <div class="note">A strong, grounding tone signalling clarity, focus, and timeless refinement.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#0D170C;"></div>
+      <div class="swatch-color" style="background:#382D28;"></div>
       <div class="swatch-info">
-        <div class="hex">#0D170C</div>
-        <div class="name">Pinch of Pepper</div>
-        <div class="note">An ultra-dark green with character: depth, maturity, and trust.</div>
+        <div class="hex">#382D28</div>
+        <div class="name">Coffee Bean</div>
+        <div class="note">A rich, earthy brown balancing organic softness with architectural strength.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#2D5029;"></div>
+      <div class="swatch-color" style="background:#6B4A2F;"></div>
       <div class="swatch-info">
-        <div class="hex">#2D5029</div>
-        <div class="name">Chestnut Green</div>
-        <div class="note">A bold forest tone speaking to stability, heritage, and power.</div>
+        <div class="hex">#6B4A2F</div>
+        <div class="name">Axe Handle</div>
+        <div class="note">Confident and tactile, a deep bronze brown evoking craftsmanship and stability.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#9B7C48;"></div>
+      <div class="swatch-color" style="background:#AA8F75;"></div>
       <div class="swatch-info">
-        <div class="hex">#9B7C48</div>
-        <div class="name">Treasured</div>
-        <div class="note">A sophisticated bronze gold. Understated wealth, quiet dominance.</div>
+        <div class="hex">#AA8F75</div>
+        <div class="name">Utaupeia</div>
+        <div class="note">A warm, modern neutral bridging rich tones and minimal whitespace.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#DDC18D;"></div>
+      <div class="swatch-color" style="background:#E3D1A7;"></div>
       <div class="swatch-info">
-        <div class="hex">#DDC18D</div>
-        <div class="name">Farina</div>
-        <div class="note">A soft golden hue bringing approachability and warmth to the palette.</div>
+        <div class="hex">#E3D1A7</div>
+        <div class="name">Lucent Yellow</div>
+        <div class="note">Soft, muted, and sophisticated, for secondary backgrounds and highlights.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#FAF7F3;"></div>
+      <div class="swatch-color" style="background:#FDF9F6;"></div>
       <div class="swatch-info">
-        <div class="hex">#FAF7F3</div>
-        <div class="name">Ultra Pure White</div>
-        <div class="note">A near white with subtle softness, for clarity and breathability.</div>
+        <div class="hex">#FDF9F6</div>
+        <div class="name">Sugar Milk</div>
+        <div class="note">A clean off white that lets brand elements breathe with quiet luxury.</div>
       </div>
     </div>
     </div>
@@ -339,16 +396,16 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="type-grid">
       <div class="type-card">
       <div class="role">Headings</div>
-      <div class="fontname">Golden</div>
-      <p>A modern display typeface with graceful curves, capturing quiet luxury, expressive without being loud.</p>
+      <div class="fontname">Omega</div>
+      <p>A confident display typeface with clean lines and bold geometry, used for logos, headlines, and navigation.</p>
     </div>
       <div class="type-card">
       <div class="role">Body</div>
-      <div class="fontname">Atlas Grotesk</div>
-      <p>A contemporary sans-serif delivering precision and approachability, built for high readability.</p>
+      <div class="fontname">Urbanist</div>
+      <p>A versatile sans-serif bringing structure and softness together, built for long-form readability.</p>
     </div>
     </div>
-    <p class="type-note">On this page, Fraunces stands in for Golden and Space Grotesk for Atlas Grotesk, matching the restrained, discreet tone documented in the styleguide.</p>
+    <p class="type-note">On this page, Fraunces stands in for Omega and Space Grotesk for Urbanist, matching the calm, structured tone documented in the styleguide.</p>
   </div>
 </section>
 
@@ -357,27 +414,27 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Brandbook</span>
     <h2>Straight from the guidelines document.</h2>
-    <p class="brandbook-note">Three spreads pulled directly from IOnlyBookVIP&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
+    <p class="brandbook-note">Three spreads pulled directly from CZA Bouwbedrijf&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
     <div class="brandbook-grid">
       <figure class="spread-card">
-        <img src="../assets/iv-bb-cover.jpg" alt="IOnlyBookVIP styleguide cover, Rolls-Royce and private jet photo with the ii brandmark">
+        <img src="../assets/cza-bb-cover.jpg" alt="CZA Bouwbedrijf styleguide cover, construction site photo with logo overlay">
         <figcaption>
           <span class="spread-tag">Cover</span>
-          <p>The guideline&#x27;s cover: a Rolls-Royce and private jet at dusk, with the ii brandmark, Styleguide 2025.</p>
+          <p>The guideline&#x27;s cover: a construction site photo with the CZA Bouwbedrijf logo overlaid, Styleguide 2025.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/iv-bb-colours.jpg" alt="IOnlyBookVIP documented colour palette page">
+        <img src="../assets/cza-bb-colours.jpg" alt="CZA Bouwbedrijf documented colour palette page">
         <figcaption>
           <span class="spread-tag">Colour Palette</span>
-          <p>The documented palette, Registration Black through Ultra Pure White, shown against a dark green textured background.</p>
+          <p>The documented palette, Dynamic Black through Sugar Milk, shown against a concrete texture background.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/iv-bb-fonts.jpg" alt="IOnlyBookVIP fonts page showing Golden and Atlas Grotesk">
+        <img src="../assets/cza-bb-fonts.jpg" alt="CZA Bouwbedrijf fonts page showing OMEGA and Urbanist">
         <figcaption>
           <span class="spread-tag">Typography</span>
-          <p>The fonts page: Golden for display, Atlas Grotesk for body, set on a deep green background.</p>
+          <p>The fonts page: OMEGA for display, Urbanist for body, set against a dark brown background.</p>
         </figcaption>
       </figure>
     </div>
@@ -387,9 +444,9 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section">
   <div class="wrap">
     <span class="section-tag">Brought to Life</span>
-    <p class="lead">A brand voice that had to hold up in every message, not just the homepage.</p>
+    <p class="lead">The operational layer that let the brand experience hold up at scale.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>This positioning was built into a Webflow landing page with neurodesign and animation applied to the WhatsApp CTA, plus a custom-trained GPT to keep ongoing content and client communication in the brand&#x27;s voice, and SEO, analytics, and pixel tracking underneath it all.</p>
+      <p>That tone-of-voice and journey work was implemented through a Moneybird and Mollie payment automation, an automatic onboarding booking calendar connecting clients directly to their foreman, and a WhatsApp widget on the site.</p>
     </div>
   </div>
 </section>
@@ -397,22 +454,22 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Thinking</span>
-    <p class="lead">Premium concierge services in this category tend to land on one of two extremes: opaque and inaccessible, or generic and impersonal.</p>
+    <p class="lead">Every automated touchpoint treated as a brand moment, not a system notification.</p>
     <div class="condensed-grid">
       <div class="condensed-block">
         <span class="step-tag">Brief</span>
-        <h3>Who They&#x27;re Really Serving</h3>
-        <p>IOnlyBookVIP&#x27;s audience is young, high earning, and highly online: agency owners, crypto traders, and content creators whose day-to-day flying experience doesn&#x27;t match what they&#x27;ve actually built. Every decision had to answer one question: does this feel discreet, secure, and effortless.</p>
+        <h3>Protecting a 9.9 out of 10.</h3>
+        <p>CZA Bouwbedrijf had already earned a 9.9 out of 10 Trustoo rating and 50-plus five-star Google reviews. The risk wasn&#x27;t the identity, it was the gap between a lead filling out a form and a real person picking up the thread, widening as the business grew.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Strategy</span>
-        <h3>A Person, Not a Platform</h3>
-        <p>The brand was positioned deliberately against both extremes, quietly exclusive rather than showy, and built around a real person rather than an anonymous service. That meant putting founder Kelvin front and centre as concierge, curator, and connector, with a WhatsApp-first CTA as the site&#x27;s single main action.</p>
+        <h3>Sound like CZA, not software.</h3>
+        <p>The customer journey was mapped first to find exactly where trust is won or lost. That led to a deliberate call: every automated touchpoint, a confirmation email, a payment link, a booking reminder, needed to sound like CZA.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Creative Direction</span>
-        <h3>Quiet Dominance</h3>
-        <p>Registration Black and the near-black Pinch of Pepper set a private, elite foundation, grounded by Chestnut Green. Treasured, a sophisticated bronze gold, and the softer Farina add understated wealth, paired with an expressive display face for headlines and a clean sans-serif for body copy.</p>
+        <h3>Materials-first colour.</h3>
+        <p>Every automated message was written in CZA&#x27;s own voice, grounded in deep, tactile browns and bronze. Omega carries logos and headlines, Urbanist carries calm, trustworthy body copy, built for a market that usually shouts about speed and price.</p>
       </div>
     </div>
   </div>
@@ -420,17 +477,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <section class="section tight quote-section">
   <div class="wrap">
-    <blockquote>"Consider it <span class="script">handled</span>."</blockquote>
-    <div class="quote-attr">Brand Slogan, IOnlyBookVIP Styleguide</div>
+    <blockquote>"This is building, redefined. Modern, refined, and deeply <span class="script">personal</span>."</blockquote>
+    <div class="quote-attr">Company Description, CZA Bouwbedrijf Styleguide</div>
   </div>
 </section>
 
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Takeaway</span>
-    <p class="lead">For an audience that already has money, the differentiator was never going to be price.</p>
+    <p class="lead">CZA didn&#x27;t need a new brand. It needed every touchpoint to sound like the trustworthy business it already was.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>It was discretion, a real person, and a brand that signalled quiet dominance before a single message was sent. That&#x27;s a positioning call, not a design trend.</p>
+      <p>Even as automation took over the busywork, that&#x27;s a brand strategy question as much as a technical one, and it&#x27;s why the tone-of-voice work mattered as much as the integration itself.</p>
     </div>
   </div>
 </section>
@@ -439,10 +496,106 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">More Work</span>
     <h2>See what else <span class="script">That's B Lindsay</span> has built.</h2>
+    <div class="slider-nav-row">
+      <button type="button" class="op-prev" aria-label="Previous project">←</button>
+      <button type="button" class="op-next" aria-label="Next project">→</button>
+    </div>
+    <div class="other-projects-track-wrap">
+      <div class="other-projects-track">
+        <a class="op-card" href="/work/peakspring/">
+          <div class="op-img"><img src="assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Packaging · Web</span>
+            <div class="op-title">PeakSpring</div>
+            <p class="op-desc">A full brand system for an athletic wellness brand.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/viva-fashion/">
+          <div class="op-img"><img src="assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Retail</span>
+            <div class="op-title">Viva Fashion</div>
+            <p class="op-desc">Brand identity and packaging for a fashion retailer.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/van-straaten-trading/">
+          <div class="op-img"><img src="assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · B2B</span>
+            <div class="op-title">Van Straaten Trading</div>
+            <p class="op-desc">A sharper, modern visual language for a legacy trading company.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/ionlybookvip/">
+          <div class="op-img"><img src="assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Hospitality</span>
+            <div class="op-title">iOnlyBookVIP</div>
+            <p class="op-desc">A premium identity for a luxury travel concierge.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/vanessa-nantes/">
+          <div class="op-img"><img src="assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Product Design</span>
+            <div class="op-title">Vanessa Nantes</div>
+            <p class="op-desc">Brand identity and packaging for a fashion and lifestyle label.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/email-elixir/">
+          <div class="op-img"><img src="assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Brand Strategy · Web</span>
+            <div class="op-title">Email Elixir</div>
+            <p class="op-desc">Brand strategy and web design for a lifecycle marketing studio.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+        <a class="op-card" href="/work/baliwithflow/">
+          <div class="op-img"><img src="assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Product Design</span>
+            <div class="op-title">Bali With Flow</div>
+            <p class="op-desc">A calm, considered identity for a boutique wellness retreat brand.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
+      </div>
+    </div>
     <a class="back-link" href="/#work">Back to the full portfolio</a>
     <div class="foot-note">(c) 2026 That's B Lindsay. Creative Direction and Brand Strategy.</div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var track = document.querySelector('.other-projects-track-wrap');
+  var prevBtn = document.querySelector('.op-prev');
+  var nextBtn = document.querySelector('.op-next');
+  if(!track || !prevBtn || !nextBtn) return;
+  function cardStep(){
+    var card = track.querySelector('.op-card');
+    var gap = 24;
+    return card ? card.offsetWidth + gap : 314;
+  }
+  function updateButtons(){
+    prevBtn.disabled = track.scrollLeft <= 4;
+    nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+  }
+  prevBtn.addEventListener('click', function(){ track.scrollBy({ left: -cardStep()*2, behavior:'smooth' }); });
+  nextBtn.addEventListener('click', function(){ track.scrollBy({ left: cardStep()*2, behavior:'smooth' }); });
+  track.addEventListener('scroll', updateButtons);
+  window.addEventListener('load', updateButtons);
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+})();
+</script>
+
 
 
 <div class="lightbox-overlay" id="lightbox">
@@ -457,7 +610,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   var lbImg = document.getElementById('lightboxImg');
   var lbCaption = document.getElementById('lightboxCaption');
   var closeBtn = document.getElementById('lightboxClose');
-  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img, .instagram-card img');
+  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img');
 
   triggers.forEach(function(img){
     img.style.cursor = 'zoom-in';
@@ -482,6 +635,38 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape'){ closeLightbox(); }
   });
+})();
+</script>
+
+<script>
+(function(){
+  var tab = document.getElementById('navGTab');
+  var panel = document.getElementById('navG');
+  var scrim = document.getElementById('navGScrim');
+  if(!tab || !panel || !scrim) return;
+  var isOpen = false;
+
+  function updateVisibility(){
+    var past = window.scrollY > 420;
+    tab.classList.toggle('visible', past);
+    if(!past){ closePanel(); }
+  }
+  function openPanel(){
+    isOpen = true;
+    tab.classList.add('open');
+    panel.classList.add('open');
+    scrim.classList.add('open');
+  }
+  function closePanel(){
+    isOpen = false;
+    tab.classList.remove('open');
+    panel.classList.remove('open');
+    scrim.classList.remove('open');
+  }
+  tab.addEventListener('click', function(){ isOpen ? closePanel() : openPanel(); });
+  scrim.addEventListener('click', closePanel);
+  window.addEventListener('scroll', updateVisibility);
+  window.addEventListener('load', updateVisibility);
 })();
 </script>
 </body>
