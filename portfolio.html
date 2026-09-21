@@ -243,32 +243,17 @@
     position:relative;
     z-index:2;
     display:grid;
-    grid-template-columns:1.1fr 0.9fr;
+    grid-template-columns:1fr;
+    justify-items:center;
+    text-align:center;
     align-items:center;
     gap:40px;
+    max-width:840px;
+    margin:0 auto;
   }
-  @media (max-width:900px){
-    .hero-inner{ grid-template-columns:1fr; }
-  }
-
-  .hero-photo{
-    display:flex;
-    justify-content:center;
-    align-items:flex-end;
-    height:100%;
-    position:relative;
-  }
-  .hero-photo img{
-    max-height:66vh;
-    width:auto;
-    max-width:100%;
-    object-fit:contain;
-    filter:drop-shadow(0 30px 50px rgba(0,0,0,0.35));
-  }
-  @media (max-width:900px){
-    .hero-photo{ order:-1; margin-bottom:8px; }
-    .hero-photo img{ max-height:40vh; }
-  }
+  .hero .eyebrow{ justify-content:center; }
+  .hero-sub{ align-items:center; }
+  .hero-ctas{ justify-content:center; }
 
   .eyebrow{
     display:flex;
@@ -394,8 +379,6 @@
     background:var(--paper);
     min-height:1300px;
     overflow:hidden;
-    max-width:1240px;
-    margin:0 auto;
   }
   @media (max-width:900px){
     .about{ grid-template-columns:1fr; min-height:0; }
@@ -405,6 +388,7 @@
     flex-direction:column;
     justify-content:flex-start;
     padding:90px 6vw 60px;
+    padding-left:calc(max(0px, (100vw - 1240px)/2) + 6vw);
   }
   .about-stats-wrap{
     display:block;
@@ -879,9 +863,6 @@
           <a class="btn btn-secondary" href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a Call</a>
         </div>
       </div>
-    </div>
-    <div class="hero-photo">
-      <img src="Assets/hannah-portrait.png" alt="Hannah, creative director">
     </div>
   </div>
 </header>
