@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Elixir. Case Study | That's B Lindsay</title>
-<meta name="description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
+<title>IOnlyBookVIP. Case Study | That's B Lindsay</title>
+<meta name="description" content="A high-end digital brand for ultra-luxury travel and personal handling, built entirely around discretion, security, and unparalleled personal service.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Email Elixir. Case Study | That's B Lindsay">
-<meta property="og:description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
+<meta property="og:title" content="IOnlyBookVIP. Case Study | That's B Lindsay">
+<meta property="og:description" content="A high-end digital brand for ultra-luxury travel and personal handling, built entirely around discretion, security, and unparalleled personal service.">
 <meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
-<meta property="og:url" content="https://thatsblindsay.com/work/email-elixir/">
+<meta property="og:url" content="https://thatsblindsay.com/work/ionlybookvip/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Email Elixir. Case Study | That's B Lindsay">
-<meta name="twitter:description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
+<meta name="twitter:title" content="IOnlyBookVIP. Case Study | That's B Lindsay">
+<meta name="twitter:description" content="A high-end digital brand for ultra-luxury travel and personal handling, built entirely around discretion, security, and unparalleled personal service.">
 <meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
@@ -86,12 +86,6 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .feature-row{ padding:20px 0; border-bottom:1px solid #e6e0d8; }
 .feature-row h4{ font-size:1.02rem; font-weight:500; margin-bottom:6px; color:var(--accent-dark); }
 .feature-row p{ font-size:0.9rem; color:#6b6b66; line-height:1.55; max-width:44ch; }
-
-.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
-@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
-.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
-.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
-.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
 
 .palette-section{ background:var(--ink); color:var(--paper); }
 .palette-section .section-tag{ color:var(--gold); }
@@ -221,24 +215,59 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 ::selection{ background:var(--accent); color:var(--paper); }
 
 
-.spread-card img, .deliverable-card img{ cursor:zoom-in; transition:opacity .2s ease; }
-.spread-card img:hover, .deliverable-card img:hover{ opacity:0.88; }
+.spread-card img, .deliverable-card img, .instagram-card img{ cursor:zoom-in; transition:opacity .2s ease; }
+.spread-card img:hover, .deliverable-card img:hover, .instagram-card img:hover{ opacity:0.88; }
 
 .deliverables-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
 .deliverable-tag{ display:inline-block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent-dark);
   border:1px solid var(--accent); border-radius:999px; padding:4px 12px; margin-bottom:12px; }
-.deliverables-grid.bento{ display:flex; flex-direction:column; gap:20px; }
-.bento-row{ display:flex; gap:20px; }
-.bento-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
-.bento-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
+.deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; }
+.deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
 .bento-scrim{ position:absolute; left:0; right:0; bottom:0; padding:16px 18px; background:linear-gradient(0deg, rgba(0,0,0,0.6), transparent); pointer-events:none; }
 .bento-tag{ display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; border-radius:999px; padding:4px 12px;
   background:transparent; color:var(--paper); border:1px solid rgba(252,252,252,0.6); transition:background .2s ease, color .2s ease, border-color .2s ease; }
-.bento-row .deliverable-card:hover .bento-tag{ background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95); }
-.bento-row.row-tall{ height:400px; }
-.bento-row.row-short{ height:300px; }
-@media (max-width:820px){ .bento-row{ flex-wrap:wrap; height:auto !important; } .bento-row .deliverable-card{ flex:1 1 45%; height:260px; } }
-@media (max-width:560px){ .bento-row .deliverable-card{ flex:1 1 100%; } }
+.deliverable-card:hover .bento-tag{ background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95); }
+.deliverables-grid.bento{ display:grid; grid-template-columns:1fr 1fr 1.6fr; grid-template-rows:280px 280px; gap:20px; }
+.deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
+.deliverables-grid.bento .cell-pen{ grid-column:2; grid-row:1; }
+.deliverables-grid.bento .cell-pickup{ grid-column:1 / 3; grid-row:2; }
+.deliverables-grid.bento .cell-cards{ grid-column:3; grid-row:1 / 3; }
+@media (max-width:820px){
+  .deliverables-grid.bento{ grid-template-columns:1fr 1fr; grid-template-rows:220px 220px 300px; }
+  .deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
+  .deliverables-grid.bento .cell-pen{ grid-column:2; grid-row:1; }
+  .deliverables-grid.bento .cell-pickup{ grid-column:1 / 3; grid-row:2; }
+  .deliverables-grid.bento .cell-cards{ grid-column:1 / 3; grid-row:3; }
+}
+@media (max-width:560px){
+  .deliverables-grid.bento{ grid-template-columns:1fr; grid-template-rows:260px 260px 260px 340px; }
+  .deliverables-grid.bento .cell-tag{ grid-column:1; grid-row:1; }
+  .deliverables-grid.bento .cell-pen{ grid-column:1; grid-row:2; }
+  .deliverables-grid.bento .cell-pickup{ grid-column:1; grid-row:3; }
+  .deliverables-grid.bento .cell-cards{ grid-column:1; grid-row:4; }
+}
+
+.cd-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
+.cd-grid{ display:flex; flex-direction:column; gap:20px; }
+.cd-row{ display:flex; gap:20px; height:360px; }
+.cd-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
+.cd-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
+@media (max-width:820px){ .cd-row{ flex-wrap:wrap; height:auto; } .cd-row .deliverable-card{ flex:1 1 45%; height:280px; } }
+@media (max-width:560px){ .cd-row .deliverable-card{ flex:1 1 100%; } }
+
+.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
+@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
+.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
+.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
+.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
+
+.instagram-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
+.instagram-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+.instagram-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; }
+.instagram-card img{ width:100%; aspect-ratio:4/5; object-fit:cover; display:block; }
+.instagram-card:hover img{ opacity:0.9; }
+@media (max-width:720px){ .instagram-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:520px){ .instagram-grid{ grid-template-columns:1fr; } }
 
 .lightbox-overlay{
   position:fixed; inset:0; z-index:1000; background:rgba(20,19,17,0.94);
@@ -270,10 +299,10 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
     <a href="/work/viva-fashion/"><span class="navG-num">02</span>Viva Fashion</a>
     <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
-    <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
+    <a href="#" class="current"><span class="navG-num">04</span>iOnlyBookVIP</a>
     <a href="/work/cza-bouwbedrijf/"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
     <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
-    <a href="#" class="current"><span class="navG-num">07</span>Email Elixir</a>
+    <a href="/work/email-elixir/"><span class="navG-num">07</span>Email Elixir</a>
     <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
   </div>
 </aside>
@@ -301,32 +330,59 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <header class="hero">
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Full Service. Marketing</div>
-    <h1>Email Elixir</h1>
-    <p class="tagline">Tailored emails. Magical results.</p>
+    <div class="eyebrow"><span class="dot"></span>Full Service. Luxury Travel</div>
+    <h1>IOnlyBookVIP</h1>
+    <p class="tagline">Luxury services, handled personally.</p>
     <div class="meta-row">
       <div><span>Year</span><strong>2025</strong></div>
-      <div><span>Scope</span><strong>Brand Identity, Webflow Build, Booking Flow</strong></div>
-      <div><span>Industry</span><strong>Email Marketing Agency</strong></div>
+      <div><span>Scope</span><strong>Brand Strategy, Identity, Website</strong></div>
+      <div><span>Industry</span><strong>Ultra Luxury Travel Concierge</strong></div>
     </div>
-    <a class="visit-live" href="https://emailelixir.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
+    <a class="visit-live" href="https://www.ionlybookvip.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
   </div>
 </header>
 
 <section class="section deliverables-section">
   <div class="wrap">
     <span class="section-tag">Deliverables</span>
-    <h2>The elixir, bottled and carried through.</h2>
-    <p class="deliverables-note">The potion-bottle mark applied across the physical touchpoints that carry the brand off screen, from the studio&#x27;s own stationery to a client welcome gift.</p>
+    <h2>Quiet wealth, held in the hand.</h2>
+    <p class="deliverables-note">The ii mark carried across the physical moments a client actually touches, from the luggage tag on the jet to the card handed over the table.</p>
     <div class="deliverables-grid bento">
-      <div class="bento-row row-tall">
-        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/ee-mockup-cards.png" alt="Email Elixir business cards for Sofia de Vries, director, front and back"><div class="bento-scrim"><span class="bento-tag">Business Cards</span></div></figure>
-        <figure class="deliverable-card" style="flex-grow:0.801;"><img src="../assets/ee-mockup-notebook.png" alt="Email Elixir branded leather notebook and pen on a stone surface"><div class="bento-scrim"><span class="bento-tag">Studio Notebook</span></div></figure>
+      <figure class="deliverable-card cell-tag"><img src="../assets/iv-mockup-luggagetag.png" alt="IOnlyBookVIP branded leather luggage tag on a client's bag"><div class="bento-scrim"><span class="bento-tag">Luggage Tag</span></div></figure>
+      <figure class="deliverable-card cell-pen"><img src="../assets/iv-mockup-pen.png" alt="IOnlyBookVIP branded fountain pen held over a leather desk journal"><div class="bento-scrim"><span class="bento-tag">Signature Pen</span></div></figure>
+      <figure class="deliverable-card cell-pickup"><img src="../assets/iv-mockup-pickup.png" alt="Concierge standing beside a private car, ready for pick up"><div class="bento-scrim"><span class="bento-tag">Private Pick Up</span></div></figure>
+      <figure class="deliverable-card cell-cards"><img src="../assets/iv-mockup-cards.png" alt="IOnlyBookVIP brushed metal member card and business card for Kelvin Arora, concierge and lifestyle curator"><div class="bento-scrim"><span class="bento-tag">Member &amp; Business Cards</span></div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section tight cd-section">
+  <div class="wrap">
+    <span class="section-tag">The Mood</span>
+    <h2>The world this client already lives in.</h2>
+    <p class="cd-note">The mood the identity was built to sit inside, the cabin, the lounge, the tarmac, the arrival, shot with the same restraint as the brand itself.</p>
+    <div class="cd-grid">
+      <div class="cd-row">
+        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-cabin.png" alt="Two passengers in dark sunglasses seated in a private jet cabin"></figure>
+        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-lounge.png" alt="Couple in an airport lounge with champagne, an Emirates aircraft visible through the window"></figure>
       </div>
-      <div class="bento-row row-short">
-        <figure class="deliverable-card" style="flex-grow:1.25;"><img src="../assets/ee-mockup-sign.png" alt="Email Elixir hanging shop sign mounted on a stone building facade"><div class="bento-scrim"><span class="bento-tag">Studio Signage</span></div></figure>
-        <figure class="deliverable-card" style="flex-grow:1.25;"><img src="../assets/ee-mockup-candle.png" alt="Email Elixir branded candle in a green glass jar, lit on a living room table"><div class="bento-scrim"><span class="bento-tag">Client Welcome Gift</span></div></figure>
+      <div class="cd-row">
+        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/iv-cd-tarmac.png" alt="Private jet wing and engine on a runway at night"></figure>
+        <figure class="deliverable-card" style="flex-grow:1;"><img src="../assets/iv-cd-arrival.png" alt="Bulgari Resort Dubai entrance at night with a private car arriving"></figure>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight instagram-section">
+  <div class="wrap">
+    <span class="section-tag">Instagram</span>
+    <h2>The brand voice, built for the feed.</h2>
+    <p class="instagram-note">Three posts from the launch content set, each one leaning on the same quiet, image-led confidence as the rest of the identity.</p>
+    <div class="instagram-grid">
+      <figure class="instagram-card"><img src="../assets/iv-ig-moved.png" alt="Instagram post: You don't travel, you're moved, man reading a newspaper in a chauffeured car"></figure>
+      <figure class="instagram-card"><img src="../assets/iv-ig-champagne.png" alt="Instagram post: Champagne Flights, chardonnay pricing, first class cabin table with champagne"></figure>
+      <figure class="instagram-card"><img src="../assets/iv-ig-dinner.png" alt="Instagram post: Driver waiting, dinner booked, luxury services handled personally, Rolls-Royce outside a hotel"></figure>
     </div>
   </div>
 </section>
@@ -335,54 +391,54 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Palette</span>
     <h2>Colour, straight from the brandbook.</h2>
-    <p class="palette-note">Six named tones documented in the Email Elixir 2025 styleguide, each carrying its own short rationale in the brandbook itself.</p>
+    <p class="palette-note">Six named tones documented in the IOnlyBookVIP 2025 styleguide, from Registration Black through to Ultra Pure White.</p>
     <div class="palette-grid">
       <div class="swatch">
-      <div class="swatch-color" style="background:#0C0E0A;"></div>
+      <div class="swatch-color" style="background:#000301;"></div>
       <div class="swatch-info">
-        <div class="hex">#0C0E0A</div>
-        <div class="name">Black Wash</div>
-        <div class="note">A sleek, grounding base adding depth and elegance, refined, confident, and timeless.</div>
+        <div class="hex">#000301</div>
+        <div class="name">Registration Black</div>
+        <div class="note">A pure, deep black communicating discretion, privacy, and elite access.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#222F17;"></div>
+      <div class="swatch-color" style="background:#0D170C;"></div>
       <div class="swatch-info">
-        <div class="hex">#222F17</div>
-        <div class="name">Darkest Forest</div>
-        <div class="note">A deep forest green symbolising eco-conscious, long-term, organic growth.</div>
+        <div class="hex">#0D170C</div>
+        <div class="name">Pinch of Pepper</div>
+        <div class="note">An ultra-dark green with character: depth, maturity, and trust.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#4A3722;"></div>
+      <div class="swatch-color" style="background:#2D5029;"></div>
       <div class="swatch-info">
-        <div class="hex">#4A3722</div>
-        <div class="name">Cafe Noir</div>
-        <div class="note">A rich, earthy brown adding warmth and a crafted, boutique feel.</div>
+        <div class="hex">#2D5029</div>
+        <div class="name">Chestnut Green</div>
+        <div class="note">A bold forest tone speaking to stability, heritage, and power.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#AA7A41;"></div>
+      <div class="swatch-color" style="background:#9B7C48;"></div>
       <div class="swatch-info">
-        <div class="hex">#AA7A41</div>
-        <div class="name">Blonde Wood</div>
-        <div class="note">A softer, golden brown balancing the palette with natural, handcrafted calm.</div>
+        <div class="hex">#9B7C48</div>
+        <div class="name">Treasured</div>
+        <div class="note">A sophisticated bronze gold. Understated wealth, quiet dominance.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#5D8E35;"></div>
+      <div class="swatch-color" style="background:#DDC18D;"></div>
       <div class="swatch-info">
-        <div class="hex">#5D8E35</div>
-        <div class="name">Maximum Green</div>
-        <div class="note">The spark of vitality: fresh, energetic, and growing, representing momentum and transformation.</div>
+        <div class="hex">#DDC18D</div>
+        <div class="name">Farina</div>
+        <div class="note">A soft golden hue bringing approachability and warmth to the palette.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#F6F6E2;"></div>
+      <div class="swatch-color" style="background:#FAF7F3;"></div>
       <div class="swatch-info">
-        <div class="hex">#F6F6E2</div>
-        <div class="name">Star Shine</div>
-        <div class="note">The lightest tone, giving every visual room to breathe with a soft, magical glow.</div>
+        <div class="hex">#FAF7F3</div>
+        <div class="name">Ultra Pure White</div>
+        <div class="note">A near white with subtle softness, for clarity and breathability.</div>
       </div>
     </div>
     </div>
@@ -396,16 +452,16 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="type-grid">
       <div class="type-card">
       <div class="role">Headings</div>
-      <div class="fontname">Olivea</div>
-      <p>An elegant, handwritten feel that evokes the crafted, boutique touch behind every email. The human element in a world of automation.</p>
+      <div class="fontname">Golden</div>
+      <p>A modern display typeface with graceful curves, capturing quiet luxury, expressive without being loud.</p>
     </div>
       <div class="type-card">
       <div class="role">Body</div>
-      <div class="fontname">Haurora Regular</div>
-      <p>Clean, calm, and effortlessly modern, keeping strategy and storytelling readable and grounded.</p>
+      <div class="fontname">Atlas Grotesk</div>
+      <p>A contemporary sans-serif delivering precision and approachability, built for high readability.</p>
     </div>
     </div>
-    <p class="type-note">On this page, Meow Script stands in for Olivea and Space Grotesk for Haurora Regular, matching the boutique, handwritten warmth documented in the styleguide.</p>
+    <p class="type-note">On this page, Fraunces stands in for Golden and Space Grotesk for Atlas Grotesk, matching the restrained, discreet tone documented in the styleguide.</p>
   </div>
 </section>
 
@@ -414,27 +470,27 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Brandbook</span>
     <h2>Straight from the guidelines document.</h2>
-    <p class="brandbook-note">Three spreads pulled directly from Email Elixir&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
+    <p class="brandbook-note">Three spreads pulled directly from IOnlyBookVIP&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
     <div class="brandbook-grid">
       <figure class="spread-card">
-        <img src="../assets/ee-bb-cover.jpg" alt="Email Elixir styleguide cover, leafy background with potion bottle and envelope icon">
+        <img src="../assets/iv-bb-cover.jpg" alt="IOnlyBookVIP styleguide cover, Rolls-Royce and private jet photo with the ii brandmark">
         <figcaption>
           <span class="spread-tag">Cover</span>
-          <p>The guideline&#x27;s cover: a leafy background with the potion-bottle-and-envelope mark, Tailored emails, magical results.</p>
+          <p>The guideline&#x27;s cover: a Rolls-Royce and private jet at dusk, with the ii brandmark, Styleguide 2025.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/ee-bb-colours.jpg" alt="Email Elixir documented colour palette page">
+        <img src="../assets/iv-bb-colours.jpg" alt="IOnlyBookVIP documented colour palette page">
         <figcaption>
           <span class="spread-tag">Colour Palette</span>
-          <p>The documented palette, Black Wash through Star Shine, shown over a leafy background.</p>
+          <p>The documented palette, Registration Black through Ultra Pure White, shown against a dark green textured background.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/ee-bb-fonts.jpg" alt="Email Elixir fonts page showing Olivea and Haurora Regular">
+        <img src="../assets/iv-bb-fonts.jpg" alt="IOnlyBookVIP fonts page showing Golden and Atlas Grotesk">
         <figcaption>
           <span class="spread-tag">Typography</span>
-          <p>The fonts page: Olivea&#x27;s handwritten script over a wax-seal envelope photo, paired with Haurora Regular.</p>
+          <p>The fonts page: Golden for display, Atlas Grotesk for body, set on a deep green background.</p>
         </figcaption>
       </figure>
     </div>
@@ -444,9 +500,9 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section">
   <div class="wrap">
     <span class="section-tag">Brought to Life</span>
-    <p class="lead">A site built to be the first proof point, before a single pitch was made.</p>
+    <p class="lead">A brand voice that had to hold up in every message, not just the homepage.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>The identity was built out in Figma and developed in Webflow, with the animated logo, a Calendly-integrated booking flow, and bilingual Dutch and English support via a translate toggle, backed by SEO, page-speed, analytics, and ad-pixel tracking.</p>
+      <p>This positioning was built into a Webflow landing page with neurodesign and animation applied to the WhatsApp CTA, plus a custom-trained GPT to keep ongoing content and client communication in the brand&#x27;s voice, and SEO, analytics, and pixel tracking underneath it all.</p>
     </div>
   </div>
 </section>
@@ -454,22 +510,22 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Thinking</span>
-    <p class="lead">A specialist studio, not a broad-service shop, built around depth over breadth.</p>
+    <p class="lead">Premium concierge services in this category tend to land on one of two extremes: opaque and inaccessible, or generic and impersonal.</p>
     <div class="condensed-grid">
       <div class="condensed-block">
         <span class="step-tag">Brief</span>
-        <h3>The brand had to be the proof.</h3>
-        <p>A boutique retention studio writing Klaviyo email and SMS flows for e-commerce brands. Every decision had to answer whether it looked like it was made by someone who actually knows what makes an inbox convert.</p>
+        <h3>Who They&#x27;re Really Serving</h3>
+        <p>IOnlyBookVIP&#x27;s audience is young, high earning, and highly online: agency owners, crypto traders, and content creators whose day-to-day flying experience doesn&#x27;t match what they&#x27;ve actually built. Every decision had to answer one question: does this feel discreet, secure, and effortless.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Strategy</span>
-        <h3>Depth over breadth.</h3>
-        <p>The category is crowded with generalists treating email as one line item among many. Email Elixir was positioned as a specialist studio, with the site built as a trust engine: testimonials, low-friction call-booking, and a clear FAQ.</p>
+        <h3>A Person, Not a Platform</h3>
+        <p>The brand was positioned deliberately against both extremes, quietly exclusive rather than showy, and built around a real person rather than an anonymous service. That meant putting founder Kelvin front and centre as concierge, curator, and connector, with a WhatsApp-first CTA as the site&#x27;s single main action.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Creative Direction</span>
-        <h3>Premium, a little magical.</h3>
-        <p>An animated logo and subtle motion calibrated to feel premium without tipping into gimmicky. Olivea, an elegant handwritten display face, carries the human element in a world of automation, set against Haurora&#x27;s clean, calm body copy.</p>
+        <h3>Quiet Dominance</h3>
+        <p>Registration Black and the near-black Pinch of Pepper set a private, elite foundation, grounded by Chestnut Green. Treasured, a sophisticated bronze gold, and the softer Farina add understated wealth, paired with an expressive display face for headlines and a clean sans-serif for body copy.</p>
       </div>
     </div>
   </div>
@@ -477,17 +533,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <section class="section tight quote-section">
   <div class="wrap">
-    <blockquote>"It's the human element in a world of <span class="script">automation</span>."</blockquote>
-    <div class="quote-attr">Brand Fonts Rationale, Email Elixir Styleguide</div>
+    <blockquote>"Consider it <span class="script">handled</span>."</blockquote>
+    <div class="quote-attr">Brand Slogan, IOnlyBookVIP Styleguide</div>
   </div>
 </section>
 
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Takeaway</span>
-    <p class="lead">Email Elixir couldn&#x27;t sell "tailored emails, magical results" from behind a brand that looked like everyone else&#x27;s.</p>
+    <p class="lead">For an audience that already has money, the differentiator was never going to be price.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>The identity and the site had to be the first proof point: evidence, before a single pitch was made, that this is a studio that understands exactly what makes an inbox convert.</p>
+      <p>It was discretion, a real person, and a brand that signalled quiet dominance before a single message was sent. That&#x27;s a positioning call, not a design trend.</p>
     </div>
   </div>
 </section>
@@ -503,7 +559,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="other-projects-track-wrap">
       <div class="other-projects-track">
         <a class="op-card" href="/work/peakspring/">
-          <div class="op-img"><img src="assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Packaging · Web</span>
             <div class="op-title">PeakSpring</div>
@@ -512,7 +568,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/viva-fashion/">
-          <div class="op-img"><img src="assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Retail</span>
             <div class="op-title">Viva Fashion</div>
@@ -521,7 +577,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/van-straaten-trading/">
-          <div class="op-img"><img src="assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · B2B</span>
             <div class="op-title">Van Straaten Trading</div>
@@ -529,17 +585,8 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
-        <a class="op-card" href="/work/ionlybookvip/">
-          <div class="op-img"><img src="assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Hospitality</span>
-            <div class="op-title">iOnlyBookVIP</div>
-            <p class="op-desc">A premium identity for a luxury travel concierge.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
         <a class="op-card" href="/work/cza-bouwbedrijf/">
-          <div class="op-img"><img src="assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Construction</span>
             <div class="op-title">CZA Bouwbedrijf</div>
@@ -548,7 +595,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/vanessa-nantes/">
-          <div class="op-img"><img src="assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Product Design</span>
             <div class="op-title">Vanessa Nantes</div>
@@ -556,8 +603,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
+        <a class="op-card" href="/work/email-elixir/">
+          <div class="op-img"><img src="../assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Brand Strategy · Web</span>
+            <div class="op-title">Email Elixir</div>
+            <p class="op-desc">Brand strategy and web design for a lifecycle marketing studio.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
         <a class="op-card" href="/work/baliwithflow/">
-          <div class="op-img"><img src="assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Product Design</span>
             <div class="op-title">Bali With Flow</div>
@@ -610,7 +666,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   var lbImg = document.getElementById('lightboxImg');
   var lbCaption = document.getElementById('lightboxCaption');
   var closeBtn = document.getElementById('lightboxClose');
-  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img');
+  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img, .instagram-card img');
 
   triggers.forEach(function(img){
     img.style.cursor = 'zoom-in';

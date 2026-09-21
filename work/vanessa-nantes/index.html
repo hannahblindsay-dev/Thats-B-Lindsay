@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Van Straaten Trading. Case Study | That's B Lindsay</title>
-<meta name="description" content="A trading education brand built on discipline, structure, and clarity, with identity and voice engineered around one idea: skill that lasts.">
+<title>Vanessa Nantes. Case Study | That's B Lindsay</title>
+<meta name="description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Van Straaten Trading. Case Study | That's B Lindsay">
-<meta property="og:description" content="A trading education brand built on discipline, structure, and clarity, with identity and voice engineered around one idea: skill that lasts.">
+<meta property="og:title" content="Vanessa Nantes. Case Study | That's B Lindsay">
+<meta property="og:description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
 <meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
-<meta property="og:url" content="https://thatsblindsay.com/work/van-straaten-trading/">
+<meta property="og:url" content="https://thatsblindsay.com/work/vanessa-nantes/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Van Straaten Trading. Case Study | That's B Lindsay">
-<meta name="twitter:description" content="A trading education brand built on discipline, structure, and clarity, with identity and voice engineered around one idea: skill that lasts.">
+<meta name="twitter:title" content="Vanessa Nantes. Case Study | That's B Lindsay">
+<meta name="twitter:description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
 <meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
@@ -129,20 +129,24 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 .deliverables-grid.bento{
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:440px 280px;
+  grid-template-columns:1fr 1fr 1fr 1.3fr;
+  grid-template-rows:280px 380px;
   gap:20px;
 }
 .deliverables-grid.bento .deliverable-card{ margin:0; border:1px solid #e6e0d8; border-radius:6px; overflow:hidden; position:relative; }
 .deliverables-grid.bento .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
-.deliverables-grid.bento .cell-tee{ grid-column:1 / 3; }
+.deliverables-grid.bento .cell-bag{ grid-column:1; grid-row:1; }
+.deliverables-grid.bento .cell-coat{ grid-column:2; grid-row:1; }
+.deliverables-grid.bento .cell-serum{ grid-column:3; grid-row:1; }
+.deliverables-grid.bento .cell-tags{ grid-column:4; grid-row:1 / 3; }
+.deliverables-grid.bento .cell-storefront{ grid-column:1 / 3; grid-row:2; }
+.deliverables-grid.bento .cell-model{ grid-column:3; grid-row:2; }
 .deliverables-grid.bento .bento-scrim{
   position:absolute; left:0; right:0; bottom:0; padding:16px 18px;
   background:linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
   pointer-events:none;
 }
 .deliverables-grid.bento .bento-scrim.light{ background:linear-gradient(0deg, rgba(0,0,0,0.35), transparent); }
-.deliverables-grid.bento .cell-tee .bento-scrim{ padding:18px 22px; }
 .deliverables-grid.bento .bento-tag{
   display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase;
   border-radius:999px; padding:4px 12px;
@@ -152,15 +156,28 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .deliverables-grid.bento .deliverable-card:hover .bento-tag{
   background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95);
 }
-.deliverables-grid.bento .bento-scrim p{ color:#f2ede4; font-size:0.85rem; max-width:40ch; margin-top:6px; }
 @media (max-width:820px){
-  .deliverables-grid.bento{ grid-template-columns:1fr 1fr; grid-template-rows:none; grid-auto-rows:220px; }
-  .deliverables-grid.bento .cell-tee{ grid-column:1 / 3; }
+  .deliverables-grid.bento{ grid-template-columns:1fr 1fr; grid-template-rows:none; grid-auto-rows:240px; }
+  .deliverables-grid.bento .cell-bag{ grid-column:1; grid-row:1; }
+  .deliverables-grid.bento .cell-coat{ grid-column:2; grid-row:1; }
+  .deliverables-grid.bento .cell-serum{ grid-column:1; grid-row:2; }
+  .deliverables-grid.bento .cell-tags{ grid-column:2; grid-row:2 / 4; }
+  .deliverables-grid.bento .cell-storefront{ grid-column:1 / 3; grid-row:3; }
+  .deliverables-grid.bento .cell-model{ grid-column:1 / 3; grid-row:4; }
 }
 @media (max-width:560px){
-  .deliverables-grid.bento{ grid-template-columns:1fr; }
-  .deliverables-grid.bento .cell-tee{ grid-column:1; }
+  .deliverables-grid.bento{ grid-template-columns:1fr; grid-auto-rows:260px; }
+  .deliverables-grid.bento .cell-bag, .deliverables-grid.bento .cell-coat, .deliverables-grid.bento .cell-serum,
+  .deliverables-grid.bento .cell-storefront, .deliverables-grid.bento .cell-model{ grid-column:1; grid-row:auto; }
+  .deliverables-grid.bento .cell-tags{ grid-column:1; grid-row:span 2; }
 }
+
+.campaign-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+@media (max-width:820px){ .campaign-grid{ grid-template-columns:1fr; } }
+.campaign-card{ margin:0; border:1px solid #e6e0d8; border-radius:4px; overflow:hidden; background:#f1ede6; }
+.campaign-card img{ width:100%; height:auto; display:block; cursor:zoom-in; transition:opacity .2s ease; }
+.campaign-card img:hover{ opacity:0.88; }
+.campaign-card figcaption{ padding:20px 22px; }
 
 .condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
 @media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
@@ -297,10 +314,10 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="navG-list">
     <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
     <a href="/work/viva-fashion/"><span class="navG-num">02</span>Viva Fashion</a>
-    <a href="#" class="current"><span class="navG-num">03</span>Van Straaten Trading</a>
+    <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
     <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
     <a href="/work/cza-bouwbedrijf/"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
-    <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
+    <a href="#" class="current"><span class="navG-num">06</span>Vanessa Nantes</a>
     <a href="/work/email-elixir/"><span class="navG-num">07</span>Email Elixir</a>
     <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
   </div>
@@ -329,15 +346,15 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <header class="hero">
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Brand Guidelines. Trading Education</div>
-    <h1>Van Straaten Trading</h1>
-    <p class="tagline">Trading without the noise.</p>
+    <div class="eyebrow"><span class="dot"></span>Full Service. Fashion</div>
+    <h1>Vanessa Nantes</h1>
+    <p class="tagline">Modern luxury for women who move with purpose.</p>
     <div class="meta-row">
       <div><span>Year</span><strong>2025</strong></div>
       <div><span>Scope</span><strong>Brand Strategy, Identity, Webflow Build</strong></div>
-      <div><span>Industry</span><strong>Trading Education</strong></div>
+      <div><span>Industry</span><strong>Womenswear</strong></div>
     </div>
-    <a class="visit-live" href="https://noudvanstraaten.nl/" target="_blank" rel="noopener">Visit live site &#8594;</a>
+    <a class="visit-live" href="https://www.vanessanantes.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
   </div>
 </header>
 
@@ -345,30 +362,55 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">Deliverables</span>
     <h2>Where the brand system landed.</h2>
-    <p class="deliverables-note">Van Straaten Trading&#x27;s brandbook carries the identity onto apparel and everyday carry, straight from the guideline&#x27;s own mock-up pages.</p>
+    <p class="deliverables-note">From garment labels and woven tags to the boutique window, the identity carries the same restraint from the styleguide onto every touchpoint a customer or retailer actually sees.</p>
     <div class="deliverables-grid bento">
-      <figure class="deliverable-card cell-cap">
-        <img src="../assets/vst-mockup-cap.png" alt="Van Straaten Trading white cap with an embroidered N brandmark, held up against a blue sky">
-        <div class="bento-scrim"><span class="bento-tag">Headwear</span></div>
+      <figure class="deliverable-card cell-bag">
+        <img src="../assets/vn-mockup-bag.png" alt="Vanessa Nantes olive leather handbag with a gold VN monogram, studio lit">
+        <div class="bento-scrim"><span class="bento-tag">Accessories</span></div>
       </figure>
-      <figure class="deliverable-card cell-hoodie">
-        <img src="../assets/vst-mockup-hoodie.png" alt="Van Straaten Trading Foundation-toned hoodie with a small embroidered brandmark on the sleeve">
-        <div class="bento-scrim light"><span class="bento-tag">Apparel</span></div>
+      <figure class="deliverable-card cell-coat">
+        <img src="../assets/vn-mockup-coat.png" alt="Vanessa Nantes garment label stitched into a tan wool coat on a hanger">
+        <div class="bento-scrim"><span class="bento-tag">Garment Label</span></div>
       </figure>
-      <figure class="deliverable-card cell-lifestyle">
-        <img src="../assets/vst-mockup-lifestyle.png" alt="Person drinking from a Van Straaten Trading branded mug while working on a laptop">
-        <div class="bento-scrim"><span class="bento-tag">In Use</span></div>
+      <figure class="deliverable-card cell-serum">
+        <img src="../assets/vn-mockup-serum.png" alt="Vanessa Nantes Sunstone serum bottle resting on a bed of moss">
+        <div class="bento-scrim"><span class="bento-tag">Skincare</span></div>
       </figure>
-      <figure class="deliverable-card cell-tee">
-        <img src="../assets/vst-mockup-tee.png" alt="Van Straaten Trading wordmark printed on the back of a white t-shirt">
-        <div class="bento-scrim">
-          <span class="bento-tag">Apparel</span>
-          <p>The wordmark, placed quiet and centred on the back.</p>
-        </div>
+      <figure class="deliverable-card cell-tags">
+        <img src="../assets/vn-mockup-tags.png" alt="Vanessa Nantes woven tags, size labels, and debossed leather patches in cream and olive">
+        <div class="bento-scrim"><span class="bento-tag">Tags &amp; Labels</span></div>
       </figure>
-      <figure class="deliverable-card cell-airpods">
-        <img src="../assets/vst-mockup-airpods.png" alt="Van Straaten Trading Core Growth green AirPods case with the N brandmark">
-        <div class="bento-scrim light"><span class="bento-tag">Tech</span></div>
+      <figure class="deliverable-card cell-storefront">
+        <img src="../assets/vn-mockup-storefront.png" alt="Vanessa Nantes boutique storefront window at dusk, elephant brandmark lit above the rail">
+        <div class="bento-scrim"><span class="bento-tag">Storefront</span></div>
+      </figure>
+      <figure class="deliverable-card cell-model">
+        <img src="../assets/vn-mockup-model.png" alt="Woman in white carrying a Vanessa Nantes shopping bag with the elephant brandmark">
+        <div class="bento-scrim light"><span class="bento-tag">Lifestyle</span></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section tight campaign-section">
+  <div class="wrap">
+    <span class="section-tag">The Campaign</span>
+    <h2>The identity, brought onto the shop floor.</h2>
+    <p class="deliverables-note">Two pull-up banners built for the boutique, carrying the brand description word for word: effortless, empowered, and enduring. One leads with the tagline, the other with the five values that anchor the brand.</p>
+    <div class="campaign-grid">
+      <figure class="campaign-card">
+        <img src="../assets/vn-banner-tagline.png" alt="Vanessa Nantes store banner reading This Is Fashion, Redefined: Effortless, Empowered and Enduring">
+        <figcaption>
+          <span class="deliverable-tag">Brand Statement</span>
+          <p>Three words carrying the whole brand: effortless, empowered, enduring.</p>
+        </figcaption>
+      </figure>
+      <figure class="campaign-card">
+        <img src="../assets/vn-banner-values.png" alt="Vanessa Nantes store banner listing brand values: Effortless Strength, Timeless Refinement, Purposeful Craftsmanship, Modern Femininity, Integrity and Intention">
+        <figcaption>
+          <span class="deliverable-tag">The Pillars</span>
+          <p>What the brand stands for, said plainly instead of implied.</p>
+        </figcaption>
       </figure>
     </div>
   </div>
@@ -378,54 +420,54 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Palette</span>
     <h2>Colour, straight from the brandbook.</h2>
-    <p class="palette-note">Documented in the guidelines as six named tones moving from Foundation through to Clarity, anchored by a deep blue-black and built up through a growth-driven green gradient.</p>
+    <p class="palette-note">Documented in the Vanessa Nantes styleguide as six named tones moving from Nocturne through to Ivory Silk.</p>
     <div class="palette-grid">
       <div class="swatch">
-      <div class="swatch-color" style="background:#03323C;"></div>
+      <div class="swatch-color" style="background:#292919;"></div>
       <div class="swatch-info">
-        <div class="hex">#03323C</div>
-        <div class="name">Foundation</div>
-        <div class="note">A deep, grounded blue-black representing discipline, focus, and long-term resilience. The anchor of the brand, steady and unshaken by market noise.</div>
+        <div class="hex">#292919</div>
+        <div class="name">Nocturne</div>
+        <div class="note">A deep, grounding shade that conveys clarity, focus, and poise. Anchors the brand in modern sophistication.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#707E8D;"></div>
+      <div class="swatch-color" style="background:#40402F;"></div>
       <div class="swatch-info">
-        <div class="hex">#707E8D</div>
-        <div class="name">Graphite Zone</div>
-        <div class="note">A balanced, neutral grey symbolising clarity in decision-making, reflecting the calm, analytical mindset required to navigate uncertainty.</div>
+        <div class="hex">#40402F</div>
+        <div class="name">Mangrove</div>
+        <div class="note">Earthy and intelligent. Connects the palette&#x27;s darker foundations to its natural warmth.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#199000;"></div>
+      <div class="swatch-color" style="background:#85834B;"></div>
       <div class="swatch-info">
-        <div class="hex">#199000</div>
-        <div class="name">Core Growth</div>
-        <div class="note">A bold growth-driven green representing momentum built from skill, not luck. Stands for conviction and progress earned through practice.</div>
+        <div class="hex">#85834B</div>
+        <div class="name">Verdant Clay</div>
+        <div class="note">A muted green carrying the balance of nature and artistry, an ode to craftsmanship.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#62C94D;"></div>
+      <div class="swatch-color" style="background:#C59955;"></div>
       <div class="swatch-info">
-        <div class="hex">#62C94D</div>
-        <div class="name">Momentum Line</div>
-        <div class="note">A lighter, energetic green speaking to acceleration and forward movement, representing confidence increasing as a trader sharpens technique.</div>
+        <div class="hex">#C59955</div>
+        <div class="name">Honey Dune</div>
+        <div class="note">A warm neutral radiating understated luxury, evoking sunlit textures and golden depth.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#A2E794;"></div>
+      <div class="swatch-color" style="background:#DEC18C;"></div>
       <div class="swatch-info">
-        <div class="hex">#A2E794</div>
-        <div class="name">Soft Progress</div>
-        <div class="note">A gentle green symbolising steady, sustainable improvement. Mastery is developed over time, not through shortcuts.</div>
+        <div class="hex">#DEC18C</div>
+        <div class="name">Sunstone</div>
+        <div class="note">Radiant and balanced, introducing warmth and optimism to accents and highlights.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#F7F7F7;"></div>
+      <div class="swatch-color" style="background:#F5EFE4;"></div>
       <div class="swatch-info">
-        <div class="hex">#F7F7F7</div>
-        <div class="name">Clarity</div>
-        <div class="note">A clean, bright neutral expressing transparency and honesty, bringing balance to a teaching environment built on trust.</div>
+        <div class="hex">#F5EFE4</div>
+        <div class="name">Ivory Silk</div>
+        <div class="note">The foundation of light within the brand. Pure, timeless, and composed.</div>
       </div>
     </div>
     </div>
@@ -438,57 +480,48 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <h2>The typefaces documented in the brandbook.</h2>
     <div class="type-grid">
       <div class="type-card">
-      <div class="role">Typeface</div>
-      <div class="fontname">Lexend Deca</div>
-      <p>A modern sans-serif designed for clarity and controlled presence. Its balanced geometry and open letterforms make every line easy to read, even in teaching environments where precision matters.</p>
+      <div class="role">Headings</div>
+      <div class="fontname">Timeless</div>
+      <p>A confident serif blending classic elegance with modern precision, used for headings, logos, and key statements.</p>
     </div>
       <div class="type-card">
-      <div class="role">Voice</div>
-      <div class="fontname">Wide tracking</div>
-      <p>Wide letter spacing on hero lines is used deliberately, the same quiet luxury feel documented for hero moments.</p>
+      <div class="role">Body</div>
+      <div class="fontname">Onest</div>
+      <p>A contemporary sans-serif balancing warmth and function, used for body copy and digital interfaces.</p>
     </div>
     </div>
-    <p class="type-note">On this page, Fraunces stands in for display moments and Space Grotesk for the Lexend Deca body system, matching the calm, disciplined tone documented in the guidelines.</p>
+    <p class="type-note">On this page, Fraunces and Space Grotesk stand in for Timeless and Onest to keep the portfolio&#x27;s own type system consistent.</p>
   </div>
 </section>
+
 
 <section class="section brandbook-section">
   <div class="wrap">
     <span class="section-tag">The Brandbook</span>
     <h2>Straight from the guidelines document.</h2>
-    <p class="brandbook-note">Three spreads pulled directly from Van Straaten Trading&#x27;s brand guidelines, the source for every colour and font named on this page.</p>
+    <p class="brandbook-note">Three spreads pulled directly from Vanessa Nantes&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
     <div class="brandbook-grid">
       <figure class="spread-card">
-        <img src="../assets/vst-bb-cover.jpg" alt="Van Straaten Trading Brand Guidelines cover, brushed steel and glass with a green light streak">
+        <img src="../assets/vn-bb-cover.jpg" alt="Vanessa Nantes styleguide cover, elephant brandmark on an olive gradient background">
         <figcaption>
           <span class="spread-tag">Cover</span>
-          <p>The guideline&#x27;s cover: brushed steel and glass with a streak of Core Growth green, Brand Guidelines, Weblyfe, November 2025.</p>
+          <p>The guideline&#x27;s cover: the elephant brandmark on an olive gradient, titled Vanessa Nantes, Styleguide 2025.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/vst-bb-colours.jpg" alt="Van Straaten Trading documented colour palette page">
+        <img src="../assets/vn-bb-colours.jpg" alt="Vanessa Nantes documented colour palette page, Nocturne through Ivory Silk">
         <figcaption>
           <span class="spread-tag">Colour Palette</span>
-          <p>The documented six-tone palette, Foundation through Clarity, shown as full-bleed swatches with usage notes.</p>
+          <p>The six-tone palette exactly as documented, Nocturne through Ivory Silk, with usage notes for each shade.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/vst-bb-typography.jpg" alt="Van Straaten Trading typography page showing Lexend Deca">
+        <img src="../assets/vn-bb-fonts.jpg" alt="Vanessa Nantes fonts page showing Timeless and Onest typefaces">
         <figcaption>
           <span class="spread-tag">Typography</span>
-          <p>The typography page: Lexend Deca shown across Medium, Regular, and Light weights, with usage roles.</p>
+          <p>The fonts page: Timeless for headings, Onest for body copy, shown at full type scale.</p>
         </figcaption>
       </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <span class="section-tag">Brought to Life</span>
-    <p class="lead">A promise of value first that could scale without manual follow-up.</p>
-    <div class="body-copy" style="margin-top:30px;">
-      <p>This positioning carried through into a Webflow site, a content strategy connected directly to a video editing team, and ManyChat automations delivering free and paid content.</p>
     </div>
   </div>
 </section>
@@ -496,22 +529,22 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Thinking</span>
-    <p class="lead">A brand built to stand out precisely by refusing to perform.</p>
+    <p class="lead">One brand had to work equally well in a boutique fitting room and a wholesale sales pitch, without ever feeling like two different brands.</p>
     <div class="condensed-grid">
       <div class="condensed-block">
         <span class="step-tag">Brief</span>
-        <h3>Building the Anti-Guru</h3>
-        <p>Van Straaten Trading&#x27;s target trader had typically already lost money and time to mentors and courses that oversold a lifestyle and hid the substance behind a paywall. Per the guidelines, the brand exists to teach skill that lasts, no hype, no signals, no shortcuts. Geen onzin. Alleen resultaat.</p>
+        <h3>One Brand, Two Buyers</h3>
+        <p>Vanessa Nantes sits in a narrow lane: affordable luxury womenswear, positioned just above mainstream premium brands and just below high-end names. It needed to sell directly to a time-poor professional woman and, in parallel, close long-term partnerships with fashion agents and premium retailers across the Benelux and EU.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Strategy</span>
-        <h3>Value First, By Design</h3>
-        <p>The customer journey was mapped before any visual work started: how a skeptical, previously-burned trader moves from stranger to free-content consumer to trusting community member to paying student. Free community, paid courses, and mentorship were mapped as one coherent path rather than four competing offers.</p>
+        <h3>One Consistent Truth</h3>
+        <p>Affordable luxury was defined precisely enough to hold its ground between two tiers of competitor, built around the capsule wardrobe philosophy, efficiency and timelessness as empowerment. For wholesale, the same idea became a commercial argument: a brand that completes a retailer&#x27;s portfolio rather than competing inside it.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Creative Direction</span>
-        <h3>Steady, Not Loud</h3>
-        <p>Foundation, a deep blue-black, anchors the brand as disciplined and unshaken by market noise, paired with the neutral Graphite Zone and a growth-green trio representing skill-based progress. Typography is Lexend Deca, chosen because it has no decoration, only structure.</p>
+        <h3>Restraint, Considered</h3>
+        <p>Nocturne and Mangrove anchor the brand in poise and clarity, Verdant Clay adds tactile vitality, and Honey Dune and Sunstone bring warmth against a soft Ivory Silk. Timeless carries the logo and headlines, Onest carries the body copy, a pairing built to read as premium on a shelf and credible in a wholesale deck.</p>
       </div>
     </div>
   </div>
@@ -519,17 +552,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <section class="section tight quote-section">
   <div class="wrap">
-    <blockquote>"The market <span class="script">rewards</span> patience, discipline, and understanding, and so do we."</blockquote>
-    <div class="quote-attr">Company Description, Van Straaten Trading Brand Guidelines</div>
+    <blockquote>"This is fashion, redefined. Effortless, empowered, and <span class="script">enduring</span>."</blockquote>
+    <div class="quote-attr">Brand Description, Vanessa Nantes Styleguide</div>
   </div>
 </section>
 
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Takeaway</span>
-    <p class="lead">In a market built on noise, the strongest positioning move was to build something quieter.</p>
+    <p class="lead">Vanessa Nantes needed a brand that could hold two conversations at once, with the woman wearing it, and with the retailer selling it, without diluting either.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>The palette, the copy, the offer structure, all restraint, on purpose. That&#x27;s what makes the brand distinct in a category that usually shouts, and it only works because the strategy came before the screens.</p>
+      <p>That only works when the strategy comes first: define the gap precisely, then let the creative direction carry the same restraint into every room the brand walks into.</p>
     </div>
   </div>
 </section>
@@ -545,7 +578,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="other-projects-track-wrap">
       <div class="other-projects-track">
         <a class="op-card" href="/work/peakspring/">
-          <div class="op-img"><img src="assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Packaging · Web</span>
             <div class="op-title">PeakSpring</div>
@@ -554,7 +587,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/viva-fashion/">
-          <div class="op-img"><img src="assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Retail</span>
             <div class="op-title">Viva Fashion</div>
@@ -562,8 +595,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
+        <a class="op-card" href="/work/van-straaten-trading/">
+          <div class="op-img"><img src="../assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · B2B</span>
+            <div class="op-title">Van Straaten Trading</div>
+            <p class="op-desc">A sharper, modern visual language for a legacy trading company.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
         <a class="op-card" href="/work/ionlybookvip/">
-          <div class="op-img"><img src="assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Hospitality</span>
             <div class="op-title">iOnlyBookVIP</div>
@@ -572,7 +614,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/cza-bouwbedrijf/">
-          <div class="op-img"><img src="assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Construction</span>
             <div class="op-title">CZA Bouwbedrijf</div>
@@ -580,17 +622,8 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
-        <a class="op-card" href="/work/vanessa-nantes/">
-          <div class="op-img"><img src="assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Product Design</span>
-            <div class="op-title">Vanessa Nantes</div>
-            <p class="op-desc">Brand identity and packaging for a fashion and lifestyle label.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
         <a class="op-card" href="/work/email-elixir/">
-          <div class="op-img"><img src="assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Brand Strategy · Web</span>
             <div class="op-title">Email Elixir</div>
@@ -599,7 +632,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/baliwithflow/">
-          <div class="op-img"><img src="assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Product Design</span>
             <div class="op-title">Bali With Flow</div>
@@ -652,7 +685,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   var lbImg = document.getElementById('lightboxImg');
   var lbCaption = document.getElementById('lightboxCaption');
   var closeBtn = document.getElementById('lightboxClose');
-  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img');
+  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img, .campaign-card img');
 
   triggers.forEach(function(img){
     img.style.cursor = 'zoom-in';

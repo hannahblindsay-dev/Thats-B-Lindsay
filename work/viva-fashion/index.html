@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vanessa Nantes. Case Study | That's B Lindsay</title>
-<meta name="description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
+<title>Viva Fashion. Case Study | That's B Lindsay</title>
+<meta name="description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vanessa Nantes. Case Study | That's B Lindsay">
-<meta property="og:description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
+<meta property="og:title" content="Viva Fashion. Case Study | That's B Lindsay">
+<meta property="og:description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
 <meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
-<meta property="og:url" content="https://thatsblindsay.com/work/vanessa-nantes/">
+<meta property="og:url" content="https://thatsblindsay.com/work/viva-fashion/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vanessa Nantes. Case Study | That's B Lindsay">
-<meta name="twitter:description" content="A premium womenswear brand for the ambitious professional woman, with strategic positioning and a slow-fashion ethos across a considered digital platform.">
+<meta name="twitter:title" content="Viva Fashion. Case Study | That's B Lindsay">
+<meta name="twitter:description" content="A vibrant, joyful style guide for a European womenswear retailer, warmly direct and inclusive by design, built to feel like a trusted friend with great taste.">
 <meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
@@ -87,6 +87,12 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .feature-row h4{ font-size:1.02rem; font-weight:500; margin-bottom:6px; color:var(--accent-dark); }
 .feature-row p{ font-size:0.9rem; color:#6b6b66; line-height:1.55; max-width:44ch; }
 
+.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
+@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
+.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
+.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
+.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
+
 .palette-section{ background:var(--ink); color:var(--paper); }
 .palette-section .section-tag{ color:var(--gold); }
 .palette-note{ font-size:0.92rem; color:var(--tan); max-width:60ch; margin-bottom:36px; line-height:1.6; }
@@ -118,58 +124,33 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .spread-card figcaption p{ font-size:0.85rem; color:#6b6b66; line-height:1.55; }
 
 .deliverables-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.deliverables-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
-@media (max-width:820px){ .deliverables-grid{ grid-template-columns:1fr; } }
-.deliverable-card{ margin:0; border:1px solid #e6e0d8; border-radius:4px; overflow:hidden; }
-.deliverable-card img{ width:100%; height:340px; object-fit:cover; display:block; }
-.deliverable-card figcaption{ padding:20px 22px; }
 .deliverable-tag{ display:inline-block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent-dark);
   border:1px solid var(--accent); border-radius:999px; padding:4px 12px; margin-bottom:12px; }
-.deliverable-card figcaption p{ font-size:0.9rem; color:#6b6b66; line-height:1.6; }
-
-.deliverables-grid.bento{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1.3fr;
-  grid-template-rows:280px 380px;
-  gap:20px;
-}
-.deliverables-grid.bento .deliverable-card{ margin:0; border:1px solid #e6e0d8; border-radius:6px; overflow:hidden; position:relative; }
-.deliverables-grid.bento .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
-.deliverables-grid.bento .cell-bag{ grid-column:1; grid-row:1; }
-.deliverables-grid.bento .cell-coat{ grid-column:2; grid-row:1; }
-.deliverables-grid.bento .cell-serum{ grid-column:3; grid-row:1; }
-.deliverables-grid.bento .cell-tags{ grid-column:4; grid-row:1 / 3; }
-.deliverables-grid.bento .cell-storefront{ grid-column:1 / 3; grid-row:2; }
-.deliverables-grid.bento .cell-model{ grid-column:3; grid-row:2; }
-.deliverables-grid.bento .bento-scrim{
+.deliverables-grid.bento{ display:flex; flex-direction:column; gap:20px; }
+.bento-row{ display:flex; gap:20px; height:280px; }
+.bento-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
+.bento-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
+.bento-scrim{
   position:absolute; left:0; right:0; bottom:0; padding:16px 18px;
   background:linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
   pointer-events:none;
 }
-.deliverables-grid.bento .bento-scrim.light{ background:linear-gradient(0deg, rgba(0,0,0,0.35), transparent); }
-.deliverables-grid.bento .bento-tag{
+.bento-scrim.light{ background:linear-gradient(0deg, rgba(0,0,0,0.35), transparent); }
+.bento-tag{
   display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase;
   border-radius:999px; padding:4px 12px;
   background:transparent; color:var(--paper); border:1px solid rgba(252,252,252,0.6);
   transition:background .2s ease, color .2s ease, border-color .2s ease;
 }
-.deliverables-grid.bento .deliverable-card:hover .bento-tag{
+.bento-row .deliverable-card:hover .bento-tag{
   background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95);
 }
 @media (max-width:820px){
-  .deliverables-grid.bento{ grid-template-columns:1fr 1fr; grid-template-rows:none; grid-auto-rows:240px; }
-  .deliverables-grid.bento .cell-bag{ grid-column:1; grid-row:1; }
-  .deliverables-grid.bento .cell-coat{ grid-column:2; grid-row:1; }
-  .deliverables-grid.bento .cell-serum{ grid-column:1; grid-row:2; }
-  .deliverables-grid.bento .cell-tags{ grid-column:2; grid-row:2 / 4; }
-  .deliverables-grid.bento .cell-storefront{ grid-column:1 / 3; grid-row:3; }
-  .deliverables-grid.bento .cell-model{ grid-column:1 / 3; grid-row:4; }
+  .bento-row{ flex-wrap:wrap; height:auto; }
+  .bento-row .deliverable-card{ flex:1 1 45%; height:220px; }
 }
 @media (max-width:560px){
-  .deliverables-grid.bento{ grid-template-columns:1fr; grid-auto-rows:260px; }
-  .deliverables-grid.bento .cell-bag, .deliverables-grid.bento .cell-coat, .deliverables-grid.bento .cell-serum,
-  .deliverables-grid.bento .cell-storefront, .deliverables-grid.bento .cell-model{ grid-column:1; grid-row:auto; }
-  .deliverables-grid.bento .cell-tags{ grid-column:1; grid-row:span 2; }
+  .bento-row .deliverable-card{ flex:1 1 100%; }
 }
 
 .campaign-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
@@ -179,11 +160,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 .campaign-card img:hover{ opacity:0.88; }
 .campaign-card figcaption{ padding:20px 22px; }
 
-.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
-@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
-.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
-.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
-.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
+.product-photo-stats{ display:flex; gap:48px; flex-wrap:wrap; margin:34px 0 48px; }
+.product-photo-stats div strong{ display:block; font-family:'Fraunces', serif; font-weight:500; font-size:2.1rem; color:var(--terracotta); }
+.product-photo-stats div span{ font-size:0.75rem; text-transform:uppercase; letter-spacing:0.09em; color:#6b6b66; }
+.product-subhead{ font-size:0.78rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent-dark); font-weight:600; margin:44px 0 18px; display:block; }
+.product-photo-grid{ display:grid; grid-template-columns:repeat(5, 1fr); gap:18px; }
+@media (max-width:900px){ .product-photo-grid{ grid-template-columns:repeat(3, 1fr); } }
+@media (max-width:560px){ .product-photo-grid{ grid-template-columns:repeat(2, 1fr); } }
+.product-photo-card{ margin:0; cursor:zoom-in; }
+.product-photo-card img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:6px; display:block; transition:opacity .2s ease; }
+.product-photo-card:hover img{ opacity:0.85; }
+.product-photo-card .label{ font-size:0.78rem; color:#6b6b66; margin-top:9px; }
 
 .quote-section{ text-align:center; }
 .quote-section blockquote{ font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.3rem, 2.6vw, 2rem);
@@ -300,7 +287,25 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 }
 .lightbox-close:hover{ background:rgba(252,252,252,0.18); border-color:rgba(252,252,252,0.4); }
 .lightbox-caption{ position:absolute; bottom:28px; left:0; right:0; text-align:center; font-size:0.82rem; color:#DBA589; letter-spacing:0.02em; padding:0 6vw; }
-@media (max-width:720px){ .lightbox-close{ top:16px; right:16px; width:38px; height:38px; font-size:1.2rem; } }
+.lightbox-overlay.has-gallery .lightbox-caption{ bottom:112px; }
+.lightbox-overlay.has-gallery img{ max-height:74vh; }
+.lightbox-thumbs{
+  position:absolute; bottom:28px; left:0; right:0; display:none;
+  gap:12px; overflow-x:auto; padding:0 6vw; justify-content:center;
+}
+.lightbox-overlay.has-gallery .lightbox-thumbs{ display:flex; }
+.lightbox-thumbs img{
+  max-width:none; box-shadow:none; border-radius:4px;
+  height:64px; width:auto; flex:0 0 auto; object-fit:cover;
+  opacity:0.55; cursor:pointer; border:2px solid transparent;
+  transition:opacity .2s ease, border-color .2s ease;
+}
+.lightbox-thumbs img:hover{ opacity:0.85; }
+.lightbox-thumbs img.active{ opacity:1; border-color:var(--terracotta); }
+@media (max-width:720px){
+  .lightbox-close{ top:16px; right:16px; width:38px; height:38px; font-size:1.2rem; }
+  .lightbox-thumbs img{ height:48px; }
+}
 </style>
 </head>
 <body>
@@ -313,11 +318,11 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="navG-eyebrow">Case Studies</div>
   <div class="navG-list">
     <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
-    <a href="/work/viva-fashion/"><span class="navG-num">02</span>Viva Fashion</a>
+    <a href="#" class="current"><span class="navG-num">02</span>Viva Fashion</a>
     <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
     <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
     <a href="/work/cza-bouwbedrijf/"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
-    <a href="#" class="current"><span class="navG-num">06</span>Vanessa Nantes</a>
+    <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
     <a href="/work/email-elixir/"><span class="navG-num">07</span>Email Elixir</a>
     <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
   </div>
@@ -346,15 +351,15 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <header class="hero">
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Full Service. Fashion</div>
-    <h1>Vanessa Nantes</h1>
-    <p class="tagline">Modern luxury for women who move with purpose.</p>
+    <div class="eyebrow"><span class="dot"></span>Styleguide. Fashion Retail</div>
+    <h1>Viva Fashion</h1>
+    <p class="tagline">European chic with a Latin soul.</p>
     <div class="meta-row">
-      <div><span>Year</span><strong>2025</strong></div>
-      <div><span>Scope</span><strong>Brand Strategy, Identity, Webflow Build</strong></div>
-      <div><span>Industry</span><strong>Womenswear</strong></div>
+      <div><span>Year</span><strong>2026</strong></div>
+      <div><span>Scope</span><strong>Brand Voice, Styleguide, Tone of Voice System</strong></div>
+      <div><span>Industry</span><strong>Womenswear Retail</strong></div>
     </div>
-    <a class="visit-live" href="https://www.vanessanantes.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
+    <a class="visit-live" href="https://vivafashion.nl/" target="_blank" rel="noopener">Visit live site &#8594;</a>
   </div>
 </header>
 
@@ -362,54 +367,58 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">Deliverables</span>
     <h2>Where the brand system landed.</h2>
-    <p class="deliverables-note">From garment labels and woven tags to the boutique window, the identity carries the same restraint from the styleguide onto every touchpoint a customer or retailer actually sees.</p>
+    <p class="deliverables-note">The Viva Fashion identity carried from the styleguide onto the pieces a customer actually holds: the swing tag, the garment label, the embroidered monogram, and the bag it all leaves the store in.</p>
     <div class="deliverables-grid bento">
-      <figure class="deliverable-card cell-bag">
-        <img src="../assets/vn-mockup-bag.png" alt="Vanessa Nantes olive leather handbag with a gold VN monogram, studio lit">
-        <div class="bento-scrim"><span class="bento-tag">Accessories</span></div>
-      </figure>
-      <figure class="deliverable-card cell-coat">
-        <img src="../assets/vn-mockup-coat.png" alt="Vanessa Nantes garment label stitched into a tan wool coat on a hanger">
-        <div class="bento-scrim"><span class="bento-tag">Garment Label</span></div>
-      </figure>
-      <figure class="deliverable-card cell-serum">
-        <img src="../assets/vn-mockup-serum.png" alt="Vanessa Nantes Sunstone serum bottle resting on a bed of moss">
-        <div class="bento-scrim"><span class="bento-tag">Skincare</span></div>
-      </figure>
-      <figure class="deliverable-card cell-tags">
-        <img src="../assets/vn-mockup-tags.png" alt="Vanessa Nantes woven tags, size labels, and debossed leather patches in cream and olive">
-        <div class="bento-scrim"><span class="bento-tag">Tags &amp; Labels</span></div>
-      </figure>
-      <figure class="deliverable-card cell-storefront">
-        <img src="../assets/vn-mockup-storefront.png" alt="Vanessa Nantes boutique storefront window at dusk, elephant brandmark lit above the rail">
-        <div class="bento-scrim"><span class="bento-tag">Storefront</span></div>
-      </figure>
-      <figure class="deliverable-card cell-model">
-        <img src="../assets/vn-mockup-model.png" alt="Woman in white carrying a Vanessa Nantes shopping bag with the elephant brandmark">
-        <div class="bento-scrim light"><span class="bento-tag">Lifestyle</span></div>
-      </figure>
+      <div class="bento-row">
+        <figure class="deliverable-card" style="flex-grow:1.49;">
+          <img src="../assets/vf-mockup-storefront.png" alt="Viva Fashion boutique storefront window with mannequins and a red backlit logo panel">
+          <div class="bento-scrim"><span class="bento-tag">Storefront</span></div>
+        </figure>
+        <figure class="deliverable-card" style="flex-grow:1;">
+          <img src="../assets/vf-mockup-handbag.png" alt="Black Viva Fashion handbag with gold V hardware, sunglasses and lipstick beside it">
+          <div class="bento-scrim"><span class="bento-tag">Accessories</span></div>
+        </figure>
+        <figure class="deliverable-card" style="flex-grow:1;">
+          <img src="../assets/vf-mockup-embroidery.png" alt="Viva Fashion V monogram being embroidered in red thread onto cream fabric">
+          <div class="bento-scrim"><span class="bento-tag">Embroidery</span></div>
+        </figure>
+      </div>
+      <div class="bento-row">
+        <figure class="deliverable-card" style="flex-grow:1;">
+          <img src="../assets/vf-mockup-label.png" alt="Viva Fashion garment label stitched into a patterned jacket, size M">
+          <div class="bento-scrim"><span class="bento-tag">Garment Label</span></div>
+        </figure>
+        <figure class="deliverable-card" style="flex-grow:0.8;">
+          <img src="../assets/vf-mockup-shoppingbag.png" alt="Hand carrying a white Viva Fashion shopping bag with the red V monogram">
+          <div class="bento-scrim light"><span class="bento-tag">Shopping Bag</span></div>
+        </figure>
+        <figure class="deliverable-card" style="flex-grow:1.79;">
+          <img src="../assets/vf-mockup-swingtag.png" alt="Viva Fashion swing tag on a knit sweater, red script logo on cream card stock">
+          <div class="bento-scrim"><span class="bento-tag">Swing Tag</span></div>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section tight campaign-section">
+<section class="section tight packaging-section">
   <div class="wrap">
-    <span class="section-tag">The Campaign</span>
-    <h2>The identity, brought onto the shop floor.</h2>
-    <p class="deliverables-note">Two pull-up banners built for the boutique, carrying the brand description word for word: effortless, empowered, and enduring. One leads with the tagline, the other with the five values that anchor the brand.</p>
+    <span class="section-tag">Packaging</span>
+    <h2>The unboxing, considered.</h2>
+    <p class="deliverables-note">A shopping bag and mailer box carrying the brand's floral motif and a warm parting line, Hola Beautiful!, printed straight onto the packaging a customer takes home.</p>
     <div class="campaign-grid">
       <figure class="campaign-card">
-        <img src="../assets/vn-banner-tagline.png" alt="Vanessa Nantes store banner reading This Is Fashion, Redefined: Effortless, Empowered and Enduring">
+        <img src="../assets/vf-packaging-bag.png" alt="Viva Fashion shopping bag design with a red floral graphic and the Viva Fashion logo">
         <figcaption>
-          <span class="deliverable-tag">Brand Statement</span>
-          <p>Three words carrying the whole brand: effortless, empowered, enduring.</p>
+          <span class="deliverable-tag">Shopping Bag</span>
+          <p>The floral graphic carried onto the bag customers leave the store with.</p>
         </figcaption>
       </figure>
       <figure class="campaign-card">
-        <img src="../assets/vn-banner-values.png" alt="Vanessa Nantes store banner listing brand values: Effortless Strength, Timeless Refinement, Purposeful Craftsmanship, Modern Femininity, Integrity and Intention">
+        <img src="../assets/vf-packaging-box.png" alt="Viva Fashion mailer box with a red floral pattern, logo, and Hola Beautiful printed on the front edge" data-gallery='[{"src":"../assets/vf-packaging-box.png","alt":"Viva Fashion mailer box closed, red floral pattern with Hola Beautiful printed on the front edge"},{"src":"../assets/vf-packaging-box-opening.png","alt":"Viva Fashion mailer box lid lifting open, floral pattern lining the interior"},{"src":"../assets/vf-packaging-box-open.png","alt":"Viva Fashion mailer box fully open, showing the floral-lined interior"}]'>
         <figcaption>
-          <span class="deliverable-tag">The Pillars</span>
-          <p>What the brand stands for, said plainly instead of implied.</p>
+          <span class="deliverable-tag">Mailer Box</span>
+          <p>The same pattern on the shipping box, with Hola Beautiful! as the parting line.</p>
         </figcaption>
       </figure>
     </div>
@@ -420,54 +429,54 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Palette</span>
     <h2>Colour, straight from the brandbook.</h2>
-    <p class="palette-note">Documented in the Vanessa Nantes styleguide as six named tones moving from Nocturne through to Ivory Silk.</p>
+    <p class="palette-note">Six named tones documented in the 2026 styleguide, from Viva Carmine through to True White.</p>
     <div class="palette-grid">
       <div class="swatch">
-      <div class="swatch-color" style="background:#292919;"></div>
+      <div class="swatch-color" style="background:#A5072F;"></div>
       <div class="swatch-info">
-        <div class="hex">#292919</div>
-        <div class="name">Nocturne</div>
-        <div class="note">A deep, grounding shade that conveys clarity, focus, and poise. Anchors the brand in modern sophistication.</div>
+        <div class="hex">#A5072F</div>
+        <div class="name">Viva Carmine</div>
+        <div class="note">A bold, confident red speaking to the passionate heart of the brand. Dramatic flair without shouting.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#40402F;"></div>
+      <div class="swatch-color" style="background:#C53D52;"></div>
       <div class="swatch-info">
-        <div class="hex">#40402F</div>
-        <div class="name">Mangrove</div>
-        <div class="note">Earthy and intelligent. Connects the palette&#x27;s darker foundations to its natural warmth.</div>
+        <div class="hex">#C53D52</div>
+        <div class="name">Crushed Petal</div>
+        <div class="note">A deeply romantic, muted rouge capturing the feeling of vintage florals.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#85834B;"></div>
+      <div class="swatch-color" style="background:#D3726F;"></div>
       <div class="swatch-info">
-        <div class="hex">#85834B</div>
-        <div class="name">Verdant Clay</div>
-        <div class="note">A muted green carrying the balance of nature and artistry, an ode to craftsmanship.</div>
+        <div class="hex">#D3726F</div>
+        <div class="name">Coral Blush</div>
+        <div class="note">Fresh, spirited, and full of life. Radiates the sheer joy of dressing up.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#C59955;"></div>
+      <div class="swatch-color" style="background:#F0DCAA;"></div>
       <div class="swatch-info">
-        <div class="hex">#C59955</div>
-        <div class="name">Honey Dune</div>
-        <div class="note">A warm neutral radiating understated luxury, evoking sunlit textures and golden depth.</div>
+        <div class="hex">#F0DCAA</div>
+        <div class="name">Champaign Drape</div>
+        <div class="note">An effortless neutral that shines with understated luxury and a celebratory sparkle.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#DEC18C;"></div>
+      <div class="swatch-color" style="background:#FEF8E9;"></div>
       <div class="swatch-info">
-        <div class="hex">#DEC18C</div>
-        <div class="name">Sunstone</div>
-        <div class="note">Radiant and balanced, introducing warmth and optimism to accents and highlights.</div>
+        <div class="hex">#FEF8E9</div>
+        <div class="name">Ivory Lace</div>
+        <div class="note">Soft and delicate, a calm highlight that lifts the mood with airiness and light.</div>
       </div>
     </div>
       <div class="swatch">
-      <div class="swatch-color" style="background:#F5EFE4;"></div>
+      <div class="swatch-color" style="background:#FFFEFA;"></div>
       <div class="swatch-info">
-        <div class="hex">#F5EFE4</div>
-        <div class="name">Ivory Silk</div>
-        <div class="note">The foundation of light within the brand. Pure, timeless, and composed.</div>
+        <div class="hex">#FFFEFA</div>
+        <div class="name">True White</div>
+        <div class="note">Crisp and clean. The canvas for the collection, ensuring every outfit feels fresh and balanced.</div>
       </div>
     </div>
     </div>
@@ -481,16 +490,16 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="type-grid">
       <div class="type-card">
       <div class="role">Headings</div>
-      <div class="fontname">Timeless</div>
-      <p>A confident serif blending classic elegance with modern precision, used for headings, logos, and key statements.</p>
+      <div class="fontname">Costa Std</div>
+      <p>The spirited voice of Viva Fashion. Curved, sculptural letterforms used for primary headings and key brand statements.</p>
     </div>
       <div class="type-card">
       <div class="role">Body</div>
-      <div class="fontname">Onest</div>
-      <p>A contemporary sans-serif balancing warmth and function, used for body copy and digital interfaces.</p>
+      <div class="fontname">Hauora</div>
+      <p>Calm and modern, keeping longer content comfortable to read while the heading type shines.</p>
     </div>
     </div>
-    <p class="type-note">On this page, Fraunces and Space Grotesk stand in for Timeless and Onest to keep the portfolio&#x27;s own type system consistent.</p>
+    <p class="type-note">On this page, Fraunces stands in for Costa Std and Space Grotesk for Hauora, keeping the portfolio&#x27;s own type system consistent across every case study.</p>
   </div>
 </section>
 
@@ -499,28 +508,119 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <div class="wrap">
     <span class="section-tag">The Brandbook</span>
     <h2>Straight from the guidelines document.</h2>
-    <p class="brandbook-note">Three spreads pulled directly from Vanessa Nantes&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
+    <p class="brandbook-note">Three spreads pulled directly from Viva Fashion&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
     <div class="brandbook-grid">
       <figure class="spread-card">
-        <img src="../assets/vn-bb-cover.jpg" alt="Vanessa Nantes styleguide cover, elephant brandmark on an olive gradient background">
+        <img src="../assets/vf-bb-cover.jpg" alt="Viva Fashion styleguide cover, floral dress editorial photo, Styleguide 2026">
         <figcaption>
           <span class="spread-tag">Cover</span>
-          <p>The guideline&#x27;s cover: the elephant brandmark on an olive gradient, titled Vanessa Nantes, Styleguide 2025.</p>
+          <p>The guideline&#x27;s cover: a floral-print editorial photo, Viva Fashion, Styleguide 2026.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/vn-bb-colours.jpg" alt="Vanessa Nantes documented colour palette page, Nocturne through Ivory Silk">
+        <img src="../assets/vf-bb-colours.jpg" alt="Viva Fashion documented colour palette page">
         <figcaption>
           <span class="spread-tag">Colour Palette</span>
-          <p>The six-tone palette exactly as documented, Nocturne through Ivory Silk, with usage notes for each shade.</p>
+          <p>The documented palette, Viva Carmine through True White, with usage notes for each tone.</p>
         </figcaption>
       </figure>
       <figure class="spread-card">
-        <img src="../assets/vn-bb-fonts.jpg" alt="Vanessa Nantes fonts page showing Timeless and Onest typefaces">
+        <img src="../assets/vf-bb-typography.jpg" alt="Viva Fashion typography page showing Costa Std and Hauora">
         <figcaption>
           <span class="spread-tag">Typography</span>
-          <p>The fonts page: Timeless for headings, Onest for body copy, shown at full type scale.</p>
+          <p>The typography page: Costa Std for headings, Hauora for body, shown at full type scale.</p>
         </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="section-tag">Brought to Life</span>
+    <p class="lead">From deck to checkout.</p>
+    <div class="body-copy" style="margin-top:30px;">
+      <p>This identity was carried through into a full Shopify rebuild: mobile-first product and collection pages, a migrated catalogue of 186 products, Klaviyo email flows, and foundational SEO. The brand system wasn&#x27;t just a deck. It became the actual customer experience, from the first scroll to checkout.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tight product-photo-section">
+  <div class="wrap">
+    <span class="section-tag">Product Photography</span>
+    <h2>When the client's own product photos weren't good enough to launch on.</h2>
+    <p class="deliverables-note">Rather than schedule a reshoot, AI-generated imagery closed the gap: three consistent angles per product, generated and quality-checked at full catalogue scale. Shown here is a curated selection from the full set.</p>
+    <div class="product-photo-stats">
+      <div><strong>140</strong><span>Products</span></div>
+      <div><strong>420</strong><span>Images Generated</span></div>
+      <div><strong>3</strong><span>Angles Each</span></div>
+    </div>
+
+    <span class="product-subhead">Clothing</span>
+    <div class="product-photo-grid">
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c01-a.png" alt="AI-generated product photography: olive tank top with a cream tailored blazer and trousers" data-gallery='[{"src":"../assets/vf-product-c01-a.png","alt":"Tailored blazer set, front view"},{"src":"../assets/vf-product-c01-b.png","alt":"Tailored blazer set, alternate angle"},{"src":"../assets/vf-product-c01-c.png","alt":"Tailored blazer set, side angle"}]'>
+        <div class="label">Tailored Blazer Set</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c02-a.png" alt="AI-generated product photography: black sleeveless top with wide trousers and a gold buckle belt" data-gallery='[{"src":"../assets/vf-product-c02-a.png","alt":"Belted trouser set, front view"},{"src":"../assets/vf-product-c02-b.png","alt":"Belted trouser set, alternate angle"},{"src":"../assets/vf-product-c02-c.png","alt":"Belted trouser set, side angle"}]'>
+        <div class="label">Belted Trouser Set</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c03-a.png" alt="AI-generated product photography: light pinstripe blazer and matching trousers" data-gallery='[{"src":"../assets/vf-product-c03-a.png","alt":"Pinstripe suit, front view"},{"src":"../assets/vf-product-c03-b.png","alt":"Pinstripe suit, alternate angle"},{"src":"../assets/vf-product-c03-c.png","alt":"Pinstripe suit, side angle"}]'>
+        <div class="label">Pinstripe Suit</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c04-a.png" alt="AI-generated product photography: floral kimono duster layered over a white top and trousers" data-gallery='[{"src":"../assets/vf-product-c04-a.png","alt":"Floral kimono duster, front view"},{"src":"../assets/vf-product-c04-b.png","alt":"Floral kimono duster, alternate angle"},{"src":"../assets/vf-product-c04-c.png","alt":"Floral kimono duster, detail view"}]'>
+        <div class="label">Floral Kimono Duster</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c05-a.png" alt="AI-generated product photography: lavender tailored vest and matching wide-leg trousers" data-gallery='[{"src":"../assets/vf-product-c05-a.png","alt":"Lavender vest suit, front view"},{"src":"../assets/vf-product-c05-b.png","alt":"Lavender vest suit, side angle"},{"src":"../assets/vf-product-c05-c.png","alt":"Lavender vest suit, detail view"}]'>
+        <div class="label">Lavender Vest Suit</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c06-a.png" alt="AI-generated product photography: cream cable-knit one-shoulder top with wide-leg denim jeans" data-gallery='[{"src":"../assets/vf-product-c06-a.png","alt":"Cable-knit top and denim, front view"},{"src":"../assets/vf-product-c06-b.png","alt":"Cable-knit top and denim, alternate angle"},{"src":"../assets/vf-product-c06-c.png","alt":"Cable-knit top and denim, side angle"}]'>
+        <div class="label">Cable-Knit &amp; Denim</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c07-a.png" alt="AI-generated product photography: pink floral wrap maxi dress with a front slit" data-gallery='[{"src":"../assets/vf-product-c07-a.png","alt":"Pink floral wrap dress, front view"},{"src":"../assets/vf-product-c07-b.png","alt":"Pink floral wrap dress, front slit detail"},{"src":"../assets/vf-product-c07-c.png","alt":"Pink floral wrap dress, close-up detail"}]'>
+        <div class="label">Pink Floral Wrap Dress</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c08-a.png" alt="AI-generated product photography: white sleeveless linen vest and trousers" data-gallery='[{"src":"../assets/vf-product-c08-a.png","alt":"Linen vest set, front view"},{"src":"../assets/vf-product-c08-b.png","alt":"Linen vest set, alternate angle"},{"src":"../assets/vf-product-c08-c.png","alt":"Linen vest set, side angle"}]'>
+        <div class="label">Linen Vest Set</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c09-a.png" alt="AI-generated product photography: pink and orange striped ribbed-knit maxi dress" data-gallery='[{"src":"../assets/vf-product-c09-a.png","alt":"Striped knit dress, front view"},{"src":"../assets/vf-product-c09-b.png","alt":"Striped knit dress, alternate angle"},{"src":"../assets/vf-product-c09-c.png","alt":"Striped knit dress, side angle"}]'>
+        <div class="label">Striped Knit Dress</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-c10-a.png" alt="AI-generated product photography: cream long-sleeve knit dress with a fringe hem" data-gallery='[{"src":"../assets/vf-product-c10-a.png","alt":"Fringe-hem knit dress, front view"},{"src":"../assets/vf-product-c10-b.png","alt":"Fringe-hem knit dress, alternate angle"},{"src":"../assets/vf-product-c10-c.png","alt":"Fringe-hem knit dress, side angle"}]'>
+        <div class="label">Fringe-Hem Knit Dress</div>
+      </figure>
+    </div>
+
+    <span class="product-subhead">Jewellery</span>
+    <div class="product-photo-grid">
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-j01-a.png" alt="AI-generated product photography: red drop earrings, worn with a white blazer" data-gallery='[{"src":"../assets/vf-product-j01-a.png","alt":"Red drop earrings, angle one"},{"src":"../assets/vf-product-j01-b.png","alt":"Red drop earrings, angle two"},{"src":"../assets/vf-product-j01-c.png","alt":"Red drop earrings, angle three"}]'>
+        <div class="label">Red Drop Earrings</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-j02-a.png" alt="AI-generated product photography: gold coin drop earrings" data-gallery='[{"src":"../assets/vf-product-j02-a.png","alt":"Gold coin earrings, angle one"},{"src":"../assets/vf-product-j02-b.png","alt":"Gold coin earrings, angle two"},{"src":"../assets/vf-product-j02-c.png","alt":"Gold coin earrings, angle three"}]'>
+        <div class="label">Gold Coin Earrings</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-j03-a.png" alt="AI-generated product photography: layered green and gold beaded necklace with matching earrings" data-gallery='[{"src":"../assets/vf-product-j03-a.png","alt":"Layered necklace and earrings, angle one"},{"src":"../assets/vf-product-j03-b.png","alt":"Layered necklace and earrings, angle two"},{"src":"../assets/vf-product-j03-c.png","alt":"Layered necklace and earrings, angle three"}]'>
+        <div class="label">Layered Necklace &amp; Earrings</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-j04-a.png" alt="AI-generated product photography: beaded pearl necklace worn with a black square-neck top" data-gallery='[{"src":"../assets/vf-product-j04-a.png","alt":"Beaded pearl necklace, angle one"},{"src":"../assets/vf-product-j04-b.png","alt":"Beaded pearl necklace, angle two"},{"src":"../assets/vf-product-j04-c.png","alt":"Beaded pearl necklace, angle three"}]'>
+        <div class="label">Beaded Pearl Necklace</div>
+      </figure>
+      <figure class="product-photo-card">
+        <img src="../assets/vf-product-j05-a.png" alt="AI-generated product photography: wooden bead necklace worn with a light blue blazer" data-gallery='[{"src":"../assets/vf-product-j05-a.png","alt":"Wooden bead necklace, angle one"},{"src":"../assets/vf-product-j05-b.png","alt":"Wooden bead necklace, angle two"},{"src":"../assets/vf-product-j05-c.png","alt":"Wooden bead necklace, angle three"}]'>
+        <div class="label">Wooden Bead Necklace</div>
       </figure>
     </div>
   </div>
@@ -529,22 +629,22 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Thinking</span>
-    <p class="lead">One brand had to work equally well in a boutique fitting room and a wholesale sales pitch, without ever feeling like two different brands.</p>
+    <p class="lead">A positioning problem, not a facelift.</p>
     <div class="condensed-grid">
       <div class="condensed-block">
         <span class="step-tag">Brief</span>
-        <h3>One Brand, Two Buyers</h3>
-        <p>Vanessa Nantes sits in a narrow lane: affordable luxury womenswear, positioned just above mainstream premium brands and just below high-end names. It needed to sell directly to a time-poor professional woman and, in parallel, close long-term partnerships with fashion agents and premium retailers across the Benelux and EU.</p>
+        <h3>The product wasn&#x27;t the problem.</h3>
+        <p>A vibrant style guide for a European womenswear retailer, built to feel like a trusted friend with great taste, not a catalogue. The brand around the product looked generic and didn&#x27;t signal the quality shoppers were actually receiving.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Strategy</span>
-        <h3>One Consistent Truth</h3>
-        <p>Affordable luxury was defined precisely enough to hold its ground between two tiers of competitor, built around the capsule wardrobe philosophy, efficiency and timelessness as empowerment. For wholesale, the same idea became a commercial argument: a brand that completes a retailer&#x27;s portfolio rather than competing inside it.</p>
+        <h3>A special find, not a discount.</h3>
+        <p>The audience: women 30 to 65, not fast-fashion shoppers, who want a purchase to feel like a find rather than a discount. That reframed the brief, and even shaped merchandising decisions like bundling, because that feeling is the brand&#x27;s emotional core.</p>
       </div>
       <div class="condensed-block">
         <span class="step-tag">Creative Direction</span>
-        <h3>Restraint, Considered</h3>
-        <p>Nocturne and Mangrove anchor the brand in poise and clarity, Verdant Clay adds tactile vitality, and Honey Dune and Sunstone bring warmth against a soft Ivory Silk. Timeless carries the logo and headlines, Onest carries the body copy, a pairing built to read as premium on a shelf and credible in a wholesale deck.</p>
+        <h3>Warm, never salesy.</h3>
+        <p>Viva Carmine and Coral Blush carry the warmth, Costa Std brings expressive headlines, and photography leans on lush nature and sun-drenched light, warmer than the clinical product shots typical of this price bracket.</p>
       </div>
     </div>
   </div>
@@ -552,17 +652,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
 
 <section class="section tight quote-section">
   <div class="wrap">
-    <blockquote>"This is fashion, redefined. Effortless, empowered, and <span class="script">enduring</span>."</blockquote>
-    <div class="quote-attr">Brand Description, Vanessa Nantes Styleguide</div>
+    <blockquote>"Style that breathes. <span class="script">Polished</span> without the pressure."</blockquote>
+    <div class="quote-attr">Function Driven Language, Viva Fashion Styleguide</div>
   </div>
 </section>
 
 <section class="section tight">
   <div class="wrap">
     <span class="section-tag">The Takeaway</span>
-    <p class="lead">Vanessa Nantes needed a brand that could hold two conversations at once, with the woman wearing it, and with the retailer selling it, without diluting either.</p>
+    <p class="lead">Viva Fashion needed one thing more than anything else: for the brand to feel as good as the clothes.</p>
     <div class="body-copy" style="margin-top:30px;">
-      <p>That only works when the strategy comes first: define the gap precisely, then let the creative direction carry the same restraint into every room the brand walks into.</p>
+      <p>Starting from positioning and audience insight instead of screens meant every downstream decision, palette, tone, even how discounts were framed, spoke with the same voice. That&#x27;s the work of a brand strategist, not just a designer.</p>
     </div>
   </div>
 </section>
@@ -578,7 +678,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
     <div class="other-projects-track-wrap">
       <div class="other-projects-track">
         <a class="op-card" href="/work/peakspring/">
-          <div class="op-img"><img src="assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Packaging · Web</span>
             <div class="op-title">PeakSpring</div>
@@ -586,17 +686,8 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
-        <a class="op-card" href="/work/viva-fashion/">
-          <div class="op-img"><img src="assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Retail</span>
-            <div class="op-title">Viva Fashion</div>
-            <p class="op-desc">Brand identity and packaging for a fashion retailer.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
         <a class="op-card" href="/work/van-straaten-trading/">
-          <div class="op-img"><img src="assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · B2B</span>
             <div class="op-title">Van Straaten Trading</div>
@@ -605,7 +696,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/ionlybookvip/">
-          <div class="op-img"><img src="assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Hospitality</span>
             <div class="op-title">iOnlyBookVIP</div>
@@ -614,7 +705,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/cza-bouwbedrijf/">
-          <div class="op-img"><img src="assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Construction</span>
             <div class="op-title">CZA Bouwbedrijf</div>
@@ -622,8 +713,17 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
             <span class="op-link">View case study →</span>
           </div>
         </a>
+        <a class="op-card" href="/work/vanessa-nantes/">
+          <div class="op-img"><img src="../assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
+          <div class="op-body">
+            <span class="op-tag">Branding · Product Design</span>
+            <div class="op-title">Vanessa Nantes</div>
+            <p class="op-desc">Brand identity and packaging for a fashion and lifestyle label.</p>
+            <span class="op-link">View case study →</span>
+          </div>
+        </a>
         <a class="op-card" href="/work/email-elixir/">
-          <div class="op-img"><img src="assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/ee-mockup-sign.png" alt="Email Elixir case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Brand Strategy · Web</span>
             <div class="op-title">Email Elixir</div>
@@ -632,7 +732,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
           </div>
         </a>
         <a class="op-card" href="/work/baliwithflow/">
-          <div class="op-img"><img src="assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
+          <div class="op-img"><img src="../assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
           <div class="op-body">
             <span class="op-tag">Branding · Product Design</span>
             <div class="op-title">Bali With Flow</div>
@@ -677,6 +777,7 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
   <img id="lightboxImg" src="" alt="">
   <div class="lightbox-caption" id="lightboxCaption"></div>
+  <div class="lightbox-thumbs" id="lightboxThumbs"></div>
 </div>
 
 <script>
@@ -684,15 +785,48 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   var overlay = document.getElementById('lightbox');
   var lbImg = document.getElementById('lightboxImg');
   var lbCaption = document.getElementById('lightboxCaption');
+  var lbThumbs = document.getElementById('lightboxThumbs');
   var closeBtn = document.getElementById('lightboxClose');
-  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img, .campaign-card img');
+  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img, .campaign-card img, .product-photo-card img');
+
+  function showImage(gallery, index){
+    var item = gallery[index];
+    lbImg.src = item.src;
+    lbImg.alt = item.alt || '';
+    lbCaption.textContent = item.alt || '';
+    var thumbs = lbThumbs.querySelectorAll('img');
+    thumbs.forEach(function(t, i){ t.classList.toggle('active', i === index); });
+  }
 
   triggers.forEach(function(img){
     img.style.cursor = 'zoom-in';
     img.addEventListener('click', function(){
-      lbImg.src = img.getAttribute('src');
-      lbImg.alt = img.getAttribute('alt') || '';
-      lbCaption.textContent = img.getAttribute('alt') || '';
+      var galleryData = img.getAttribute('data-gallery');
+      var gallery;
+      if(galleryData){
+        try{ gallery = JSON.parse(galleryData); }catch(e){ gallery = null; }
+      }
+      if(!gallery || !gallery.length){
+        gallery = [{ src: img.getAttribute('src'), alt: img.getAttribute('alt') || '' }];
+      }
+
+      lbThumbs.innerHTML = '';
+      overlay.classList.toggle('has-gallery', gallery.length > 1);
+
+      if(gallery.length > 1){
+        gallery.forEach(function(item, i){
+          var thumb = document.createElement('img');
+          thumb.src = item.src;
+          thumb.alt = item.alt || '';
+          thumb.addEventListener('click', function(e){
+            e.stopPropagation();
+            showImage(gallery, i);
+          });
+          lbThumbs.appendChild(thumb);
+        });
+      }
+
+      showImage(gallery, 0);
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
     });

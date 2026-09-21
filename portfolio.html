@@ -246,6 +246,8 @@
     grid-template-columns:1fr;
     align-items:center;
     gap:40px;
+    max-width:none;
+    padding:0 6vw;
   }
 
   .eyebrow{
@@ -572,12 +574,33 @@
     color:var(--tan);
   }
 
+  .work-card > div:not(.work-card-top){
+    position:relative;
+    z-index:2;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+  }
+
+  .work-card:hover .work-card-top{
+    opacity:0;
+    transform:translateY(-8px);
+  }
+  .work-card-top{
+    transition:opacity .35s ease, transform .35s ease;
+  }
+
   .work-card h3{
     position:relative;
     z-index:2;
     font-size:clamp(1.6rem, 2.6vw, 2.1rem);
     margin-top:34px;
     margin-bottom:14px;
+    transition:margin-bottom .45s ease;
+  }
+  .work-card:hover h3{
+    margin-bottom:0;
   }
   .work-card p{
     position:relative;
@@ -587,6 +610,16 @@
     color:var(--tan);
     max-width:44ch;
     margin-bottom:22px;
+    max-height:200px;
+    overflow:hidden;
+    opacity:1;
+    transition:opacity .3s ease, max-height .45s ease, margin-bottom .45s ease;
+  }
+  .work-card:hover p{
+    opacity:0;
+    max-height:0;
+    margin-bottom:0;
+    pointer-events:none;
   }
   .work-link{
     position:relative;
@@ -600,6 +633,15 @@
     color:var(--paper);
     border-bottom:1px solid var(--orange);
     padding-bottom:4px;
+    max-height:40px;
+    overflow:hidden;
+    opacity:1;
+    transition:opacity .3s ease, max-height .45s ease;
+  }
+  .work-card:hover .work-link{
+    opacity:0;
+    max-height:0;
+    pointer-events:none;
     width:fit-content;
   }
   .work-link:hover{ color:var(--gold); }
@@ -1058,7 +1100,7 @@
 
     <div class="work-grid" id="work-grid">
 
-      <div class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#21211F; --wc2:#B6612A;">
+      <a class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#21211F; --wc2:#B6612A;" href="work/peakspring/">
         <img class="work-card-preview" src="work/assets/ps-mockup-bottles.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Water Filtration</span>
@@ -1067,11 +1109,11 @@
         <div>
           <h3>PeakSpring</h3>
           <p>A functional hydration brand for people who live outdoors, with ionised, mineral-rich water positioned as a foundation for performance. Full brand values, tone of voice, and visual system built around "living water."</p>
-          <a class="work-link" href="work/peakspring/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#DBA589; --wc2:#F8C073;">
+      <a class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#DBA589; --wc2:#F8C073;" href="work/viva-fashion/">
         <img class="work-card-preview" src="work/assets/vf-mockup-storefront.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Fashion Retail</span>
@@ -1080,11 +1122,11 @@
         <div>
           <h3>Viva Fashion</h3>
           <p>A vibrant, joyful style guide for a European womenswear retailer, warmly direct, playful yet poised, and inclusive by design. A voice built to feel like a trusted friend with great taste.</p>
-          <a class="work-link" href="work/viva-fashion/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding product-design" style="--wc1:#DBA589; --wc2:#21211F;">
+      <a class="work-card" data-tags="branding product-design" style="--wc1:#DBA589; --wc2:#21211F;" href="work/van-straaten-trading/">
         <img class="work-card-preview" src="work/assets/vst-mockup-lifestyle.jpg" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Trading Education</span>
@@ -1093,11 +1135,11 @@
         <div>
           <h3>Van Straaten Trading</h3>
           <p>A trading education brand built on discipline, structure, and clarity, with no hype and no shortcuts. Identity and voice engineered around one idea: skill that lasts.</p>
-          <a class="work-link" href="work/van-straaten-trading/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#21211F; --wc2:#E48F3E;">
+      <a class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#21211F; --wc2:#E48F3E;" href="work/ionlybookvip/">
         <img class="work-card-preview" src="work/assets/iv-cd-lounge.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Luxury Travel</span>
@@ -1106,11 +1148,11 @@
         <div>
           <h3>IOnlyBookVIP</h3>
           <p>A high-end digital brand for ultra-luxury travel and personal handling, built entirely around discretion, security, and unparalleled personal service for a VIP clientele.</p>
-          <a class="work-link" href="work/ionlybookvip/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding brand-strategy packaging product-design" style="--wc1:#E48F3E; --wc2:#21211F;">
+      <a class="work-card" data-tags="branding brand-strategy packaging product-design" style="--wc1:#E48F3E; --wc2:#21211F;" href="work/cza-bouwbedrijf/">
         <img class="work-card-preview" src="work/assets/cza-mockup-building.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Construction</span>
@@ -1119,11 +1161,11 @@
         <div>
           <h3>CZA Bouwbedrijf</h3>
           <p>A boutique construction partner specializing in high-end renovations, with identity built to translate precision and discretion into calm, professional visual language.</p>
-          <a class="work-link" href="work/cza-bouwbedrijf/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#B6612A; --wc2:#E48F3E;">
+      <a class="work-card" data-tags="branding web-design brand-strategy packaging product-design" style="--wc1:#B6612A; --wc2:#E48F3E;" href="work/vanessa-nantes/">
         <img class="work-card-preview" src="work/assets/vn-mockup-storefront.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Fashion</span>
@@ -1132,11 +1174,11 @@
         <div>
           <h3>Vanessa Nantes</h3>
           <p>A premium womenswear brand for the ambitious professional woman, with strategic positioning, a slow-fashion ethos, and a digital platform built to feel as considered as the clothes themselves.</p>
-          <a class="work-link" href="work/vanessa-nantes/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding product-design" style="--wc1:#B6612A; --wc2:#DBA589;">
+      <a class="work-card" data-tags="branding product-design" style="--wc1:#B6612A; --wc2:#DBA589;" href="work/email-elixir/">
         <img class="work-card-preview" src="work/assets/ee-mockup-candle.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Marketing</span>
@@ -1145,11 +1187,11 @@
         <div>
           <h3>Email Elixir</h3>
           <p>A playful yet premium brand and Webflow site for a boutique email marketing agency, with an animated logo, custom booking flow, and a system designed to convert e-commerce founders through personality and precision.</p>
-          <a class="work-link" href="work/email-elixir/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card" data-tags="branding product-design" style="--wc1:#F8C073; --wc2:#B6612A;">
+      <a class="work-card" data-tags="branding product-design" style="--wc1:#F8C073; --wc2:#B6612A;" href="work/baliwithflow/">
         <img class="work-card-preview" src="work/assets/bwf-mockup-tote-v2.png" alt="" loading="lazy">
         <div class="work-card-top">
           <span class="work-tag">Luxury Travel</span>
@@ -1158,9 +1200,9 @@
         <div>
           <h3>BaliwithFlow</h3>
           <p>A full-service brand and platform for a luxury travel company curating experiences in Bali, with identity through automation, turning travel dreams into effortless bookings.</p>
-          <a class="work-link" href="work/baliwithflow/">View case study →</a>
+          <span class="work-link">View case study →</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
