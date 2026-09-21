@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>That's B Lindsay. Creative Direction and Brand Strategy</title>
+<meta name="description" content="Creative direction and brand strategy for founders and companies. Strategy, identity, and story built into brand systems people remember.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="That's B Lindsay — Creative Direction & Brand Strategy">
+<meta property="og:description" content="Creative direction and brand strategy for founders and companies. Strategy, identity, and story built into brand systems people remember.">
+<meta property="og:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<meta property="og:url" content="https://thatsblindsay.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="That's B Lindsay — Creative Direction & Brand Strategy">
+<meta name="twitter:description" content="Creative direction and brand strategy for founders and companies. Strategy, identity, and story built into brand systems people remember.">
+<meta name="twitter:image" content="https://thatsblindsay.com/Assets/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/Assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/Assets/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/Assets/favicon/android-chrome-512x512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=Meow+Script&display=swap" rel="stylesheet">
@@ -105,8 +121,54 @@
   }
   nav ul li a:hover{ opacity:1; }
 
+  .nav-contact-wrap{ position:relative; }
+  .nav-contact-btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:0.8rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:inherit;
+    background:transparent;
+    border:1px solid currentColor;
+    border-radius:999px;
+    padding:8px 18px;
+    cursor:pointer;
+    opacity:0.92;
+    transition:opacity .2s ease, background .2s ease, color .2s ease;
+  }
+  .nav-contact-btn:hover{ opacity:1; }
+  .nav-contact-menu{
+    position:absolute;
+    top:calc(100% + 10px);
+    right:0;
+    min-width:200px;
+    background:var(--ink);
+    color:var(--paper);
+    border-radius:12px;
+    padding:8px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-6px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+  }
+  .nav-contact-wrap.is-open .nav-contact-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+  .nav-contact-menu a{
+    display:block;
+    font-size:0.85rem;
+    padding:10px 12px;
+    border-radius:8px;
+    transition:background .15s ease;
+  }
+  .nav-contact-menu a:hover{ background:rgba(252,252,252,0.1); }
+
   @media (max-width:720px){
     nav ul{ display:none; }
+    .nav-contact-btn{ padding:7px 14px; font-size:0.72rem; }
   }
 
   /* ---------- HERO ---------- */
@@ -180,6 +242,32 @@
   .hero-inner{
     position:relative;
     z-index:2;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    align-items:center;
+    gap:40px;
+  }
+  @media (max-width:900px){
+    .hero-inner{ grid-template-columns:1fr; }
+  }
+
+  .hero-photo{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    height:100%;
+    position:relative;
+  }
+  .hero-photo img{
+    max-height:66vh;
+    width:auto;
+    max-width:100%;
+    object-fit:contain;
+    filter:drop-shadow(0 30px 50px rgba(0,0,0,0.35));
+  }
+  @media (max-width:900px){
+    .hero-photo{ order:-1; margin-bottom:8px; }
+    .hero-photo img{ max-height:40vh; }
   }
 
   .eyebrow{
@@ -199,8 +287,8 @@
   }
 
   .hero h1{
-    font-size:clamp(2.6rem, 7vw, 6rem);
-    max-width:16ch;
+    font-size:clamp(2.4rem, 5.6vw, 4.6rem);
+    max-width:14ch;
   }
   .hero h1 .script{
     color:var(--gold);
@@ -212,11 +300,10 @@
 
   .hero-sub{
     display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    gap:40px;
-    margin-top:48px;
-    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:32px;
+    margin-top:40px;
   }
 
   .hero-sub p{
@@ -225,25 +312,39 @@
     line-height:1.6;
     color:var(--tan);
     font-weight:300;
+    margin:0;
   }
 
-  .scroll-cue{
-    position:absolute;
-    bottom:36px;
-    left:6vw;
-    font-size:0.75rem;
-    letter-spacing:0.15em;
-    text-transform:uppercase;
-    color:var(--tan);
+  .hero-ctas{
     display:flex;
     align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:0.88rem;
+    font-weight:500;
+    letter-spacing:0.02em;
+    padding:15px 30px;
+    border-radius:999px;
+    display:inline-flex;
+    align-items:center;
     gap:10px;
+    transition:transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
   }
-  .scroll-cue span.line{
-    width:32px; height:1px;
-    background:var(--tan);
-    display:inline-block;
+  .btn-primary{
+    background:var(--terracotta);
+    color:var(--paper);
+    border:1px solid var(--terracotta);
   }
+  .btn-primary:hover{ background:var(--orange); border-color:var(--orange); transform:translateY(-2px); }
+  .btn-secondary{
+    background:transparent;
+    color:var(--paper);
+    border:1px solid rgba(252,252,252,0.4);
+  }
+  .btn-secondary:hover{ border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
 
   /* ---------- SECTION HEADERS ---------- */
   .section{
@@ -293,6 +394,8 @@
     background:var(--paper);
     min-height:1300px;
     overflow:hidden;
+    max-width:1240px;
+    margin:0 auto;
   }
   @media (max-width:900px){
     .about{ grid-template-columns:1fr; min-height:0; }
@@ -301,7 +404,7 @@
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
-    padding:90px 5vw 60px 6vw;
+    padding:90px 6vw 60px;
   }
   .about-stats-wrap{
     display:block;
@@ -344,12 +447,12 @@
     margin-bottom:0;
   }
   .pillar h4{
-    font-size:1.05rem;
-    font-weight:500;
-    margin-bottom:6px;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:8px;
   }
   .pillar p{
-    font-size:0.9rem;
+    font-size:0.88rem;
     line-height:1.6;
     color:#4d4d49;
     max-width:44ch;
@@ -533,7 +636,8 @@
     margin-bottom:26px;
   }
   .process-card h4{
-    font-size:1.15rem;
+    font-size:1.2rem;
+    font-weight:600;
     margin-bottom:12px;
   }
   .process-card p{
@@ -753,74 +857,37 @@
     <li><a href="#work">Work</a></li>
     <li><a href="#approach">Approach</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ul>
+  <div class="nav-contact-wrap" id="navContactWrap">
+    <button class="nav-contact-btn" id="navContactBtn" type="button" aria-haspopup="true" aria-expanded="false">Contact</button>
+    <div class="nav-contact-menu" id="navContactMenu">
+      <a href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a call</a>
+      <a href="mailto:hello@thatsblindsay.com">Send a message</a>
+    </div>
+  </div>
 </nav>
 
 <header class="hero" data-nav="light">
   <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Creative Direction &amp; Brand Strategy</div>
-    <h1>Brands with a <span class="script">point of view</span>, built to be felt.</h1>
-    <div class="hero-sub">
-      <p>I help founders and companies turn a raw idea into a brand system people actually remember: strategy, identity, and story working as one.</p>
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span>Creative Direction &amp; Brand Strategy</div>
+      <h1>Brands with a <span class="script">point of view</span>, built to be felt.</h1>
+      <div class="hero-sub">
+        <p>I help founders and companies turn a raw idea into a brand system people actually remember: strategy, identity, and story working as one.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#work">View Portfolio →</a>
+          <a class="btn btn-secondary" href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="Assets/hannah-portrait.png" alt="Hannah, creative director">
     </div>
   </div>
-  <div class="scroll-cue"><span class="line"></span>Scroll to explore</div>
 </header>
 
-<section class="manifesto" id="about" data-nav="dark">
-  <div class="about">
-    <div class="about-text">
-      <div class="about-top">
-        <span class="section-tag">Who I Am</span>
-        <p class="manifesto-lead">A brand isn't designed once. It's <span class="script">engineered</span>, on purpose, every time someone meets it.</p>
-        <div class="about-pillars">
-          <div class="pillar">
-            <div class="p-num">01</div>
-            <div>
-              <h4>I find the story hiding underneath the business.</h4>
-              <p>Most founders know their business inside out. The challenge is making that knowledge instantly meaningful to someone else. I ask the questions that get beneath the obvious, find the tension and turn it into a clear, compelling point of view.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="p-num">02</div>
-            <div>
-              <h4>I don't design around the category. I design around what makes you different.</h4>
-              <p>Too many brands start by looking at what everyone else is doing. I start with what makes you worth choosing, then build the strategy and creative expression around that.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="p-num">03</div>
-            <div>
-              <h4>I turn founder vision into a brand people can understand, believe in and bring to life.</h4>
-              <p>Often, the strongest version of a brand lives in the founder's head: in their instincts, ambition and ability to explain it in a way that makes people care. I help turn that instinct into something tangible: a clear idea, a distinct voice and a system the whole team can understand and run with.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="p-num">04</div>
-            <div>
-              <h4>I think beyond the big reveal.</h4>
-              <p>A launch is a moment. A brand is everything that comes after it. I build brands with enough clarity to stay focused and enough flexibility to evolve, through new campaigns, new people, new products and whatever the business becomes next.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about-stats-wrap">
-        <div class="about-stats">
-          <div><div class="num">90+</div><div class="lbl">Brands Shaped</div></div>
-          <div><div class="num">7yrs</div><div class="lbl">In The Field</div></div>
-          <div><div class="num">12</div><div class="lbl">Industries Touched</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="about-photo">
-      <img src="Assets/hannah-headshot.png" alt="Hannah, creative director">
-    </div>
-  </div>
-</section>
-
 <section class="logo-strip" data-nav="light">
-  <div class="wrap"><div class="eyebrow"><span class="dot"></span>Brands I've Worked With</div></div>
+  <div class="wrap"><div class="eyebrow"><span class="dot"></span>Trusted By</div></div>
   <div class="logo-rows">
     <div class="logo-track-wrap">
       <div class="logo-track">
@@ -901,6 +968,57 @@
         <img src="Assets/slider-logos/logo-36.png" alt="" loading="lazy" aria-hidden="true">
         <img src="Assets/slider-logos/logo-37.png" alt="" loading="lazy" aria-hidden="true">
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto" id="about" data-nav="dark">
+  <div class="about">
+    <div class="about-text">
+      <div class="about-top">
+        <span class="section-tag">Who I Am</span>
+        <p class="manifesto-lead">A brand isn't designed once. It's <span class="script">engineered</span>, on purpose, every time someone meets it.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="p-num">01</div>
+            <div>
+              <h4>I find the story hiding underneath the business.</h4>
+              <p>Founders know their business inside out. My job is making that instantly meaningful to someone else, by finding the tension and turning it into a clear point of view.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-num">02</div>
+            <div>
+              <h4>I don't design around the category. I design around what makes you different.</h4>
+              <p>Most brands start by looking at the competition. I start with what makes you worth choosing, and build the strategy around that.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-num">03</div>
+            <div>
+              <h4>I turn founder vision into a brand people can understand, believe in and bring to life.</h4>
+              <p>The strongest version of a brand often lives in the founder's head. I turn that instinct into something tangible: a clear idea, a distinct voice, a system the whole team can run with.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="p-num">04</div>
+            <div>
+              <h4>I think beyond the big reveal.</h4>
+              <p>A launch is a moment; a brand is everything after it. I build brands clear enough to stay focused and flexible enough to evolve with the business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats-wrap">
+        <div class="about-stats">
+          <div><div class="num">90+</div><div class="lbl">Brands Shaped</div></div>
+          <div><div class="num">7yrs</div><div class="lbl">In The Field</div></div>
+          <div><div class="num">12</div><div class="lbl">Industries Touched</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-photo">
+      <img src="Assets/hannah-headshot.png" alt="Hannah, creative director">
     </div>
   </div>
 </section>
@@ -1095,7 +1213,7 @@
   <div class="wrap cta-inner">
     <span class="section-tag">Let's Talk</span>
     <h2>Got a brand worth <span class="script">building</span>?</h2>
-    <a class="cta-email" href="mailto:thatsblindsay@gmail.com">thatsblindsay@gmail.com</a>
+    <a class="cta-email" href="mailto:hello@thatsblindsay.com">hello@thatsblindsay.com</a>
 
     <div class="footer-bottom">
       <span>© 2026 That's B Lindsay. Creative Direction and Brand Strategy</span>
@@ -1132,6 +1250,28 @@
     }
   });
   window.addEventListener('resize', updateNavTheme);
+
+  const contactWrap = document.getElementById('navContactWrap');
+  const contactBtn = document.getElementById('navContactBtn');
+  if(contactWrap && contactBtn){
+    contactBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const isOpen = contactWrap.classList.toggle('is-open');
+      contactBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    document.addEventListener('click', function(e){
+      if(!contactWrap.contains(e.target)){
+        contactWrap.classList.remove('is-open');
+        contactBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){
+        contactWrap.classList.remove('is-open');
+        contactBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 </script>
 
 </body>
