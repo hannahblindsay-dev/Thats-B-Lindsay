@@ -51,24 +51,19 @@ nav .logo svg.logo-mark path{ fill:#FCFCFC; }
 nav .back{ font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; opacity:0.85; display:flex; align-items:center; gap:8px; }
 nav .back:hover{ opacity:1; }
 
-header.hero{ min-height:78vh; background:var(--ink); color:var(--paper); display:flex; flex-direction:column;
-  justify-content:center; position:relative; overflow:hidden; padding:150px 0 80px; }
-header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:60vw; height:60vw; max-width:760px; max-height:760px;
-  border-radius:50%; background:radial-gradient(circle at 30% 30%, var(--accent) 0%, var(--accent-dark) 55%, transparent 78%);
-  opacity:0.4; filter:blur(10px); }
-.hero-inner{ position:relative; z-index:2; }
-.eyebrow{ display:flex; align-items:center; gap:14px; font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
-  color:var(--gold); margin-bottom:22px; }
-.eyebrow .dot{ width:7px; height:7px; border-radius:50%; background:var(--accent); }
-.hero h1{ font-size:clamp(2.4rem, 6vw, 4.6rem); max-width:20ch; }
-.hero .tagline{ font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.1rem, 2vw, 1.5rem); color:var(--tan);
-  margin-top:22px; max-width:34ch; }
-.meta-row{ display:flex; gap:40px; flex-wrap:wrap; margin-top:48px; }
-.meta-row div span{ display:block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--tan); margin-bottom:6px; }
-.meta-row div strong{ font-family:'Fraunces', serif; font-weight:400; font-size:1.15rem; }
-.visit-live{ display:inline-flex; align-items:center; gap:8px; margin-top:38px; padding:13px 28px; border:1px solid var(--accent);
+.hero-photo{ height:70vh; min-height:440px; margin-top:0; background-color:var(--ink);
+  background-image:url('assets/og-ionlybookvip.png'); background-size:cover; background-position:center 35%; background-repeat:no-repeat; }
+.hero-meta-strip{ background:var(--paper); border-bottom:1px solid #e6e0d8; }
+.hero-meta-inner{ display:flex; align-items:stretch; gap:36px; padding:36px 6vw; flex-wrap:wrap; }
+.hero-meta-cols{ display:flex; gap:40px; flex-wrap:wrap; flex:1; align-items:center; }
+.hero-meta-cols div span{ display:block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--terracotta); margin-bottom:6px; }
+.hero-meta-cols div strong{ font-family:'Fraunces', serif; font-weight:400; font-size:1.1rem; color:var(--ink); }
+.hero-meta-divider{ width:1px; background:#e6e0d8; flex-shrink:0; }
+.hero-meta-cta{ display:flex; align-items:center; }
+@media (max-width:700px){ .hero-meta-divider{ display:none; } .hero-meta-inner{ align-items:flex-start; } }
+.visit-live{ display:inline-flex; align-items:center; gap:8px; padding:13px 28px; border:1px solid var(--accent);
   border-radius:999px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--paper); background:var(--accent);
-  transition:background .25s ease, border-color .25s ease, color .25s ease; }
+  transition:background .25s ease, border-color .25s ease, color .25s ease; white-space:nowrap; }
 .visit-live:hover{ background:var(--gold); border-color:var(--gold); color:var(--ink); }
 
 .section{ padding:96px 0; }
@@ -328,19 +323,19 @@ header.hero::before{ content:""; position:absolute; right:-12%; top:-20%; width:
   <a class="back" href="/#work">Back to portfolio</a>
 </nav>
 
-<header class="hero">
-  <div class="wrap hero-inner">
-    <div class="eyebrow"><span class="dot"></span>Full Service. Luxury Travel</div>
-    <h1>IOnlyBookVIP</h1>
-    <p class="tagline">Luxury services, handled personally.</p>
-    <div class="meta-row">
+<header class="hero-photo" role="img" aria-label="IOnlyBookVIP brand photography"></header>
+
+<div class="hero-meta-strip">
+  <div class="wrap hero-meta-inner">
+    <div class="hero-meta-cols">
       <div><span>Year</span><strong>2025</strong></div>
       <div><span>Scope</span><strong>Brand Strategy, Identity, Website</strong></div>
       <div><span>Industry</span><strong>Ultra Luxury Travel Concierge</strong></div>
     </div>
-    <a class="visit-live" href="https://www.ionlybookvip.com/" target="_blank" rel="noopener">Visit live site &#8594;</a>
+    <div class="hero-meta-divider"></div>
+    <div class="hero-meta-cta"><a class="visit-live" href="https://www.ionlybookvip.com/" target="_blank" rel="noopener">Visit live site &#8594;</a></div>
   </div>
-</header>
+</div>
 
 <section class="section deliverables-section">
   <div class="wrap">
