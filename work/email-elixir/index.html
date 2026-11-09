@@ -1,667 +1,586 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Email Elixir. Case Study | That's B Lindsay</title>
-<meta name="description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Email Elixir brand identity &amp; website | thatsblindsay</title>
+<meta name="description" content="Brand identity, Webflow site and booking flow for Email Elixir, a boutique Klaviyo email and SMS retention studio.">
+<meta name="robots" content="index, follow">
+<meta property="og:site_name" content="thatsblindsay">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Email Elixir. Case Study | That's B Lindsay">
-<meta property="og:description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
-<meta property="og:image" content="https://thatsblindsay.com/work/assets/og-email-elixir.png">
+<meta property="og:title" content="Email Elixir brand identity &amp; website | thatsblindsay">
+<meta property="og:description" content="Brand identity, Webflow site and booking flow for Email Elixir, a boutique Klaviyo email and SMS retention studio.">
 <meta property="og:url" content="https://thatsblindsay.com/work/email-elixir/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Email Elixir. Case Study | That's B Lindsay">
-<meta name="twitter:description" content="A playful yet premium brand and site for a boutique email marketing agency, designed to convert e-commerce founders through personality and precision.">
+<meta property="og:image" content="https://thatsblindsay.com/work/assets/og-email-elixir.png">
 <meta name="twitter:image" content="https://thatsblindsay.com/work/assets/og-email-elixir.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Email Elixir brand identity &amp; website | thatsblindsay">
+<meta name="twitter:description" content="Brand identity, Webflow site and booking flow for Email Elixir, a boutique Klaviyo email and SMS retention studio.">
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/Assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/Assets/favicon/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/Assets/favicon/android-chrome-512x512.png">
+<link rel="canonical" href="https://thatsblindsay.com/work/email-elixir/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=Meow+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CreativeWork", "@id": "https://thatsblindsay.com/work/email-elixir/#case-study", "name": "Email Elixir case study", "headline": "Tailored emails. Magical results.", "description": "Brand identity, Webflow site and booking flow for Email Elixir, a boutique Klaviyo email and SMS retention studio.", "url": "https://thatsblindsay.com/work/email-elixir/", "dateCreated": "2025", "keywords": "Brand identity, Webflow, booking flow", "creator": {"@type": "Organization", "@id": "https://thatsblindsay.com/#studio", "name": "thatsblindsay", "url": "https://thatsblindsay.com/"}, "about": {"@type": "Organization", "name": "Email Elixir", "url": "https://emailelixir.com"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "thatsblindsay", "item": "https://thatsblindsay.com/"}, {"@type": "ListItem", "position": 2, "name": "Email Elixir case study", "item": "https://thatsblindsay.com/work/email-elixir/"}]}]}</script>
 <style>
-
-:root{
-  --ink:#21211F;
-  --terracotta:#B6612A;
-  --tan:#DBA589;
-  --orange:#E48F3E;
-  --gold:#F8C073;
-  --pale:#E9D99B;
-  --paper:#FCFCFC;
-  --accent: #B6612A;
-  --accent-dark: #21211F;
+img { max-width: 100%; }
+[hidden]:not([hidden=until-found i]) { display: none !important; }
+</style>
+<style>
+/* Layout: case study 07 for thatsblindsay on the PeakSpring template, Afterglow palette; Email Elixir Darkest Forest, Maximum Green and Star Shine are reserved for brand-owned modules (flow builder, specimens, wax seal). */
+:root {
+  --r: 12px; /* one corner radius for every rounded rectangle on the site */
+  --dark: #261510;
+  --ink: #261510;
+  --ink-soft: #6E4A3A;
+  --heat: #E8341C;
+  --spritz: #FD6C41;
+  --sun: #FE9F5D;
+  --peach: #FEC59A;
+  --vanilla: #FFF3E6;
+  --card: #FFF9F2;
+  --sangria: #920004;
+  --wash: #0C0E0A;
+  --forest: #222F17;
+  --noir: #4A3722;
+  --blonde: #AA7A41;
+  --maxgreen: #5D8E35;
+  --star: #F6F6E2;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-serif: "Instrument Serif", Georgia, serif;
+  --f-mono: "Geist Mono", ui-monospace, Menlo, monospace;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color-scheme: light;
 }
-*{ margin:0; padding:0; box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{ background:var(--paper); color:var(--ink); font-family:'Space Grotesk', sans-serif; overflow-x:hidden; }
-h1,h2,h3,h4{ font-family:'Fraunces', serif; font-weight:500; letter-spacing:-0.01em; line-height:1.08; }
-.script{ font-family:'Meow Script', cursive; font-weight:400; }
-a{ color:inherit; text-decoration:none; }
-.wrap{ max-width:1240px; margin:0 auto; padding:0 6vw; }
-
-nav{ position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between;
-  padding:22px 6vw; mix-blend-mode:difference; color:#FCFCFC; }
-nav .logo svg.logo-mark{ height:26px; width:auto; display:block; }
-nav .logo svg.logo-mark path{ fill:#FCFCFC; }
-nav .back{ font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; opacity:0.85; display:flex; align-items:center; gap:8px; }
-nav .back:hover{ opacity:1; }
-
-.hero-photo{ height:70vh; min-height:440px; margin-top:0; background-color:var(--ink);
-  background-image:url('/work/assets/cover-email-elixir.png'); background-size:cover; background-position:center 35%; background-repeat:no-repeat; }
-.hero-meta-strip{ background:var(--paper); border-bottom:1px solid #e6e0d8; }
-.hero-meta-inner{ display:flex; align-items:stretch; gap:36px; padding:36px 6vw; flex-wrap:wrap; }
-.hero-meta-cols{ display:flex; gap:40px; flex-wrap:wrap; flex:1; align-items:center; }
-.hero-meta-cols div span{ display:block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--terracotta); margin-bottom:6px; }
-.hero-meta-cols div strong{ font-family:'Fraunces', serif; font-weight:400; font-size:1.1rem; color:var(--ink); }
-.hero-meta-divider{ width:1px; background:#e6e0d8; flex-shrink:0; }
-.hero-meta-cta{ display:flex; align-items:center; }
-@media (max-width:700px){ .hero-meta-divider{ display:none; } .hero-meta-inner{ align-items:flex-start; } }
-.visit-live{ display:inline-flex; align-items:center; gap:8px; padding:13px 28px; border:1px solid var(--accent);
-  border-radius:999px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--paper); background:var(--accent);
-  transition:background .25s ease, border-color .25s ease, color .25s ease; white-space:nowrap; }
-.visit-live:hover{ background:var(--gold); border-color:var(--gold); color:var(--ink); }
-
-.section{ padding:96px 0; }
-.section.tight{ padding:64px 0; }
-.section-tag{ font-size:0.76rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--terracotta); font-weight:600;
-  margin-bottom:14px; display:block; }
-.section h2{ font-size:clamp(1.7rem, 3.2vw, 2.5rem); max-width:20ch; margin-bottom:28px; }
-.lead{ font-family:'Fraunces', serif; font-size:clamp(1.2rem, 2.2vw, 1.6rem); font-style:italic; line-height:1.5; max-width:38ch; color:var(--ink); }
-
-.two-col{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
-@media (max-width:820px){ .two-col{ grid-template-columns:1fr; } }
-.body-copy p{ font-size:1rem; line-height:1.75; color:#4c4c48; margin-bottom:18px; max-width:56ch; }
-
-.feature-list{ display:flex; flex-direction:column; border-top:1px solid #e6e0d8; }
-.feature-row{ padding:20px 0; border-bottom:1px solid #e6e0d8; }
-.feature-row h4{ font-size:1.02rem; font-weight:500; margin-bottom:6px; color:var(--accent-dark); }
-.feature-row p{ font-size:0.9rem; color:#6b6b66; line-height:1.55; max-width:44ch; }
-
-.condensed-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; margin-top:44px; }
-@media (max-width:820px){ .condensed-grid{ grid-template-columns:1fr; gap:36px; } }
-.condensed-block .step-tag{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); font-weight:600; margin-bottom:10px; display:block; }
-.condensed-block h3{ font-size:1.2rem; margin-bottom:10px; }
-.condensed-block p{ font-size:0.92rem; line-height:1.65; color:#4c4c48; }
-
-.palette-section{ background:var(--ink); color:var(--paper); }
-.palette-section .section-tag{ color:var(--gold); }
-.palette-note{ font-size:0.92rem; color:var(--tan); max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.palette-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin-top:10px; }
-@media (max-width:820px){ .palette-grid{ grid-template-columns:repeat(2, 1fr); } }
-@media (max-width:520px){ .palette-grid{ grid-template-columns:1fr; } }
-.swatch{ background:rgba(252,252,252,0.05); padding:0; overflow:hidden; border-radius:6px; }
-.swatch-color{ height:160px; }
-.swatch-info{ padding:18px 20px; }
-.swatch-info .hex{ font-family:'Space Grotesk', sans-serif; font-size:0.95rem; font-weight:600; }
-.swatch-info .name{ font-size:0.78rem; color:var(--tan); margin-top:2px; }
-.swatch-info .note{ font-size:0.78rem; color:#9a9a92; margin-top:8px; line-height:1.45; }
-
-.type-grid{ display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#e6e0d8; border:1px solid #e6e0d8; margin-top:10px; }
-@media (max-width:720px){ .type-grid{ grid-template-columns:1fr; } }
-.type-card{ background:var(--paper); padding:34px 30px; }
-.type-card .role{ font-size:0.74rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--terracotta); margin-bottom:10px; }
-.type-card .fontname{ font-family:'Fraunces', serif; font-size:1.7rem; margin-bottom:10px; }
-.type-card p{ font-size:0.88rem; color:#6b6b66; line-height:1.6; }
-.type-note{ font-size:0.85rem; color:#6b6b66; margin-top:16px; line-height:1.6; max-width:70ch; }
-
-.brandbook-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.brandbook-grid{ display:flex; flex-direction:column; gap:40px; }
-.spread-card{ margin:0; border:1px solid #e6e0d8; border-radius:4px; overflow:hidden; background:var(--paper); }
-.spread-card img{ width:100%; height:auto; display:block; border-bottom:1px solid #e6e0d8; }
-.spread-card figcaption{ padding:22px 26px; }
-.spread-tag{ display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent-dark);
-  border:1px solid var(--accent); border-radius:999px; padding:3px 10px; margin-bottom:10px; }
-.spread-card figcaption p{ font-size:0.85rem; color:#6b6b66; line-height:1.55; }
-
-
-.quote-section{ text-align:center; }
-.quote-section blockquote{ font-family:'Fraunces', serif; font-style:italic; font-size:clamp(1.3rem, 2.6vw, 2rem);
-  max-width:28ch; margin:0 auto 22px; line-height:1.4; color:var(--ink); }
-.quote-section blockquote .script{ font-style:normal; color:var(--terracotta); font-size:1.2em; }
-.quote-attr{ font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--terracotta); }
-
-.next-project{ background:var(--ink); color:var(--paper); padding:110px 0 60px; text-align:center; position:relative; overflow:hidden; }
-.next-project::before{ content:""; position:absolute; left:50%; top:0; width:60vw; height:60vw; max-width:760px; max-height:760px;
-  transform:translate(-50%,-55%); border-radius:50%; background:radial-gradient(circle, var(--accent) 0%, transparent 70%); opacity:0.3; }
-.next-project .section-tag{ color:var(--gold); }
-.next-project h2{ font-size:clamp(2rem, 5vw, 3.4rem); position:relative; z-index:2; margin-bottom:34px; }
-.next-project h2 .script{ color:var(--gold); font-size:1.2em; }
-.back-link{ position:relative; z-index:2; display:inline-block; font-size:0.95rem; border-bottom:2px solid var(--accent);
-  padding-bottom:6px; transition:color .25s ease, border-color .25s ease; }
-.back-link:hover{ color:var(--gold); border-color:var(--gold); }
-.foot-note{ position:relative; z-index:2; margin-top:70px; font-size:0.78rem; color:var(--tan); }
-
-.next-project .slider-nav-row{ display:flex; justify-content:center; gap:12px; margin-bottom:44px; position:relative; z-index:2; }
-.next-project .slider-nav-row button{ width:44px; height:44px; border-radius:50%; border:1px solid rgba(252,252,252,0.28);
-  background:transparent; color:var(--paper); font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
-  transition:background .2s ease, border-color .2s ease, transform .15s ease; }
-.next-project .slider-nav-row button:hover{ background:var(--accent); border-color:var(--accent); }
-.next-project .slider-nav-row button:active{ transform:scale(0.94); }
-.next-project .slider-nav-row button:disabled{ opacity:0.3; cursor:default; pointer-events:none; }
-.other-projects-track-wrap{ overflow-x:auto; scroll-behavior:smooth; scroll-snap-type:x mandatory; scrollbar-width:none;
-  position:relative; z-index:2; text-align:left; padding-bottom:8px; }
-.other-projects-track-wrap::-webkit-scrollbar{ display:none; }
-.other-projects-track{ display:flex; gap:24px; }
-.op-card{ flex:0 0 auto; width:290px; scroll-snap-align:start; display:block; text-decoration:none; color:var(--ink);
-  border-radius:14px; overflow:hidden; background:var(--paper); box-shadow:0 10px 26px rgba(0,0,0,0.28);
-  transition:transform .25s ease, box-shadow .25s ease; }
-.op-card:hover{ transform:translateY(-6px); box-shadow:0 18px 36px rgba(0,0,0,0.38); }
-.op-img{ position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--tan); }
-.op-img img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
-.op-card:hover .op-img img{ transform:scale(1.06); }
-.op-body{ padding:18px 20px 22px; }
-.op-tag{ font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:8px; display:block; }
-.op-title{ font-family:'Fraunces', serif; font-weight:500; font-size:1.12rem; margin-bottom:8px; color:var(--ink); }
-.op-desc{ font-size:0.8rem; line-height:1.5; color:#5b5b57; font-weight:300; margin-bottom:12px; }
-.op-link{ font-size:0.74rem; font-weight:500; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
-.op-card:hover .op-link{ color:var(--accent); }
-.next-project .back-link{ margin-top:54px; }
-
-/* ============ Sidebar case-study nav (pop-out tab + glass panel) ============ */
-.navG-tab{
-  position:fixed; right:0; top:50%; transform:translateY(-50%);
-  z-index:401; background:rgba(24,24,22,0.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
-  color:var(--gold); padding:20px 11px; border-radius:8px 0 0 8px; cursor:pointer;
-  display:flex; flex-direction:column; align-items:center; gap:10px;
-  border:1px solid rgba(255,255,255,0.14); border-right:none;
-  opacity:0; pointer-events:none; transition:opacity .4s ease, right .5s cubic-bezier(.16,1,.3,1);
-  box-shadow:-4px 0 16px rgba(0,0,0,0.28);
+* { box-sizing: border-box; }
+body {
+  background: radial-gradient(70% 45% at 85% 0%, rgba(232,52,28,.35), transparent 70%), var(--dark);
+  color: var(--vanilla);
+  font-family: var(--f-display);
+  font-size: 15px;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 72px;
 }
-.navG-tab.visible{ opacity:1; pointer-events:auto; }
-.navG-tab.open{ right:212px; }
-.navG-tab .navG-tab-text{
-  writing-mode:vertical-rl; text-orientation:mixed; font-size:0.72rem;
-  letter-spacing:0.1em; text-transform:uppercase; font-weight:500;
-}
-.navG-tab .navG-tab-arrow{ font-size:0.8rem; transition:transform .4s cubic-bezier(.16,1,.3,1); color:var(--tan); }
-.navG-tab.open .navG-tab-arrow{ transform:rotate(180deg); }
-.navG-tab:hover{ background:rgba(10,10,9,1); }
-.navG-tab:hover .navG-tab-arrow{ color:var(--gold); }
-.navG{
-  position:fixed; right:0; top:0; height:100vh; width:212px; z-index:400;
-  background:rgba(24,24,22,0.96); backdrop-filter:blur(16px) saturate(140%); -webkit-backdrop-filter:blur(16px) saturate(140%);
-  border-left:1px solid rgba(255,255,255,0.12);
-  display:flex; flex-direction:column; justify-content:center; padding:0 28px;
-  transform:translateX(100%); transition:transform .5s cubic-bezier(.16,1,.3,1);
-}
-.navG.open{ transform:translateX(0); }
-.navG .navG-eyebrow{
-  font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold);
-  margin-bottom:22px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.18);
-}
-.navG-list{ display:flex; flex-direction:column; }
-.navG a{
-  display:flex; align-items:baseline; gap:9px; text-decoration:none;
-  font-size:0.86rem; color:var(--tan);
-  padding:10px 0; transition:color .2s ease, padding-left .2s ease;
-}
-.navG a:hover{ color:#fff; padding-left:4px; }
-.navG a .navG-num{ font-family:'Fraunces', serif; font-style:italic; font-size:0.7rem; color:var(--orange); flex-shrink:0; width:14px; }
-.navG a.current{ color:var(--gold); font-weight:600; }
-.navG a.current .navG-num{ color:var(--gold); }
-.navG a.current::after{ content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); margin-left:auto; flex-shrink:0; }
-.navG-scrim{
-  position:fixed; inset:0; z-index:399; background:rgba(0,0,0,0);
-  pointer-events:none; transition:background .3s ease;
-}
-.navG-scrim.open{ pointer-events:auto; }
-@media (max-width: 1150px){
-  .navG-tab, .navG{ display:none; }
-}
-::selection{ background:var(--accent); color:var(--paper); }
+img { display: block; max-width: 100%; height: auto; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+h1, h2, h2, h3 { text-wrap: balance; margin: 0; font-weight: inherit; }
+p { margin: 0; }
+a { color: inherit; }
+.mono { font-family: var(--f-mono); font-size: 11px; letter-spacing: .02em; text-transform: uppercase; }
+em.ser { font-family: var(--f-serif); font-style: italic; font-weight: 400; font-variation-settings: normal; letter-spacing: -.02em; }
+
+/* ---------- Shell ---------- */
+.intro { padding-block: 48px 26px; display: grid; gap: 18px; }
+.intro-top { display: flex; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; color: #E9D3C4; border-bottom: 1px solid rgba(255,243,230,.3); padding-bottom: 10px; }
+.intro-top a { color: var(--sun); text-underline-offset: 3px; }
+.intro-top .links { display: flex; gap: 16px; flex-wrap: wrap; }
+.intro .sh1 { font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(46px, 8vw, 104px); line-height: .86; }
+.intro .sh1 em { text-transform: none; color: var(--sun); }
+.intro p { color: #E9D3C4; max-width: 64ch; }
+.intro p strong { color: var(--vanilla); font-weight: 600; }
+
+.frame { border-radius: var(--r); overflow: hidden; border: 1px solid #4A2A20; box-shadow: 0 30px 70px -30px rgba(0,0,0,.8); container-type: inline-size; background: var(--vanilla); }
+.chrome { display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: #140A07; font-family: var(--f-mono); font-size: 11px; color: #C9AE9C; }
+.chrome .dots { display: flex; gap: 6px; }
+.chrome .dots i { width: 9px; height: 9px; border-radius: 50%; background: #4A2A20; }
+.chrome .url { flex: 1; text-align: center; background: #26130E; border-radius: var(--r); padding: 4px 10px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.site { color: var(--ink); }
+.site section { position: relative; overflow: hidden; }
+.gut { padding-inline: 5cqi; }
+
+.btn { display: inline-block; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px; background: var(--sangria); color: var(--vanilla); box-shadow: 0 10px 22px -12px rgba(146,0,4,.75); text-decoration: none; }
+.link { font-weight: 700; font-size: 14px; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.kicker { color: var(--heat); }
+.eyebrow { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; border-bottom: 1.5px solid var(--ink); padding-bottom: 12px; margin-bottom: 3.4cqi; }
+.eyebrow h2 { font-variation-settings: "wdth" 75; font-weight: 800; font-size: clamp(32px, 5cqi, 64px); line-height: .95; letter-spacing: -.04em; }
+.eyebrow h2 em { color: var(--heat); }
+.eyebrow .paren { font-family: var(--f-serif); font-style: italic; font-size: 19px; color: var(--sangria); }
+.intro-p { font-size: 17px; line-height: 1.55; max-width: 60ch; margin: -1cqi 0 4cqi; }
+
+/* 1 · Nav + hero */
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; align-items: center; }
+.nav .logo { font-variation-settings: "wdth" 125; font-weight: 800; font-size: 18px; letter-spacing: -.04em; text-transform: none; }
+.nav .logo { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.nav .logo-lockup { display: block; height: 40px; width: auto; aspect-ratio: 379 / 147; }
+.nav .cta { background: var(--sangria); color: var(--vanilla); padding: 8px 14px; border-radius: 999px; }
+.s-hero { background: radial-gradient(60% 80% at 88% 100%, #FF2A00 0%, #FF5A00 26%, #FF9A2E 46%, rgba(254,197,154,.65) 64%, rgba(255,243,230,0) 86%), var(--vanilla); padding-bottom: 5cqi; isolation: isolate; }
+.s-hero::after, .s-dark::after { content: ""; position: absolute; inset: 0; z-index: 0; background: var(--grain); mix-blend-mode: multiply; pointer-events: none; }
+.s-hero > *, .s-dark > * { position: relative; z-index: 1; }
+.crumb { display: flex; justify-content: space-between; gap: 8px 20px; flex-wrap: wrap; padding-block: 10px; border-block: 1px solid rgba(38,21,16,.22); }
+.crumb a { text-decoration: none; }
+.s-hero h1 { margin-top: 4cqi; font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(50px, 10cqi, 140px); line-height: .86; }
+.s-hero h1 em { display: block; margin-top: .1em; text-transform: none; font-size: 1.02em; line-height: .9; color: var(--heat); }
+.hero-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3cqi 5cqi; margin-top: 4cqi; align-items: end; }
+.deck { font-family: var(--f-serif); font-size: clamp(20px, 2.2cqi, 26px); line-height: 1.3; max-width: 46ch; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1.5px solid var(--ink); }
+.facts div { padding: 12px 12px 12px 0; border-bottom: 1px solid rgba(38,21,16,.2); display: grid; gap: 4px; min-width: 0; }
+.facts div:nth-child(even) { padding-left: 14px; border-left: 1px solid rgba(38,21,16,.2); }
+.facts dt { color: var(--ink-soft); }
+.facts dd { margin: 0; font-weight: 600; font-size: 15px; }
+.facts dd a { color: var(--sangria); }
+.cover { margin: 5cqi 0 0; }
+.cover img { width: 100%; border-radius: var(--r); box-shadow: 0 30px 60px -34px rgba(38,21,16,.7); }
+
+/* 2 · Thinking */
+.s-think { padding-block: 7cqi; }
+.think { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid var(--ink); margin: 0; padding: 0; }
+.think li { list-style: none; padding: 22px 3cqi 0 0; display: grid; gap: 10px; align-content: start; }
+.think li + li { border-left: 1px solid rgba(38,21,16,.2); padding-left: 3cqi; }
+.think .n { font-variation-settings: "wdth" 62; font-weight: 900; font-size: clamp(56px, 7cqi, 96px); line-height: .8; color: var(--heat); }
+.think b { font-variation-settings: "wdth" 75; font-weight: 800; font-size: 26px; line-height: 1; letter-spacing: -.02em; }
+.think p { font-size: 15px; line-height: 1.6; }
+
+/* 3 · Quote */
+.s-dark { background: repeating-linear-gradient(90deg, rgba(255,243,230,0) 0 calc(9% - 12px), rgba(255,243,230,.85) calc(9% - 6px), rgba(255,243,230,0) 9%), radial-gradient(30% 70% at 80% 50%, #FF1A00 0%, #FF2E00 30%, #FF6A00 52%, #FFA63A 70%, rgba(255,243,230,0) 88%), var(--vanilla); color: var(--ink); padding-block: 8cqi; isolation: isolate; }
+.s-dark blockquote { margin: 0; max-width: 18ch; font-family: var(--f-serif); font-size: clamp(38px, 6.4cqi, 88px); line-height: 1; letter-spacing: -.02em; }
+.s-dark blockquote em { color: var(--heat); }
+.s-dark cite { display: block; margin-top: 3cqi; font-style: normal; color: var(--ink-soft); }
 
 
-.spread-card img, .deliverable-card img{ cursor:zoom-in; transition:opacity .2s ease; }
-.spread-card img:hover, .deliverable-card img:hover{ opacity:0.88; }
+/* 4 · Deliverables */
+.s-deliv { padding-block: 7cqi; background: radial-gradient(ellipse at 30% 20%, #FFFDF6 0%, var(--vanilla) 40%, var(--peach) 100%); }
+.bento { display: grid; gap: 1.8cqi; }
+/* Column fractions equal each image's aspect ratio, so every image in a row is the same height with nothing cropped. */
+.brow { display: grid; gap: 1.8cqi; align-items: start; }
+.brow-1 { grid-template-columns: 1.5fr .8fr; }
+.brow-2 { grid-template-columns: 1fr 1fr; }
 
-.deliverables-note{ font-size:0.95rem; color:#6b6b66; max-width:60ch; margin-bottom:36px; line-height:1.6; }
-.deliverable-tag{ display:inline-block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent-dark);
-  border:1px solid var(--accent); border-radius:999px; padding:4px 12px; margin-bottom:12px; }
-.deliverables-grid.bento{ display:flex; flex-direction:column; gap:20px; }
-.bento-row{ display:flex; gap:20px; }
-.bento-row .deliverable-card{ margin:0; border-radius:6px; overflow:hidden; position:relative; flex-basis:0; min-width:0; }
-.bento-row .deliverable-card img{ width:100%; height:100%; object-fit:cover; display:block; }
-.bento-scrim{ position:absolute; left:0; right:0; bottom:0; padding:16px 18px; background:linear-gradient(0deg, rgba(0,0,0,0.6), transparent); pointer-events:none; }
-.bento-tag{ display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; border-radius:999px; padding:4px 12px;
-  background:transparent; color:var(--paper); border:1px solid rgba(252,252,252,0.6); transition:background .2s ease, color .2s ease, border-color .2s ease; }
-.bento-row .deliverable-card:hover .bento-tag{ background:rgba(252,252,252,0.95); color:var(--ink); border-color:rgba(252,252,252,0.95); }
-.bento-row.row-tall{ height:400px; }
-.bento-row.row-short{ height:300px; }
-@media (max-width:820px){ .bento-row{ flex-wrap:wrap; height:auto !important; } .bento-row .deliverable-card{ flex:1 1 45%; height:260px; } }
-@media (max-width:560px){ .bento-row .deliverable-card{ flex:1 1 100%; } }
+.tile { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.tile img { width: 100%; border-radius: var(--r); background: var(--card); }
+.tile figcaption { display: flex; justify-content: space-between; gap: 10px; }
+.tile figcaption b { color: var(--sangria); font-weight: 500; }
+.funnel { margin-top: 5cqi; display: grid; grid-template-columns: auto 1fr; gap: 2cqi 4cqi; align-items: center; background: var(--dark); color: var(--vanilla); border-radius: var(--r); padding: 3.6cqi 4cqi; }
+.funnel .steps { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.funnel .steps span { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255,243,230,.4); }
+.funnel .steps span.end { background: var(--heat); border-color: var(--heat); }
+.funnel .steps i { font-style: normal; color: var(--sun); }
+.funnel h3 { font-variation-settings: "wdth" 75; font-weight: 800; font-size: clamp(22px, 2.6cqi, 32px); line-height: 1.05; letter-spacing: -.02em; max-width: 18ch; }
+.funnel p { font-size: 15px; line-height: 1.6; color: #E9D3C4; grid-column: 1 / -1; max-width: 72ch; }
 
-.lightbox-overlay{
-  position:fixed; inset:0; z-index:1000; background:rgba(20,19,17,0.94);
-  display:none; align-items:center; justify-content:center; padding:5vh 5vw;
-  opacity:0; transition:opacity .25s ease;
+
+
+/* 4b · The mark */
+.s-mark { padding-block: 7cqi; background: radial-gradient(34% 60% at 26% 52%, rgba(93,142,53,.28) 0%, rgba(227,209,167,0) 72%), var(--vanilla); }
+.mark-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 3cqi 6cqi; align-items: center; }
+.mark-hero { margin: 0; display: grid; place-items: center; }
+.mark-hero svg { width: min(70%, 300px); height: auto; overflow: visible; --ee-body: #222F17; --ee-accent: #5D8E35; --ee-cork: #4A3722; }
+.mark-trace { fill: none; stroke: var(--blonde); stroke-width: 1.2; stroke-linejoin: round; stroke-dasharray: .14 .86; animation: mark-trace 9s linear infinite; }
+@keyframes mark-trace { to { stroke-dashoffset: -1; } }
+.mark-points { list-style: none; margin: 0; padding: 0; border-top: 1.5px solid var(--ink); }
+.mark-points li { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(38,21,16,.18); }
+.mark-points .n { font-family: var(--f-mono); font-size: 13px; font-weight: 500; color: var(--maxgreen); padding-top: 5px; }
+.mark-points b { display: block; font-variation-settings: "wdth" 75; font-weight: 800; font-size: 21px; letter-spacing: -.02em; }
+.mark-points p { font-size: 15px; line-height: 1.55; margin-top: 4px; max-width: 48ch; }
+.mark-ways { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.6cqi; margin-top: 6cqi; }
+.mark-ways figure { margin: 0; display: grid; gap: 10px; }
+.mark-ways svg { width: 100%; aspect-ratio: 1; height: auto; padding: 18%; border-radius: var(--r); background: var(--bg); color: var(--fg); box-shadow: inset 0 0 0 1px rgba(38,21,16,.08); }
+.mark-ways figcaption { color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) { .mark-trace { animation: none; stroke-dasharray: none; opacity: 0; } }
+
+
+
+/* 5 · Flow builder (interactive, example flow) */
+.s-flow { padding-block: 7cqi; background: radial-gradient(34% 50% at 82% 18%, rgba(93,142,53,.22) 0%, rgba(93,142,53,0) 72%), var(--vanilla); }
+.fb { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 3cqi; align-items: start; }
+.fb-list { position: relative; border-radius: var(--r); background: var(--star); box-shadow: inset 0 0 0 1px rgba(34,47,23,.1); padding: 3cqi; display: grid; gap: 10px; }
+.fb-line { position: absolute; left: calc(3cqi + 21px); top: calc(3cqi + 22px); bottom: calc(3cqi + 22px); width: 2px; background: rgba(34,47,23,.15); }
+.fb-line i { position: absolute; left: -4px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--maxgreen); box-shadow: 0 0 0 5px rgba(93,142,53,.2); animation: fb-pulse 6s ease-in-out infinite; }
+@keyframes fb-pulse { 0% { top: 0; } 100% { top: calc(100% - 10px); } }
+@media (prefers-reduced-motion: reduce) { .fb-line i { animation: none; } }
+.fb-node { all: unset; position: relative; z-index: 1; cursor: pointer; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 8px; border-radius: var(--r); }
+.fb-node .ic { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #fff; box-shadow: inset 0 0 0 1.5px rgba(34,47,23,.2); font-family: var(--f-mono); font-size: 10px; color: var(--forest); }
+.fb-node b { display: block; font-weight: 700; font-size: 16px; color: var(--forest); }
+.fb-node span.k { font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; color: var(--maxgreen); }
+.fb-node[aria-pressed="true"] { background: #fff; box-shadow: 0 10px 24px -18px rgba(34,47,23,.6); }
+.fb-node[aria-pressed="true"] .ic { background: var(--forest); color: var(--star); box-shadow: none; }
+.fb-node:focus-visible { outline: 2px solid var(--maxgreen); outline-offset: 2px; }
+.fb-panel { border-radius: var(--r); background: var(--forest); color: var(--star); padding: 3.4cqi; display: grid; gap: 14px; align-content: start; min-height: 100%; }
+.fb-panel .k { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; color: #9FC97A; }
+.fb-panel h3 { font-family: var(--f-serif); font-weight: 400; font-size: clamp(30px, 3.6cqi, 44px); line-height: 1.02; }
+.fb-panel p { font-size: 16px; line-height: 1.6; color: rgba(246,246,226,.82); max-width: 44ch; }
+.fb-body { display: grid; gap: 12px; animation: fb-in .35s ease; }
+.fb-note { margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(246,246,226,.15); color: rgba(246,246,226,.55); }
+@keyframes fb-in { from { opacity: 0; transform: translateY(4px); } }
+
+/* Flow step previews: a small mock of each touch fills the panel */
+.fb-panel { grid-template-rows: auto 1fr auto; }
+.fb-viz { display: grid; place-items: center; padding: 10px 0; animation: fb-in .4s ease; }
+.fv-card { width: min(100%, 340px); border-radius: var(--r); background: var(--star); color: var(--forest); padding: 18px; display: grid; gap: 10px; box-shadow: 0 24px 40px -24px rgba(0,0,0,.7); }
+.fv-row { display: flex; align-items: center; gap: 10px; }
+.fv-av { width: 30px; height: 30px; border-radius: 50%; background: var(--forest); display: grid; place-items: center; flex: none; }
+.fv-av svg { width: 18px; height: auto; --ee-body: #F6F6E2; --ee-accent: #9FC97A; --ee-cork: #AA7A41; }
+.fv-from { font-size: 12px; font-weight: 700; } .fv-from span { display: block; font-family: var(--f-mono); font-weight: 400; font-size: 10px; color: #6B7A5C; text-transform: uppercase; }
+.fv-subj { font-family: var(--f-serif); font-size: 22px; line-height: 1.1; }
+.fv-ln { height: 6px; border-radius: 999px; background: rgba(34,47,23,.12); }
+.fv-ln.s { width: 70%; } .fv-ln.m { width: 86%; }
+.fv-btn { justify-self: start; font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; background: var(--maxgreen); color: var(--star); }
+.fv-input { display: flex; gap: 8px; }
+.fv-input span { flex: 1; border-radius: 999px; box-shadow: inset 0 0 0 1.5px rgba(34,47,23,.2); padding: 9px 14px; font-size: 12px; color: #7C8A6E; }
+.fv-input b { border-radius: 999px; background: var(--forest); color: var(--star); padding: 9px 14px; font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; font-weight: 400; }
+.fv-stars { color: var(--blonde); letter-spacing: .14em; font-size: 15px; }
+.fv-thumb { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; }
+.fv-thumb i { aspect-ratio: 1; border-radius: var(--r); background: linear-gradient(135deg, #5D8E35, #222F17); display: grid; place-items: end center; overflow: hidden; }
+.fv-thumb i svg { width: 74%; height: auto; fill: rgba(246,246,226,.9); }
+.fv-time { width: min(100%, 360px); display: grid; gap: 14px; }
+.fv-track { position: relative; height: 2px; background: rgba(246,246,226,.2); margin: 0 8px; }
+.fv-track i { position: absolute; left: 0; top: 0; height: 2px; background: #9FC97A; animation: fv-grow 3s ease-in-out infinite; }
+.fv-dots { display: flex; justify-content: space-between; margin-top: -22px; }
+.fv-dots span { display: grid; justify-items: center; gap: 8px; font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; color: rgba(246,246,226,.7); }
+.fv-dots span::before { content: ""; width: 16px; height: 16px; border-radius: 50%; background: var(--forest); box-shadow: inset 0 0 0 2px #9FC97A; }
+.fv-dots span.on::before { background: #9FC97A; }
+.fv-cap { text-align: center; font-family: var(--f-serif); font-style: italic; font-size: 20px; color: var(--star); }
+@keyframes fv-grow { 0% { width: 0; } 70%, 100% { width: 100%; } }
+.fv-phone { width: min(100%, 260px); border-radius: 26px; background: #0C0E0A; padding: 14px; box-shadow: 0 24px 40px -24px rgba(0,0,0,.8), inset 0 0 0 1.5px rgba(246,246,226,.12); display: grid; gap: 10px; }
+.fv-phone .top { justify-self: center; font-family: var(--f-mono); font-size: 10px; color: rgba(246,246,226,.55); text-transform: uppercase; }
+.fv-bub { justify-self: start; max-width: 88%; background: #2F3A26; color: var(--star); border-radius: var(--r); border-bottom-left-radius: 0; padding: 10px 12px; font-size: 13px; line-height: 1.4; }
+.fv-bub.me { justify-self: end; background: var(--maxgreen); border-radius: var(--r); border-bottom-right-radius: 0; }
+.fv-split { width: min(100%, 360px); display: grid; justify-items: center; gap: 0; }
+.fv-split .q { border-radius: 999px; background: var(--star); color: var(--forest); padding: 10px 18px; font-weight: 700; font-size: 14px; }
+.fv-split svg { width: 70%; height: 46px; }
+.fv-split svg path { fill: none; stroke: #9FC97A; stroke-width: 2; stroke-dasharray: 4 4; }
+.fv-branches { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fv-branches div { border-radius: var(--r); padding: 12px 14px; display: grid; gap: 4px; background: rgba(246,246,226,.08); box-shadow: inset 0 0 0 1px rgba(246,246,226,.16); color: var(--star); font-size: 14px; font-weight: 600; }
+.fv-branches div span { font-family: var(--f-mono); font-size: 10px; font-weight: 400; text-transform: uppercase; color: #9FC97A; }
+@media (prefers-reduced-motion: reduce) { .fv-track i { animation: none; width: 100%; } }
+
+/* 8 · Takeaway */
+.s-take { padding-block: 8cqi; background: radial-gradient(38% 70% at 76% 50%, rgba(93,142,53,.3) 0%, rgba(170,122,65,.14) 46%, rgba(255,243,230,0) 78%), var(--vanilla); }
+.take-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 4cqi; align-items: center; }
+/* Takeaway art: an envelope closes and a green wax seal presses down with the potion-bottle mark. */
+.take-art { width: min(100%, 440px); justify-self: center; }
+.take-art svg { width: 100%; height: auto; display: block; overflow: visible; }
+.ws-card { fill: var(--forest); filter: drop-shadow(0 30px 40px rgba(34,47,23,.4)); }
+.ws-env { fill: #F3EEDB; }
+.ws-flap { fill: #E9E3CC; stroke: rgba(34,47,23,.08); transform-box: view-box; transform-origin: 220px 128px; animation: ws-flap 9s cubic-bezier(.5,0,.3,1) infinite; }
+.ws-fold { fill: none; stroke: rgba(34,47,23,.12); stroke-width: 1.5; }
+.ws-seal { transform-box: fill-box; transform-origin: center; animation: ws-seal 9s cubic-bezier(.3,1.4,.4,1) infinite both; }
+.ws-wax { fill: #5D8E35; }
+.ws-wax2 { fill: none; stroke: rgba(255,255,255,.18); stroke-width: 3; }
+.ws-spark { fill: #9FC97A; transform-box: fill-box; transform-origin: center; animation: ws-spark 9s ease infinite both; }
+.ws-k { font-family: var(--f-mono); font-size: 10px; letter-spacing: .2em; fill: #9FC97A; }
+.ws-line { font-family: var(--f-display); font-weight: 600; font-size: 21px; fill: var(--star); }
+.ws-line2 { font-family: var(--f-serif); font-style: italic; font-size: 26px; fill: #9FC97A; }
+@keyframes ws-flap { 0%, 10% { transform: scaleY(-1); } 30%, 88% { transform: scaleY(1); } 98%, 100% { transform: scaleY(-1); } }
+@keyframes ws-seal { 0%, 32% { transform: scale(1.8); opacity: 0; } 40% { transform: scale(.94); opacity: 1; } 46%, 86% { transform: scale(1); opacity: 1; } 94%, 100% { transform: scale(1); opacity: 0; } }
+@keyframes ws-spark { 0%, 44% { transform: scale(0) rotate(0); opacity: 0; } 52% { transform: scale(1.2) rotate(45deg); opacity: 1; } 60%, 84% { transform: scale(1) rotate(45deg); opacity: 1; } 92%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .ws-flap { animation: none; transform: none; } .ws-seal, .ws-spark { animation: none; opacity: 1; } }
+.s-take h2 { font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(40px, 7cqi, 100px); line-height: .88; max-width: 15ch; }
+.s-take h2 em { text-transform: none; color: var(--heat); }
+.s-take p { font-size: 18px; line-height: 1.55; max-width: 52ch; margin-top: 3cqi; }
+.s-take .actions { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; margin-top: 3cqi; }
+
+/* 6b · Type specimens from the styleguide */
+.type { margin-top: 6cqi; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3cqi 3cqi; border-top: 1.5px solid var(--ink); padding-top: 3cqi; }
+.spec { margin: 0; display: grid; gap: 14px; align-content: start; }
+.spec .role { color: var(--heat); }
+.spec-card { border-radius: var(--r); background: var(--star); padding: 2.4cqi 2.6cqi; box-shadow: 0 20px 40px -30px rgba(0,0,0,.6); }
+/* Both specimen boxes share one shape; each crop is fitted inside, left-aligned, so the boxes always match in height. */
+.spec-card { position: relative; aspect-ratio: 3.3; }
+.spec-card img, .spec-card svg { position: absolute; top: 14%; left: 7%; width: 86%; height: 72%; object-fit: contain; object-position: left center; }
+.spec-card svg { top: 26%; height: 48%; fill: var(--wash); }
+.spec p { font-size: 15px; line-height: 1.6; max-width: 50ch; }
+.glyphs { grid-column: 1 / -1; margin: 0; border-radius: var(--r); overflow: hidden; background: var(--star); }
+.glyphs img { width: 100%; }
+.glyphs { padding: 3.4cqi 3.4cqi 2.6cqi; background: var(--star); box-shadow: inset 0 0 0 1px rgba(34,47,23,.08); }
+.type-note { grid-column: 1 / -1; color: var(--ink-soft); }
+
+/* 6 · Palette + type */
+.s-brand { padding-block: 7cqi; background: var(--card); }
+.swatches { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.4cqi; }
+.sw { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.sw .chip { aspect-ratio: 3 / 4; border-radius: var(--r); background: var(--c); box-shadow: inset 0 0 0 1px rgba(38,21,16,.08); display: flex; align-items: flex-end; padding: 12px; color: var(--t, #fff); font-family: var(--f-mono); font-size: 11px; }
+.sw b { font-variation-settings: "wdth" 75; font-weight: 800; font-size: 17px; letter-spacing: -.02em; }
+.sw p { font-size: 13px; line-height: 1.45; color: var(--ink-soft); }
+/* 7 · Brandbook */
+.s-book { padding-block: 7cqi; }
+.spreads { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2cqi; }
+.spread { margin: 0; display: grid; gap: 10px; min-width: 0; }
+.spread img { width: 100%; border-radius: var(--r); box-shadow: 0 20px 40px -26px rgba(38,21,16,.6); }
+.spread b { font-variation-settings: "wdth" 75; font-weight: 800; font-size: 18px; }
+.spread p { font-size: 14px; line-height: 1.5; color: var(--ink-soft); }
+
+/* 10 · Next project */
+.s-next { padding-block: 7cqi; background: radial-gradient(ellipse at 30% 20%, #FFFDF6 0%, var(--vanilla) 40%, var(--peach) 100%); color: var(--ink); }
+.next-big { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3cqi 4cqi; align-items: center; text-decoration: none; }
+.next-big img { width: 100%; border-radius: var(--r); transition: transform .4s ease; }
+.next-big:hover img { transform: scale(1.015); }
+.next-big .mono { color: var(--heat); }
+.next-big h3 { font-variation-settings: "wdth" 75; font-weight: 800; font-size: clamp(36px, 5.4cqi, 72px); line-height: .95; letter-spacing: -.04em; margin-top: 10px; }
+.next-big h3 em { color: var(--heat); }
+.next-big .btn { margin-top: 22px; }
+.more { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.4cqi; margin-top: 5cqi; padding-top: 18px; border-top: 1px solid rgba(38,21,16,.25); }
+.more a { display: grid; gap: 6px; text-decoration: none; min-width: 0; }
+.more img { width: 100%; aspect-ratio: 1.9; object-fit: cover; border-radius: var(--r); opacity: .85; transition: opacity .2s; }
+.more a:hover img { opacity: 1; }
+.more b { font-size: 13px; font-weight: 700; }
+.more .mono { color: var(--ink-soft); font-size: 10px; }
+
+/* 11 · Footer */
+.s-foot { background: var(--grain), linear-gradient(180deg, #FF582D 0%, #FF7A45 26%, #FFAE73 52%, #FEC59A 78%, #FFF3E6 100%); color: var(--vanilla); padding-block: 6cqi 0; }
+.s-foot h2 { font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(46px, 9cqi, 130px); line-height: .86; }
+.s-foot h2 em { text-transform: none; color: var(--dark); font-size: 1.06em; }
+.s-foot .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4cqi; }
+.btn.outline { background: transparent; color: var(--vanilla); box-shadow: inset 0 0 0 2px var(--vanilla); }
+.wordmark { margin: 6cqi -1cqi -3.6cqi; font-variation-settings: "wdth" 125; font-weight: 900; font-size: 11cqi; line-height: .74; letter-spacing: -.07em; color: var(--heat); white-space: nowrap; text-align: center; }
+
+
+
+
+
+
+
+/* ---------- Narrow ---------- */
+@container (max-width: 760px) {
+  .gut { padding-inline: 20px; }
+  .nav ul li:not(.cta) { display: none; }
+  .s-hero h1 { font-size: 13.5cqi; }
+  .hero-row, .type, .next-big, .take-grid, .fb { grid-template-columns: 1fr; }
+  .take-art { width: min(92%, 380px); }
+  .s-take { background: radial-gradient(70% 36% at 50% 78%, rgba(93,142,53,.3) 0%, rgba(170,122,65,.14) 46%, rgba(255,243,230,0) 78%), var(--vanilla); }
+  .think { grid-template-columns: 1fr; }
+  .think li + li { border-left: 0; padding-left: 0; border-top: 1px solid rgba(38,21,16,.2); margin-top: 18px; }
+  .bento, .brow { gap: 10px; }
+  .tile figcaption span { display: none; }
+  .mark-grid { grid-template-columns: 1fr; }
+  .mark-hero svg { width: min(60%, 240px); }
+  .mark-ways { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .fb-list, .fb-panel { padding: 18px; }
+  .fb-line { left: calc(18px + 21px); top: 40px; bottom: 40px; }
+  .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .spreads { grid-template-columns: 1fr; }
+  .funnel { grid-template-columns: 1fr; padding: 24px 20px; }
+  .more { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 }
-.lightbox-overlay.active{ display:flex; opacity:1; }
-.lightbox-overlay img{ max-width:90vw; max-height:88vh; width:auto; height:auto; object-fit:contain; display:block; box-shadow:0 30px 80px rgba(0,0,0,0.5); border-radius:2px; }
-.lightbox-close{
-  position:absolute; top:26px; right:32px; width:44px; height:44px; border-radius:50%;
-  background:rgba(252,252,252,0.1); border:1px solid rgba(252,252,252,0.25); color:#FCFCFC;
-  font-size:1.4rem; line-height:1; display:flex; align-items:center; justify-content:center;
-  cursor:pointer; transition:background .2s ease, border-color .2s ease;
+
+/* Phones: no stretched flutes or tall glows. Glows are true circles and sit clear of the text. */
+@container (max-width: 760px) {
+  .s-hero { background: radial-gradient(circle 80cqi at 94% calc(100% - 22cqi), var(--spritz) 0%, var(--sun) 36%, rgba(254,197,154,.5) 64%, rgba(254,197,154,0) 100%), var(--vanilla) !important; }
+  .s-hero::after, .s-dark::after, .s-note::after { display: none; }
+  .tile figcaption span { display: none; }
+  .s-dark { background: radial-gradient(circle 42cqi at 100% 100%, var(--spritz) 0%, var(--sun) 40%, rgba(254,159,93,0) 100%), var(--vanilla) !important; padding-block: 12cqi 28cqi; }
+  .s-mark, .s-flow, .s-doors { background: var(--vanilla) !important; }
 }
-.lightbox-close:hover{ background:rgba(252,252,252,0.18); border-color:rgba(252,252,252,0.4); }
-.lightbox-caption{ position:absolute; bottom:28px; left:0; right:0; text-align:center; font-size:0.82rem; color:#DBA589; letter-spacing:0.02em; padding:0 6vw; }
-@media (max-width:720px){ .lightbox-close{ top:16px; right:16px; width:38px; height:38px; font-size:1.2rem; } }
+.s-foot .wordmark { margin: 6cqi -1cqi -2cqi; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-variation-settings: normal; font-weight: 400; font-size: 15.6cqi; line-height: .74; letter-spacing: -.035em; white-space: nowrap; text-align: center; }
+@container (max-width: 760px) { .s-foot .wordmark { margin: 10cqi -1cqi -2cqi; } .nav .logo-lockup { height: 34px; } }
+.nav .cta a { color: inherit; text-decoration: none; }
+.foot-links a { font-size: 15px; font-weight: 600; text-decoration: none; }
+.foot-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.s-foot .actions, .s-foot .foot-actions { align-items: center; column-gap: 20px; }
+.s-foot .wa { font-size: 14px; }
+</style>
+<style>
+/* production: drop the review shell, page runs edge to edge */
+html { background: #FFF3E6; }
+body { background: #FFF3E6 !important; padding: 0 !important; margin: 0; }
+.wrap { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+.frame { border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.nav ul a { color: inherit; text-decoration: none; }
+.nav ul a:hover { text-decoration: underline; text-underline-offset: 4px; }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="tbl-wordmark" viewBox="0 0 379 147"><path fill="currentColor" d="M60.6953 0C65.496 0.149289 71.2338 1.15892 75.9473 2.65039C78.0697 3.32197 82.5481 5.38766 84.3389 6.52148C90.6223 10.4994 95.2345 16.6202 97.0889 23.4424C98.0857 27.1095 98.3879 29.3982 98.3828 33.2383C98.3703 42.6536 94.9156 50.6411 88.1494 56.9023C84.506 60.2738 80.2346 62.6775 74.2061 64.749C73.2358 65.0824 72.491 65.3976 72.5498 65.4502C72.6096 65.5024 73.8365 65.8642 75.2764 66.2539C78.8671 67.2258 81.0068 67.9834 83.5332 69.1787C90.6196 72.5315 95.4326 76.9908 98.6602 83.1924C101.051 87.7864 102.19 92.8138 102.183 98.75C102.179 101.888 102.019 103.519 101.446 106.258C100.668 109.981 98.7963 114.423 96.7549 117.391C95.6074 119.059 93.5572 121.504 92.3301 122.668C86.2515 128.434 78.1767 131.958 67.8926 133.331C64.0042 133.85 63.0378 133.887 51.9502 133.944L41.042 134V129.927L41.8135 129.491C44.2607 128.108 45.9693 126.666 47.2666 124.887C49.1719 122.274 50.4799 120.416 50.8574 116.25C51.0459 114.171 50.9605 113.826 50.4785 114.727C49.1916 117.131 46.4805 119.063 43.3242 119.825C42.2081 120.095 38.7976 120.06 37.6855 119.769C36.2009 119.379 34.2384 118.374 33.0479 117.395C30.1413 115.003 28.6811 111.763 28.6816 107.705C28.682 105.387 29.1343 103.535 30.1992 101.487C31.8242 98.363 33.7021 96.2888 38.9609 91.8076C45.7742 86.0018 48.6385 82.6605 51.332 77.3789C51.9632 76.1413 52.5736 72.9969 52.6885 72.873C53.0981 72.4321 53.381 74.6243 53.8154 75.5469C55.02 78.105 56.1887 80.2312 57.0957 81.5166C60.0721 85.7348 61.1366 86.8022 68.6904 93.1416C70.4366 94.6071 72.7759 97.0097 74.1006 98.6973C75.062 99.922 76.0805 101.793 76.6104 103.308C78.8902 109.826 76.173 116.432 70.1084 119.115C66.8091 120.575 62.5829 120.36 59.4844 118.574C57.712 117.553 56.737 116.64 55.6621 114.998C55.3545 114.528 55.0797 114.167 55.0518 114.193C54.9523 114.294 55.2771 117.969 55.4805 119.039C55.9767 121.651 56.9251 122.082 58.2334 124.156C59.0886 125.512 59.4079 125.876 60.3555 126.573C61.8345 127.661 62.5912 127.876 64.2393 127.676C67.4048 127.291 71.8331 125.406 74.6963 123.224C79.1114 119.858 82.3803 115.046 84.0693 109.426C85.1714 105.759 85.4095 103.921 85.4043 99.1357C85.399 94.3152 85.0753 91.8935 83.9873 88.5293C80.379 77.3706 71.5609 71.0201 58.0918 69.8799C56.3101 69.7291 52.8645 69.6919 40.4854 69.6914H25.0938L25.001 71.5234C24.9501 72.5327 24.9343 83.5979 24.9658 96.1143C25.0166 116.293 25.0487 119.051 25.2441 120.444C25.8237 124.575 26.6539 126.575 28.5605 128.431C29.9983 129.83 31.8007 130.556 34.9336 131L36.5439 131.229L36.6201 133.982L0.0273438 133.917V131.221L1.51367 131.072C4.49271 130.775 6.15302 130.119 7.70508 128.629C9.29495 127.102 10.2205 124.917 10.7959 121.334C11.0095 120.004 11.0295 116.349 11.0713 70.1406C11.1168 19.7447 11.0819 15.1213 10.6309 12.0908C9.82308 6.66425 7.73415 4.19502 3.18262 3.28613C2.33346 3.11653 1.29085 2.93766 0.866211 2.88867L0.0947266 2.79883V0H60.6953ZM63.126 5.38477C56.8072 3.04629 45.9801 3.44064 45.9062 3.44336C43.559 3.45716 39.9223 3.44347 39.8936 3.44336C32.7566 3.48515 32.0913 3.55312 30.2207 4.43262C29.2475 4.89027 28.8243 5.18442 28.1396 5.88086C26.1259 7.92912 25.3072 10.6073 25.0625 15.9443C24.9928 17.4659 24.9354 28.5055 24.9346 40.4775L24.9326 62.2461L40.5391 62.1953C51.6957 62.1589 56.4897 62.1002 57.3535 61.9893C63.9051 61.1478 68.9997 58.9512 73.1484 55.1797C77.3311 51.3772 79.851 46.7469 81.1719 40.4385C82.2271 35.3982 82.0385 28.7003 80.6914 23.4014C79.6034 19.1212 77.1924 14.8686 74.1445 11.8525C71.079 8.81895 67.8053 7.11659 63.126 5.38477Z"/><path fill="currentColor" d="M345.884 146.683C344.703 146.683 343.669 146.585 342.783 146.388C341.946 146.24 341.38 146.142 341.084 146.092V141.366H344.333C345.515 141.366 346.672 141.12 347.804 140.628C348.937 140.136 349.995 139.299 350.98 138.117C351.964 136.936 352.801 135.311 353.49 133.243L338.426 94.4001H345.22L352.973 114.412C353.318 115.348 353.712 116.505 354.155 117.883C354.647 119.212 355.115 120.591 355.558 122.019C356.05 123.446 356.444 124.702 356.74 125.785H357.183C357.38 124.997 357.626 124.111 357.921 123.126C358.217 122.142 358.512 121.132 358.807 120.099C359.152 119.016 359.472 118.006 359.767 117.071C360.112 116.086 360.383 115.225 360.58 114.486L367.152 94.4001H373.724L360.58 132.136C359.841 134.252 359.029 136.197 358.143 137.969C357.257 139.791 356.272 141.342 355.189 142.622C354.106 143.902 352.801 144.886 351.275 145.576C349.749 146.314 347.952 146.683 345.884 146.683Z"/><path fill="currentColor" d="M312.055 134.129C310.627 134.129 309.2 133.957 307.772 133.612C306.344 133.268 305.015 132.701 303.784 131.914C302.553 131.126 301.569 130.043 300.83 128.664C300.092 127.237 299.723 125.464 299.723 123.348C299.723 120.689 300.363 118.498 301.643 116.775C302.923 115.052 304.695 113.723 306.96 112.788C309.273 111.803 312.006 111.138 315.156 110.794C318.307 110.4 321.729 110.203 325.421 110.203V105.772C325.421 104.344 325.175 103.114 324.683 102.08C324.19 101.046 323.304 100.258 322.024 99.7168C320.793 99.126 319.021 98.8306 316.707 98.8306C314.492 98.8306 312.72 99.126 311.39 99.7168C310.11 100.258 309.2 100.972 308.658 101.858C308.166 102.744 307.92 103.729 307.92 104.812V105.92H301.643C301.593 105.674 301.569 105.428 301.569 105.181C301.569 104.935 301.569 104.64 301.569 104.295C301.569 101.932 302.209 99.9629 303.489 98.3875C304.818 96.7629 306.664 95.5568 309.027 94.7691C311.39 93.9321 314.098 93.5137 317.15 93.5137C320.4 93.5137 323.107 93.9814 325.273 94.9168C327.489 95.8521 329.138 97.1814 330.221 98.9044C331.353 100.628 331.92 102.695 331.92 105.108V126.154C331.92 127.089 332.141 127.754 332.584 128.148C333.027 128.492 333.569 128.664 334.209 128.664H337.089V132.948C336.4 133.243 335.637 133.489 334.8 133.686C333.963 133.932 333.003 134.055 331.92 134.055C330.64 134.055 329.581 133.784 328.744 133.243C327.907 132.751 327.267 132.061 326.824 131.175C326.381 130.24 326.086 129.206 325.938 128.074H325.421C324.535 129.304 323.403 130.388 322.024 131.323C320.695 132.209 319.193 132.898 317.52 133.391C315.846 133.883 314.024 134.129 312.055 134.129ZM313.68 128.664C315.255 128.664 316.732 128.418 318.11 127.926C319.538 127.434 320.793 126.744 321.876 125.858C322.96 124.923 323.821 123.815 324.461 122.535C325.101 121.255 325.421 119.852 325.421 118.326V115.077C321.433 115.077 318.036 115.298 315.23 115.741C312.424 116.184 310.258 116.972 308.732 118.104C307.255 119.237 306.516 120.837 306.516 122.904C306.516 124.234 306.812 125.317 307.403 126.154C307.993 126.991 308.83 127.631 309.913 128.074C310.996 128.468 312.252 128.664 313.68 128.664Z"/><path fill="currentColor" d="M278.274 134.13C275.616 134.13 273.277 133.859 271.259 133.317C269.24 132.776 267.567 131.988 266.237 130.954C264.908 129.92 263.899 128.69 263.21 127.262C262.52 125.834 262.176 124.21 262.176 122.388C262.176 122.142 262.176 121.92 262.176 121.724C262.176 121.477 262.2 121.28 262.25 121.133H268.674C268.625 121.33 268.6 121.502 268.6 121.65C268.6 121.797 268.6 121.945 268.6 122.093C268.65 123.816 269.093 125.17 269.93 126.154C270.816 127.139 272.022 127.828 273.548 128.222C275.074 128.616 276.773 128.813 278.643 128.813C280.268 128.813 281.77 128.616 283.148 128.222C284.527 127.779 285.61 127.139 286.397 126.302C287.234 125.416 287.653 124.308 287.653 122.979C287.653 121.354 287.111 120.124 286.028 119.287C284.994 118.4 283.616 117.711 281.893 117.219C280.17 116.727 278.373 116.21 276.502 115.668C274.927 115.225 273.351 114.733 271.776 114.191C270.2 113.65 268.773 112.985 267.493 112.197C266.262 111.41 265.253 110.4 264.465 109.17C263.727 107.89 263.357 106.29 263.357 104.37C263.357 102.647 263.702 101.12 264.391 99.7912C265.13 98.462 266.163 97.3297 267.493 96.3943C268.822 95.4589 270.422 94.7697 272.293 94.3266C274.213 93.8343 276.33 93.5881 278.643 93.5881C281.105 93.5881 283.247 93.8589 285.068 94.4004C286.939 94.942 288.49 95.7051 289.72 96.6897C290.951 97.6743 291.862 98.8066 292.453 100.087C293.043 101.317 293.339 102.647 293.339 104.074C293.339 104.37 293.339 104.665 293.339 104.96C293.339 105.207 293.314 105.404 293.265 105.551H286.914V104.739C286.914 103.754 286.643 102.819 286.102 101.933C285.61 100.997 284.723 100.259 283.443 99.7174C282.213 99.1266 280.49 98.8312 278.274 98.8312C276.847 98.8312 275.616 98.9543 274.582 99.2004C273.548 99.3974 272.687 99.742 271.997 100.234C271.308 100.677 270.791 101.219 270.447 101.859C270.102 102.45 269.93 103.139 269.93 103.927C269.93 105.207 270.348 106.191 271.185 106.88C272.022 107.57 273.13 108.136 274.508 108.579C275.936 109.022 277.462 109.514 279.087 110.056C280.81 110.548 282.557 111.065 284.33 111.607C286.151 112.099 287.8 112.739 289.277 113.527C290.803 114.314 292.01 115.397 292.896 116.776C293.831 118.105 294.299 119.877 294.299 122.093C294.299 124.16 293.905 125.957 293.117 127.484C292.33 129.01 291.197 130.265 289.72 131.25C288.293 132.234 286.594 132.948 284.625 133.391C282.705 133.884 280.588 134.13 278.274 134.13Z"/><path fill="currentColor" d="M235.996 134.129C232.796 134.129 230.039 133.415 227.726 131.988C225.461 130.56 223.689 128.345 222.409 125.342C221.178 122.289 220.562 118.351 220.562 113.526C220.562 108.948 221.203 105.182 222.483 102.228C223.763 99.274 225.535 97.0832 227.799 95.6555C230.064 94.2278 232.698 93.514 235.701 93.514C237.424 93.514 239.024 93.7109 240.501 94.1047C241.978 94.4986 243.282 95.114 244.415 95.9509C245.596 96.7878 246.63 97.8955 247.516 99.274H247.959V79.8524H254.458V133.243H249.215L248.624 127.705H248.107C246.778 129.871 245.055 131.495 242.938 132.579C240.821 133.612 238.507 134.129 235.996 134.129ZM237.547 128.443C240.009 128.443 242.003 127.902 243.529 126.819C245.055 125.735 246.162 124.16 246.852 122.092C247.59 120.025 247.959 117.465 247.959 114.412V113.231C247.959 110.572 247.689 108.332 247.147 106.511C246.606 104.689 245.867 103.237 244.932 102.154C243.996 101.071 242.913 100.308 241.682 99.8647C240.452 99.4217 239.147 99.2001 237.769 99.2001C235.356 99.2001 233.387 99.6924 231.861 100.677C230.335 101.612 229.203 103.114 228.464 105.182C227.726 107.2 227.356 109.834 227.356 113.083V114.634C227.356 117.982 227.75 120.689 228.538 122.757C229.326 124.775 230.458 126.228 231.935 127.114C233.461 128 235.332 128.443 237.547 128.443Z"/><path fill="currentColor" d="M181.164 133.243V94.3998H186.407L186.998 100.234H187.515C188.549 98.6583 189.706 97.3783 190.986 96.3937C192.315 95.4091 193.767 94.6952 195.343 94.2521C196.967 93.7598 198.69 93.5137 200.512 93.5137C202.973 93.5137 205.115 93.9321 206.936 94.7691C208.807 95.606 210.259 96.9598 211.293 98.8306C212.376 100.701 212.918 103.237 212.918 106.437V133.243H206.419V107.323C206.419 105.698 206.198 104.369 205.755 103.335C205.361 102.301 204.795 101.489 204.056 100.898C203.367 100.308 202.506 99.8891 201.472 99.6429C200.487 99.3968 199.379 99.2737 198.149 99.2737C196.327 99.2737 194.604 99.7168 192.979 100.603C191.355 101.489 190.05 102.769 189.066 104.443C188.13 106.117 187.663 108.111 187.663 110.424V133.243H181.164Z"/><path fill="currentColor" d="M164.578 87.0893V79.8524H171.077V87.0893H164.578ZM164.578 133.243V94.4001H171.077V133.243H164.578Z"/><path fill="currentColor" d="M126.238 133.243V82.5845H133.254V127.114H158.435V133.243H126.238Z"/><path fill="currentColor" d="M305.282 54.2773C302.624 54.2773 300.285 54.0065 298.267 53.465C296.248 52.9234 294.574 52.1357 293.245 51.1019C291.916 50.068 290.907 48.8373 290.217 47.4096C289.528 45.9819 289.184 44.3573 289.184 42.5357C289.184 42.2896 289.184 42.068 289.184 41.8711C289.184 41.625 289.208 41.428 289.257 41.2803H295.682C295.633 41.4773 295.608 41.6496 295.608 41.7973C295.608 41.945 295.608 42.0926 295.608 42.2403C295.657 43.9634 296.101 45.3173 296.937 46.3019C297.824 47.2865 299.03 47.9757 300.556 48.3696C302.082 48.7634 303.781 48.9603 305.651 48.9603C307.276 48.9603 308.777 48.7634 310.156 48.3696C311.534 47.9265 312.617 47.2865 313.405 46.4496C314.242 45.5634 314.661 44.4557 314.661 43.1265C314.661 41.5019 314.119 40.2711 313.036 39.4342C312.002 38.548 310.624 37.8588 308.901 37.3665C307.177 36.8742 305.381 36.3573 303.51 35.8157C301.934 35.3726 300.359 34.8803 298.784 34.3388C297.208 33.7973 295.781 33.1326 294.501 32.3449C293.27 31.5573 292.261 30.548 291.473 29.3173C290.734 28.0373 290.365 26.4373 290.365 24.5173C290.365 22.7942 290.71 21.268 291.399 19.9388C292.137 18.6096 293.171 17.4773 294.501 16.5419C295.83 15.6065 297.43 14.9173 299.301 14.4742C301.221 13.9819 303.337 13.7357 305.651 13.7357C308.113 13.7357 310.254 14.0065 312.076 14.548C313.947 15.0896 315.497 15.8526 316.728 16.8373C317.959 17.8219 318.87 18.9542 319.461 20.2342C320.051 21.4649 320.347 22.7942 320.347 24.2219C320.347 24.5173 320.347 24.8126 320.347 25.108C320.347 25.3542 320.322 25.5511 320.273 25.6988H313.922V24.8865C313.922 23.9019 313.651 22.9665 313.11 22.0803C312.617 21.1449 311.731 20.4065 310.451 19.8649C309.221 19.2742 307.497 18.9788 305.282 18.9788C303.854 18.9788 302.624 19.1019 301.59 19.348C300.556 19.5449 299.694 19.8896 299.005 20.3819C298.316 20.8249 297.799 21.3665 297.454 22.0065C297.11 22.5973 296.937 23.2865 296.937 24.0742C296.937 25.3542 297.356 26.3388 298.193 27.028C299.03 27.7173 300.137 28.2834 301.516 28.7265C302.944 29.1696 304.47 29.6619 306.094 30.2034C307.817 30.6957 309.565 31.2126 311.337 31.7542C313.159 32.2465 314.808 32.8865 316.285 33.6742C317.811 34.4619 319.017 35.545 319.904 36.9234C320.839 38.2526 321.307 40.0249 321.307 42.2403C321.307 44.308 320.913 46.1049 320.125 47.6311C319.337 49.1573 318.205 50.4126 316.728 51.3973C315.301 52.3819 313.602 53.0957 311.633 53.5388C309.713 54.0311 307.596 54.2773 305.282 54.2773Z"/><path fill="currentColor" d="M277.887 21.2674V18.3136C278.871 18.0674 279.659 17.5751 280.25 16.8367C280.89 16.0982 281.333 15.1874 281.579 14.1044C281.874 13.0213 282.022 11.8151 282.022 10.4859H278.625V2.73206H285.862V9.6736C285.862 12.4798 285.444 14.6951 284.607 16.3198C283.77 17.9444 282.736 19.1259 281.505 19.8644C280.324 20.5536 279.117 21.0213 277.887 21.2674Z"/><path fill="currentColor" d="M265.572 54.2768C263.553 54.2768 261.978 53.9075 260.845 53.1691C259.713 52.3814 258.901 51.3721 258.408 50.1414C257.916 48.8614 257.67 47.5075 257.67 46.0798V20.0121H252.648V14.5475H257.818L258.999 3.69214H264.168V14.5475H271.479V20.0121H264.168V45.1198C264.168 46.3506 264.39 47.286 264.833 47.926C265.276 48.5168 266.113 48.8121 267.344 48.8121H271.479V53.0952C270.987 53.3414 270.396 53.5383 269.707 53.686C269.018 53.8337 268.304 53.9568 267.565 54.0552C266.876 54.2029 266.212 54.2768 265.572 54.2768Z"/><path fill="currentColor" d="M225.989 54.2766C224.561 54.2766 223.133 54.1043 221.705 53.7597C220.278 53.4151 218.949 52.849 217.718 52.0613C216.487 51.2736 215.502 50.1905 214.764 48.812C214.025 47.3843 213.656 45.612 213.656 43.4951C213.656 40.8366 214.296 38.6459 215.576 36.9228C216.856 35.1997 218.629 33.8705 220.893 32.9351C223.207 31.9505 225.939 31.2859 229.09 30.9413C232.241 30.5474 235.662 30.3505 239.355 30.3505V25.9197C239.355 24.492 239.109 23.2613 238.616 22.2274C238.124 21.1936 237.238 20.4059 235.958 19.8643C234.727 19.2736 232.955 18.9782 230.641 18.9782C228.425 18.9782 226.653 19.2736 225.324 19.8643C224.044 20.4059 223.133 21.1197 222.592 22.0059C222.099 22.892 221.853 23.8766 221.853 24.9597V26.0674H215.576C215.527 25.8213 215.502 25.5751 215.502 25.3289C215.502 25.0828 215.502 24.7874 215.502 24.4428C215.502 22.0797 216.142 20.1105 217.422 18.5351C218.752 16.9105 220.598 15.7043 222.961 14.9166C225.324 14.0797 228.032 13.6613 231.084 13.6613C234.333 13.6613 237.041 14.1289 239.207 15.0643C241.422 15.9997 243.072 17.3289 244.155 19.052C245.287 20.7751 245.853 22.8428 245.853 25.2551V46.3013C245.853 47.2366 246.075 47.9013 246.518 48.2951C246.961 48.6397 247.502 48.812 248.142 48.812H251.022V53.0951C250.333 53.3905 249.57 53.6366 248.733 53.8336C247.896 54.0797 246.936 54.2028 245.853 54.2028C244.573 54.2028 243.515 53.932 242.678 53.3905C241.841 52.8982 241.201 52.2089 240.758 51.3228C240.315 50.3874 240.019 49.3536 239.872 48.2213H239.355C238.469 49.452 237.336 50.5351 235.958 51.4705C234.629 52.3566 233.127 53.0459 231.453 53.5382C229.779 54.0305 227.958 54.2766 225.989 54.2766ZM227.613 48.812C229.189 48.812 230.665 48.5659 232.044 48.0736C233.472 47.5813 234.727 46.892 235.81 46.0059C236.893 45.0705 237.755 43.9628 238.395 42.6828C239.035 41.4028 239.355 39.9997 239.355 38.4736V35.2243C235.367 35.2243 231.97 35.4459 229.164 35.889C226.358 36.332 224.192 37.1197 222.665 38.252C221.189 39.3843 220.45 40.9843 220.45 43.052C220.45 44.3813 220.745 45.4643 221.336 46.3013C221.927 47.1382 222.764 47.7782 223.847 48.2213C224.93 48.6151 226.185 48.812 227.613 48.812Z"/><path fill="currentColor" d="M174.641 53.3908V0H181.139V19.4215H181.656C182.641 18.0923 183.748 17.0092 184.979 16.1723C186.21 15.3354 187.564 14.72 189.041 14.3262C190.567 13.8831 192.216 13.6615 193.988 13.6615C196.45 13.6615 198.591 14.08 200.413 14.9169C202.284 15.7538 203.736 17.1077 204.77 18.9785C205.853 20.8492 206.394 23.3846 206.394 26.5846V53.3908H199.896V27.4708C199.896 25.8462 199.674 24.5169 199.231 23.4831C198.838 22.4492 198.271 21.6369 197.533 21.0462C196.844 20.4554 195.982 20.0369 194.948 19.7908C193.964 19.5446 192.856 19.4215 191.625 19.4215C189.804 19.4215 188.081 19.8646 186.456 20.7508C184.831 21.5877 183.527 22.8431 182.542 24.5169C181.607 26.1415 181.139 28.16 181.139 30.5723V53.3908H174.641Z"/><path fill="currentColor" d="M143.51 53.3905V8.86129H126.156V2.73206H168.027V8.86129H150.525V53.3905H143.51Z"/></symbol></svg>
 
-<div class="navG-tab" id="navGTab">
-  <span class="navG-tab-text">View Work</span>
-  <span class="navG-tab-arrow">←</span>
-</div>
-<aside class="navG" id="navG">
-  <div class="navG-eyebrow">Case Studies</div>
-  <div class="navG-list">
-    <a href="/work/peakspring/"><span class="navG-num">01</span>PeakSpring</a>
-    <a href="/work/viva-fashion/"><span class="navG-num">02</span>Viva Fashion</a>
-    <a href="/work/van-straaten-trading/"><span class="navG-num">03</span>Van Straaten Trading</a>
-    <a href="/work/ionlybookvip/"><span class="navG-num">04</span>iOnlyBookVIP</a>
-    <a href="/work/cza-bouwbedrijf/"><span class="navG-num">05</span>CZA Bouwbedrijf</a>
-    <a href="/work/vanessa-nantes/"><span class="navG-num">06</span>Vanessa Nantes</a>
-    <a href="#" class="current"><span class="navG-num">07</span>Email Elixir</a>
-    <a href="/work/baliwithflow/"><span class="navG-num">08</span>Bali With Flow</a>
-  </div>
-</aside>
-<div class="navG-scrim" id="navGScrim"></div>
+<div class="wrap">
+  <div class="frame">
+    <div class="site">
 
-<nav>
-  <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 409 131" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="That&#x27;s B Lindsay">
-<path d="M52.9707 0C57.1623 0.130341 62.1726 1.01219 66.2881 2.31445C68.1412 2.90083 72.0516 4.70435 73.6152 5.69434C79.1015 9.16759 83.128 14.512 84.7471 20.4688C85.6174 23.6706 85.8814 25.6686 85.877 29.0215C85.866 37.2423 82.8502 44.2157 76.9424 49.6826C73.7611 52.6265 70.0315 54.7254 64.7676 56.5342C63.9201 56.8253 63.2693 57.1017 63.3213 57.1475C63.3735 57.193 64.445 57.5084 65.7021 57.8486C68.8372 58.6972 70.7054 59.3588 72.9111 60.4023C79.0985 63.3297 83.301 67.223 86.1191 72.6377C88.2069 76.6491 89.2014 81.0393 89.1953 86.2227C89.192 88.9622 89.0525 90.3857 88.5527 92.7773C87.8735 96.028 86.2386 99.9068 84.4561 102.498C83.4542 103.954 81.6642 106.089 80.5928 107.105C75.2853 112.14 68.2344 115.217 59.2549 116.416C55.8601 116.869 55.016 116.902 45.335 116.951L35.8105 117V113.443L36.4854 113.062C38.6218 111.855 40.1135 110.596 41.2461 109.043C42.9097 106.762 44.0522 103.367 44.3818 99.7295C44.5464 97.914 44.4714 97.6125 44.0508 98.3984C42.9271 100.498 40.5597 102.185 37.8037 102.851C36.8291 103.086 33.8506 103.056 32.8799 102.801C31.5837 102.46 29.8704 101.584 28.8311 100.729C26.2932 98.6403 25.0191 95.8117 25.0195 92.2686C25.0198 90.2447 25.4139 88.6281 26.3438 86.8398C27.7626 84.1117 29.4023 82.3006 33.9941 78.3877C39.9431 73.3184 42.4441 70.4007 44.7959 65.7891C45.3469 64.7086 45.8801 63.736 45.9805 63.6279C46.338 63.243 46.5856 63.3841 46.9648 64.1895C48.0166 66.4231 49.0362 68.28 49.8281 69.4023C52.4269 73.0854 53.3564 74.0174 59.9521 79.5527C61.4768 80.8323 63.5191 82.9298 64.6758 84.4033C65.5152 85.4727 66.4045 87.1061 66.8672 88.4287C68.8578 94.1199 66.4856 99.8872 61.1904 102.23C58.3096 103.505 54.6196 103.318 51.9141 101.759C50.3663 100.867 49.5147 100.069 48.5762 98.6357C48.3091 98.2279 48.0704 97.9129 48.0439 97.9326C47.9565 98.0164 48.2403 101.229 48.418 102.164C48.8512 104.444 49.679 106.594 50.8213 108.405C51.5681 109.589 51.8472 109.907 52.6748 110.516C53.9661 111.466 54.6266 111.653 56.0654 111.479C58.8293 111.143 62.6953 109.497 65.1953 107.591C69.0504 104.652 71.9051 100.45 73.3799 95.543C74.342 92.3414 74.5495 90.7368 74.5449 86.5586C74.5403 82.3497 74.2585 80.2352 73.3086 77.2979C70.1581 67.5549 62.4584 62.0103 50.6982 61.0146C49.1426 60.883 46.1339 60.851 35.3252 60.8506L21.8857 60.8496L21.8057 62.4492C21.7612 63.3292 21.7469 72.9916 21.7744 83.9209C21.8187 101.539 21.8469 103.947 22.0176 105.164C22.5236 108.77 23.2485 110.517 24.9131 112.137C26.1684 113.358 27.7421 113.993 30.4775 114.381L31.8838 114.58L31.9502 116.984L0 116.928V114.573L1.29785 114.443C3.89875 114.183 5.34804 113.612 6.70312 112.311C8.09149 110.977 8.89993 109.069 9.40234 105.94C9.58882 104.779 9.60612 101.586 9.64258 61.2422C9.68232 17.238 9.65167 13.2027 9.25781 10.5566C8.55252 5.81851 6.72899 3.66272 2.75488 2.86914C2.0135 2.72107 1.10323 2.56525 0.732422 2.52246L0.0585938 2.44434V0H52.9707ZM55.0938 4.70117C49.5577 2.65234 40.0576 3.00586 40.0576 3.00586C38.0113 3.01789 34.8432 3.00599 34.8086 3.00586C28.5773 3.04235 27.9964 3.10227 26.3633 3.87012C25.5133 4.26979 25.1437 4.52661 24.5459 5.13477C22.7876 6.92313 22.0731 9.26116 21.8594 13.9209C21.7985 15.2485 21.7478 24.888 21.7471 35.3418L21.7461 54.3496L35.3721 54.3047C45.1133 54.2729 49.2995 54.2219 50.0537 54.125C55.7739 53.3903 60.2224 51.4727 63.8447 48.1797C67.4968 44.8596 69.6973 40.8167 70.8506 35.3086C71.7719 30.9078 71.6069 25.0593 70.4307 20.4326C69.4807 16.6954 67.3751 12.9821 64.7139 10.3486C62.0373 7.70006 59.1793 6.21324 55.0938 4.70117Z" fill="#21211F"/>
-<path d="M380.849 130.944V124.749H399.776C401.061 124.749 401.704 124.061 401.704 122.684V112.223H400.602C400.189 113.141 399.547 114.035 398.675 114.907C397.849 115.733 396.725 116.421 395.303 116.972C393.88 117.522 392.091 117.798 389.934 117.798C387.365 117.798 385.071 117.224 383.052 116.077C381.033 114.93 379.45 113.301 378.303 111.19C377.156 109.08 376.582 106.579 376.582 103.688V83.2471H383.671V103.138C383.671 106.074 384.405 108.254 385.874 109.676C387.342 111.053 389.384 111.741 391.999 111.741C394.89 111.741 397.207 110.778 398.951 108.85C400.74 106.923 401.635 104.124 401.635 100.454V83.2471H408.724V124.13C408.724 126.195 408.104 127.846 406.866 129.085C405.673 130.324 404.021 130.944 401.91 130.944H380.849Z" fill="#21211F"/>
-<path d="M341.725 118.143C339.293 118.143 337.114 117.73 335.187 116.904C333.305 116.078 331.791 114.862 330.644 113.256C329.543 111.65 328.992 109.7 328.992 107.406C328.992 105.066 329.543 103.138 330.644 101.624C331.791 100.064 333.328 98.8942 335.255 98.1142C337.228 97.3342 339.454 96.9441 341.931 96.9441H352.255V94.7417C352.255 92.7687 351.659 91.1857 350.466 89.9927C349.273 88.7997 347.438 88.2032 344.96 88.2032C342.528 88.2032 340.67 88.7768 339.385 89.9239C338.1 91.071 337.251 92.5622 336.838 94.3976L330.231 92.264C330.782 90.4286 331.653 88.7768 332.846 87.3085C334.085 85.7943 335.714 84.5784 337.733 83.6607C339.752 82.743 342.184 82.2842 345.029 82.2842C349.434 82.2842 352.898 83.4083 355.421 85.6567C357.945 87.905 359.207 91.0939 359.207 95.2235V109.195C359.207 110.572 359.849 111.26 361.134 111.26H364.025V117.179H358.725C357.119 117.179 355.811 116.766 354.802 115.94C353.793 115.114 353.288 113.99 353.288 112.568V112.361H352.255C351.888 113.049 351.338 113.852 350.604 114.77C349.869 115.688 348.791 116.491 347.369 117.179C345.946 117.821 344.065 118.143 341.725 118.143ZM342.757 112.292C345.602 112.292 347.896 111.489 349.64 109.883C351.384 108.232 352.255 105.983 352.255 103.138V102.45H342.344C340.463 102.45 338.949 102.863 337.802 103.689C336.655 104.469 336.081 105.639 336.081 107.199C336.081 108.759 336.678 109.998 337.871 110.916C339.064 111.834 340.693 112.292 342.757 112.292Z" fill="#21211F"/>
-<path d="M302.323 118.143C298.01 118.143 294.431 117.179 291.586 115.252C288.741 113.325 286.998 110.411 286.355 106.511L292.963 104.928C293.33 106.809 293.949 108.3 294.821 109.402C295.693 110.503 296.771 111.283 298.056 111.742C299.387 112.201 300.809 112.43 302.323 112.43C304.571 112.43 306.292 111.994 307.485 111.122C308.724 110.251 309.343 109.126 309.343 107.75C309.343 106.373 308.77 105.364 307.623 104.721C306.476 104.079 304.778 103.551 302.53 103.138L300.19 102.726C297.895 102.313 295.808 101.716 293.926 100.936C292.045 100.156 290.554 99.0778 289.453 97.7012C288.351 96.3247 287.801 94.5582 287.801 92.4016C287.801 89.1897 288.994 86.712 291.38 84.9684C293.766 83.1789 296.932 82.2842 300.878 82.2842C304.686 82.2842 307.806 83.156 310.238 84.8996C312.716 86.5973 314.322 88.9144 315.056 91.851L308.449 93.7093C308.036 91.6445 307.164 90.1992 305.833 89.3733C304.503 88.5015 302.851 88.0656 300.878 88.0656C298.951 88.0656 297.436 88.4326 296.335 89.1668C295.234 89.8551 294.683 90.8416 294.683 92.1263C294.683 93.5028 295.211 94.5123 296.266 95.1547C297.368 95.797 298.836 96.2788 300.671 96.6L303.08 97.013C305.512 97.4259 307.737 97.9995 309.756 98.7336C311.775 99.4678 313.358 100.523 314.505 101.9C315.698 103.276 316.295 105.112 316.295 107.406C316.295 110.801 315.033 113.439 312.509 115.321C309.986 117.202 306.59 118.143 302.323 118.143Z" fill="#21211F"/>
-<path d="M251.485 118.142C248.686 118.142 246.094 117.454 243.708 116.077C241.322 114.701 239.395 112.728 237.927 110.158C236.504 107.543 235.793 104.4 235.793 100.729V99.6964C235.793 96.0716 236.504 92.9515 237.927 90.3361C239.349 87.7207 241.253 85.7247 243.639 84.3482C246.025 82.9717 248.641 82.2834 251.485 82.2834C253.688 82.2834 255.523 82.5587 256.991 83.1093C258.506 83.66 259.744 84.3712 260.708 85.243C261.672 86.0689 262.406 86.9407 262.91 87.8584H264.012V69H271.101V117.178H264.149V112.36H263.048C262.176 113.829 260.846 115.159 259.056 116.352C257.313 117.545 254.789 118.142 251.485 118.142ZM253.481 111.947C256.556 111.947 259.079 110.961 261.052 108.988C263.071 107.015 264.08 104.193 264.08 100.522V99.9029C264.08 96.2781 263.094 93.4791 261.121 91.5061C259.148 89.5331 256.601 88.5466 253.481 88.5466C250.453 88.5466 247.929 89.5331 245.91 91.5061C243.937 93.4791 242.951 96.2781 242.951 99.9029V100.522C242.951 104.193 243.937 107.015 245.91 108.988C247.929 110.961 250.453 111.947 253.481 111.947Z" fill="#21211F"/>
-<path d="M188.219 117.179V83.2479H195.17V88.341H196.271C196.914 86.9645 198.061 85.6797 199.713 84.4867C201.365 83.2938 203.819 82.6973 207.077 82.6973C209.647 82.6973 211.918 83.2708 213.891 84.4179C215.91 85.565 217.493 87.1939 218.64 89.3046C219.787 91.3693 220.361 93.87 220.361 96.8066V117.179H213.271V97.3572C213.271 94.4206 212.537 92.2641 211.069 90.8876C209.601 89.4652 207.582 88.754 205.012 88.754C202.076 88.754 199.713 89.7175 197.923 91.6447C196.18 93.5718 195.308 96.3707 195.308 100.041V117.179H188.219Z" fill="#21211F"/>
-<path d="M163.726 117.178V83.247H170.815V117.178H163.726ZM167.305 78.6357C165.928 78.6357 164.758 78.1998 163.794 77.328C162.877 76.4103 162.418 75.2402 162.418 73.8178C162.418 72.3954 162.877 71.2483 163.794 70.3765C164.758 69.4588 165.928 69 167.305 69C168.727 69 169.897 69.4588 170.815 70.3765C171.732 71.2483 172.191 72.3954 172.191 73.8178C172.191 75.2402 171.732 76.4103 170.815 77.328C169.897 78.1998 168.727 78.6357 167.305 78.6357Z" fill="#21211F"/>
-<path d="M119.199 117.178V69H126.632V110.433H149.827V117.178H119.199Z" fill="#21211F"/>
-<path d="M326.546 50.1055C322.233 50.1055 318.654 49.1419 315.809 47.2148C312.964 45.2876 311.221 42.374 310.578 38.4739L317.185 36.8909C317.552 38.7721 318.172 40.2633 319.044 41.3646C319.916 42.4658 320.994 43.2458 322.279 43.7046C323.609 44.1635 325.032 44.3929 326.546 44.3929C328.794 44.3929 330.515 43.957 331.708 43.0852C332.947 42.2134 333.566 41.0892 333.566 39.7127C333.566 38.3362 332.992 37.3268 331.845 36.6844C330.698 36.042 329.001 35.5143 326.752 35.1014L324.412 34.6884C322.118 34.2755 320.03 33.679 318.149 32.8989C316.268 32.1189 314.777 31.0406 313.675 29.6641C312.574 28.2876 312.023 26.5211 312.023 24.3645C312.023 21.1526 313.216 18.6749 315.602 16.9313C317.988 15.1418 321.154 14.2471 325.1 14.2471C328.909 14.2471 332.029 15.1189 334.461 16.8625C336.939 18.5602 338.544 20.8773 339.279 23.8139L332.671 25.6722C332.258 23.6074 331.387 22.1621 330.056 21.3362C328.725 20.4644 327.073 20.0285 325.1 20.0285C323.173 20.0285 321.659 20.3955 320.558 21.1297C319.457 21.8179 318.906 22.8044 318.906 24.0892C318.906 25.4657 319.434 26.4752 320.489 27.1175C321.59 27.7599 323.059 28.2417 324.894 28.5629L327.303 28.9759C329.735 29.3888 331.96 29.9624 333.979 30.6965C335.998 31.4307 337.581 32.486 338.728 33.8625C339.921 35.239 340.517 37.0744 340.517 39.3686C340.517 42.764 339.256 45.4023 336.732 47.2836C334.208 49.1648 330.813 50.1055 326.546 50.1055Z" fill="#21211F"/>
-<path d="M287.48 19.5466V15.4859H289.821C291.702 15.4859 292.642 14.5453 292.642 12.664V10.4616H291.61C290.004 10.4616 288.673 9.97979 287.618 9.01622C286.563 8.05266 286.035 6.83673 286.035 5.36844C286.035 3.7625 286.563 2.47774 287.618 1.51418C288.673 0.504725 290.004 0 291.61 0C293.216 0 294.524 0.527667 295.533 1.583C296.588 2.59245 297.116 3.92309 297.116 5.57492V12.7328C297.116 17.2754 294.845 19.5466 290.302 19.5466H287.48Z" fill="#21211F"/>
-<path d="M261.269 49.1411C259.205 49.1411 257.553 48.5217 256.314 47.2828C255.121 46.044 254.524 44.3921 254.524 42.3273V21.1977H245.164V15.2099H254.524V3.99121H261.613V15.2099H271.731V21.1977H261.613V41.0885C261.613 42.465 262.256 43.1533 263.541 43.1533H270.63V49.1411H261.269Z" fill="#21211F"/>
-<path d="M214.815 50.1055C212.383 50.1055 210.204 49.6925 208.276 48.8666C206.395 48.0407 204.881 46.8248 203.734 45.2188C202.633 43.6129 202.082 41.6628 202.082 39.3686C202.082 37.0285 202.633 35.1014 203.734 33.5872C204.881 32.0271 206.418 30.8571 208.345 30.0771C210.318 29.297 212.544 28.907 215.021 28.907H225.345V26.7046C225.345 24.7316 224.749 23.1486 223.556 21.9556C222.363 20.7626 220.527 20.1661 218.05 20.1661C215.618 20.1661 213.76 20.7397 212.475 21.8868C211.19 23.0339 210.341 24.5251 209.928 26.3605L203.321 24.2269C203.872 22.3915 204.743 20.7397 205.936 19.2714C207.175 17.7572 208.804 16.5413 210.823 15.6236C212.842 14.7059 215.274 14.2471 218.119 14.2471C222.523 14.2471 225.988 15.3712 228.511 17.6195C231.035 19.8679 232.297 23.0568 232.297 27.1864V41.1581C232.297 42.5346 232.939 43.2229 234.224 43.2229H237.115V49.1419H231.815C230.209 49.1419 228.901 48.7289 227.892 47.903C226.882 47.0771 226.378 45.953 226.378 44.5306V44.3241H225.345C224.978 45.0123 224.428 45.8153 223.693 46.733C222.959 47.6507 221.881 48.4536 220.459 49.1419C219.036 49.7843 217.155 50.1055 214.815 50.1055ZM215.847 44.2553C218.692 44.2553 220.986 43.4523 222.73 41.8463C224.473 40.1945 225.345 37.9462 225.345 35.1014V34.4131H215.434C213.553 34.4131 212.039 34.8261 210.892 35.652C209.745 36.432 209.171 37.6021 209.171 39.1621C209.171 40.7222 209.768 41.961 210.961 42.8787C212.154 43.7964 213.782 44.2553 215.847 44.2553Z" fill="#21211F"/>
-<path d="M155.055 49.1412V0.962891H162.144V20.0277H163.245C163.704 19.1559 164.346 18.3071 165.172 17.4812C166.044 16.6552 167.168 15.9899 168.545 15.4852C169.967 14.9346 171.756 14.6593 173.913 14.6593C176.483 14.6593 178.754 15.2328 180.727 16.3799C182.746 17.527 184.329 19.1559 185.476 21.2666C186.623 23.3314 187.196 25.8321 187.196 28.7686V49.1412H180.107V29.3192C180.107 26.3827 179.373 24.2261 177.905 22.8496C176.437 21.4272 174.418 20.716 171.848 20.716C168.912 20.716 166.549 21.6795 164.759 23.6067C163.016 25.5338 162.144 28.3327 162.144 32.0035V49.1412H155.055Z" fill="#21211F"/>
-<path d="M118.997 49.1412V7.70785H104.199V0.962891H141.228V7.70785H126.43V49.1412H118.997Z" fill="#21211F"/>
-</svg></a>
-  <a class="back" href="/#work">Back to portfolio</a>
-</nav>
+      <!-- 1 HERO -->
+      <section class="s-hero gut">
+        <nav class="nav mono"><a class="logo" href="/" aria-label="thatsblindsay home"><svg class="logo-lockup" viewBox="0 0 379 147" role="img" aria-label="thatsblindsay"><use href="#tbl-wordmark"/></svg></a><ul><li><a href="/#case">Work</a></li><li><a href="/#services">Services</a></li><li><a href="/#studio">Studio</a></li><li class="cta"><a href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a call</a></li></ul></nav>
+        <div class="crumb mono"><a href="/work/vanessa-nantes/">← Vanessa Nantes</a><span>Case study 07 / 08</span><a href="/work/baliwithflow/">Next: BaliwithFlow →</a></div>
+        <h1>Tailored emails. <em class="ser">Magical results.</em></h1>
+        <div class="hero-row">
+          <p class="deck">A boutique retention studio writing Klaviyo email and SMS flows for e-commerce brands. The brand had to be the proof: made by someone who knows exactly what makes an inbox convert.</p>
+          <dl class="facts mono" style="margin:0">
+            <div><dt>Client</dt><dd>Email Elixir</dd></div>
+            <div><dt>Year</dt><dd>2025</dd></div>
+            <div><dt>Industry</dt><dd>Email marketing agency</dd></div>
+            <div><dt>Scope</dt><dd>Brand identity, Webflow build, booking flow</dd></div>
+            <div><dt>Also</dt><dd>Calendly, NL / EN toggle</dd></div>
+            <div><dt>Live site</dt><dd><a href="https://emailelixir.com/" target="_blank" rel="noopener">emailelixir.com →</a></dd></div>
+          </dl>
+        </div>
+        <figure class="cover"><img src="img/ee/cover.webp" alt="Email Elixir cover: a cream envelope sealed with green wax on moss, beside the Email Elixir logo" width="2530" height="1329"></figure>
+      </section>
 
-<header class="hero-photo" role="img" aria-label="Email Elixir brand photography"></header>
+      <!-- 2 THINKING -->
+      <section class="s-think gut">
+        <div class="eyebrow"><h2>The <em class="ser">thinking.</em></h2><span class="paren">(Depth over breadth)</span></div>
+        <ol class="think">
+          <li><span class="n">01</span><b>The brand had to be the proof.</b><p>A boutique retention studio writing Klaviyo email and SMS flows for e-commerce. Every decision had to answer whether it looked like it was made by someone who actually knows what makes an inbox convert.</p><span class="mono kicker">The brief</span></li>
+          <li><span class="n">02</span><b>Depth over breadth.</b><p>A category crowded with generalists treating email as one line item. Email Elixir was positioned as a specialist studio, with the site built as a trust engine: testimonials, low-friction call booking and a clear FAQ.</p><span class="mono kicker">The strategy</span></li>
+          <li><span class="n">03</span><b>Premium, a little magical.</b><p>An animated logo and subtle motion, calibrated to feel premium without tipping into gimmick. Olivea’s handwritten display carries the human element, set against Haurora’s calm body copy.</p><span class="mono kicker">Creative direction</span></li>
+        </ol>
+      </section>
 
-<div class="hero-meta-strip">
-  <div class="wrap hero-meta-inner">
-    <div class="hero-meta-cols">
-      <div><span>Year</span><strong>2025</strong></div>
-      <div><span>Scope</span><strong>Brand Identity, Webflow Build, Booking Flow</strong></div>
-      <div><span>Industry</span><strong>Email Marketing Agency</strong></div>
-    </div>
-    <div class="hero-meta-divider"></div>
-    <div class="hero-meta-cta"><a class="visit-live" href="https://emailelixir.com/" target="_blank" rel="noopener">Visit live site &#8594;</a></div>
-  </div>
-</div>
+      <!-- 3 QUOTE -->
+      <section class="s-dark gut">
+        <blockquote>“It’s the human element in <em class="ser">a world of automation.</em>”</blockquote>
+        <cite class="mono">Brand fonts rationale · Email Elixir styleguide</cite>
+      </section>
 
-<section class="section deliverables-section">
-  <div class="wrap">
-    <span class="section-tag">Deliverables</span>
-    <h2>The elixir, bottled and carried through.</h2>
-    <p class="deliverables-note">The potion-bottle mark applied across the physical touchpoints that carry the brand off screen, from the studio&#x27;s own stationery to a client welcome gift.</p>
-    <div class="deliverables-grid bento">
-      <div class="bento-row row-tall">
-        <figure class="deliverable-card" style="flex-grow:1.5;"><img src="../assets/ee-mockup-cards.png" alt="Email Elixir business cards for Sofia de Vries, director, front and back"><div class="bento-scrim"><span class="bento-tag">Business Cards</span></div></figure>
-        <figure class="deliverable-card" style="flex-grow:0.801;"><img src="../assets/ee-mockup-notebook.png" alt="Email Elixir branded leather notebook and pen on a stone surface"><div class="bento-scrim"><span class="bento-tag">Studio Notebook</span></div></figure>
-      </div>
-      <div class="bento-row row-short">
-        <figure class="deliverable-card" style="flex-grow:1.25;"><img src="../assets/ee-mockup-sign.png" alt="Email Elixir hanging shop sign mounted on a stone building facade"><div class="bento-scrim"><span class="bento-tag">Studio Signage</span></div></figure>
-        <figure class="deliverable-card" style="flex-grow:1.25;"><img src="../assets/ee-mockup-candle.png" alt="Email Elixir branded candle in a green glass jar, lit on a living room table"><div class="bento-scrim"><span class="bento-tag">Client Welcome Gift</span></div></figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section palette-section">
-  <div class="wrap">
-    <span class="section-tag">The Palette</span>
-    <h2>Colour, straight from the brandbook.</h2>
-    <p class="palette-note">Six named tones documented in the Email Elixir 2025 styleguide, each carrying its own short rationale in the brandbook itself.</p>
-    <div class="palette-grid">
-      <div class="swatch">
-      <div class="swatch-color" style="background:#0C0E0A;"></div>
-      <div class="swatch-info">
-        <div class="hex">#0C0E0A</div>
-        <div class="name">Black Wash</div>
-        <div class="note">A sleek, grounding base adding depth and elegance, refined, confident, and timeless.</div>
-      </div>
-    </div>
-      <div class="swatch">
-      <div class="swatch-color" style="background:#222F17;"></div>
-      <div class="swatch-info">
-        <div class="hex">#222F17</div>
-        <div class="name">Darkest Forest</div>
-        <div class="note">A deep forest green symbolising eco-conscious, long-term, organic growth.</div>
-      </div>
-    </div>
-      <div class="swatch">
-      <div class="swatch-color" style="background:#4A3722;"></div>
-      <div class="swatch-info">
-        <div class="hex">#4A3722</div>
-        <div class="name">Cafe Noir</div>
-        <div class="note">A rich, earthy brown adding warmth and a crafted, boutique feel.</div>
-      </div>
-    </div>
-      <div class="swatch">
-      <div class="swatch-color" style="background:#AA7A41;"></div>
-      <div class="swatch-info">
-        <div class="hex">#AA7A41</div>
-        <div class="name">Blonde Wood</div>
-        <div class="note">A softer, golden brown balancing the palette with natural, handcrafted calm.</div>
-      </div>
-    </div>
-      <div class="swatch">
-      <div class="swatch-color" style="background:#5D8E35;"></div>
-      <div class="swatch-info">
-        <div class="hex">#5D8E35</div>
-        <div class="name">Maximum Green</div>
-        <div class="note">The spark of vitality: fresh, energetic, and growing, representing momentum and transformation.</div>
-      </div>
-    </div>
-      <div class="swatch">
-      <div class="swatch-color" style="background:#F6F6E2;"></div>
-      <div class="swatch-info">
-        <div class="hex">#F6F6E2</div>
-        <div class="name">Star Shine</div>
-        <div class="note">The lightest tone, giving every visual room to breathe with a soft, magical glow.</div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <span class="section-tag">Typography</span>
-    <h2>The typefaces documented in the brandbook.</h2>
-    <div class="type-grid">
-      <div class="type-card">
-      <div class="role">Headings</div>
-      <div class="fontname">Olivea</div>
-      <p>An elegant, handwritten feel that evokes the crafted, boutique touch behind every email. The human element in a world of automation.</p>
-    </div>
-      <div class="type-card">
-      <div class="role">Body</div>
-      <div class="fontname">Haurora Regular</div>
-      <p>Clean, calm, and effortlessly modern, keeping strategy and storytelling readable and grounded.</p>
-    </div>
-    </div>
-    <p class="type-note">On this page, Meow Script stands in for Olivea and Space Grotesk for Haurora Regular, matching the boutique, handwritten warmth documented in the styleguide.</p>
-  </div>
-</section>
-
-
-<section class="section brandbook-section">
-  <div class="wrap">
-    <span class="section-tag">The Brandbook</span>
-    <h2>Straight from the guidelines document.</h2>
-    <p class="brandbook-note">Three spreads pulled directly from Email Elixir&#x27;s brand styleguide, the source for every colour and font named on this page.</p>
-    <div class="brandbook-grid">
-      <figure class="spread-card">
-        <img src="../assets/ee-bb-cover.jpg" alt="Email Elixir styleguide cover, leafy background with potion bottle and envelope icon">
-        <figcaption>
-          <span class="spread-tag">Cover</span>
-          <p>The guideline&#x27;s cover: a leafy background with the potion-bottle-and-envelope mark, Tailored emails, magical results.</p>
-        </figcaption>
-      </figure>
-      <figure class="spread-card">
-        <img src="../assets/ee-bb-colours.jpg" alt="Email Elixir documented colour palette page">
-        <figcaption>
-          <span class="spread-tag">Colour Palette</span>
-          <p>The documented palette, Black Wash through Star Shine, shown over a leafy background.</p>
-        </figcaption>
-      </figure>
-      <figure class="spread-card">
-        <img src="../assets/ee-bb-fonts.jpg" alt="Email Elixir fonts page showing Olivea and Haurora Regular">
-        <figcaption>
-          <span class="spread-tag">Typography</span>
-          <p>The fonts page: Olivea&#x27;s handwritten script over a wax-seal envelope photo, paired with Haurora Regular.</p>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <span class="section-tag">Brought to Life</span>
-    <p class="lead">A site built to be the first proof point, before a single pitch was made.</p>
-    <div class="body-copy" style="margin-top:30px;">
-      <p>The identity was built out in Figma and developed in Webflow, with the animated logo, a Calendly-integrated booking flow, and bilingual Dutch and English support via a translate toggle, backed by SEO, page-speed, analytics, and ad-pixel tracking.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="wrap">
-    <span class="section-tag">The Thinking</span>
-    <p class="lead">A specialist studio, not a broad-service shop, built around depth over breadth.</p>
-    <div class="condensed-grid">
-      <div class="condensed-block">
-        <span class="step-tag">Brief</span>
-        <h3>The brand had to be the proof.</h3>
-        <p>A boutique retention studio writing Klaviyo email and SMS flows for e-commerce brands. Every decision had to answer whether it looked like it was made by someone who actually knows what makes an inbox convert.</p>
-      </div>
-      <div class="condensed-block">
-        <span class="step-tag">Strategy</span>
-        <h3>Depth over breadth.</h3>
-        <p>The category is crowded with generalists treating email as one line item among many. Email Elixir was positioned as a specialist studio, with the site built as a trust engine: testimonials, low-friction call-booking, and a clear FAQ.</p>
-      </div>
-      <div class="condensed-block">
-        <span class="step-tag">Creative Direction</span>
-        <h3>Premium, a little magical.</h3>
-        <p>An animated logo and subtle motion calibrated to feel premium without tipping into gimmicky. Olivea, an elegant handwritten display face, carries the human element in a world of automation, set against Haurora&#x27;s clean, calm body copy.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section tight quote-section">
-  <div class="wrap">
-    <blockquote>"It's the human element in a world of <span class="script">automation</span>."</blockquote>
-    <div class="quote-attr">Brand Fonts Rationale, Email Elixir Styleguide</div>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="wrap">
-    <span class="section-tag">The Takeaway</span>
-    <p class="lead">Email Elixir couldn&#x27;t sell "tailored emails, magical results" from behind a brand that looked like everyone else&#x27;s.</p>
-    <div class="body-copy" style="margin-top:30px;">
-      <p>The identity and the site had to be the first proof point: evidence, before a single pitch was made, that this is a studio that understands exactly what makes an inbox convert.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="next-project">
-  <div class="wrap">
-    <span class="section-tag">More Work</span>
-    <h2>See what else <span class="script">That's B Lindsay</span> has built.</h2>
-    <div class="slider-nav-row">
-      <button type="button" class="op-prev" aria-label="Previous project">←</button>
-      <button type="button" class="op-next" aria-label="Next project">→</button>
-    </div>
-    <div class="other-projects-track-wrap">
-      <div class="other-projects-track">
-        <a class="op-card" href="/work/peakspring/">
-          <div class="op-img"><img src="../assets/ps-mockup-athletic.png" alt="PeakSpring case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Packaging · Web</span>
-            <div class="op-title">PeakSpring</div>
-            <p class="op-desc">A full brand system for an athletic wellness brand.</p>
-            <span class="op-link">View case study →</span>
+      <!-- 4 DELIVERABLES -->
+      <section class="s-deliv gut">
+        <div class="eyebrow"><h2>The elixir, <em class="ser">bottled and carried through.</em></h2><span class="paren">(Off screen)</span></div>
+        <p class="intro-p">The potion-bottle mark applied across the physical touchpoints that carry the brand off screen, from the studio’s own stationery to a client welcome gift.</p>
+        <div class="bento">
+          <div class="brow brow-1">
+            <figure class="tile"><img src="img/ee/d-cards.webp" alt="Cream and green Email Elixir business cards on a stone block with olive leaves" width="1599" height="1066" loading="lazy"><figcaption class="mono"><b>Business cards</b><span>Cream and forest</span></figcaption></figure>
+            <figure class="tile"><img src="img/ee/d-notebook.webp" alt="A tan leather Email Elixir notebook with a pen and a cup" width="853" height="1066" loading="lazy"><figcaption class="mono"><b>Studio notebook</b><span>Debossed</span></figcaption></figure>
           </div>
-        </a>
-        <a class="op-card" href="/work/viva-fashion/">
-          <div class="op-img"><img src="../assets/vf-mockup-storefront.png" alt="Viva Fashion case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Retail</span>
-            <div class="op-title">Viva Fashion</div>
-            <p class="op-desc">Brand identity and packaging for a fashion retailer.</p>
-            <span class="op-link">View case study →</span>
+          <div class="brow brow-2">
+            <figure class="tile"><img src="img/ee/d-sign.webp" alt="A round hanging Email Elixir sign on a city street" width="1214" height="971" loading="lazy"><figcaption class="mono"><b>Studio signage</b><span>Hanging sign</span></figcaption></figure>
+            <figure class="tile"><img src="img/ee/d-candle.webp" alt="A green Email Elixir candle lit on a marble table" width="1214" height="971" loading="lazy"><figcaption class="mono"><b>Client welcome gift</b><span>Candle</span></figcaption></figure>
           </div>
-        </a>
-        <a class="op-card" href="/work/van-straaten-trading/">
-          <div class="op-img"><img src="../assets/vst-mockup-lifestyle.png" alt="Van Straaten Trading case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · B2B</span>
-            <div class="op-title">Van Straaten Trading</div>
-            <p class="op-desc">A sharper, modern visual language for a legacy trading company.</p>
-            <span class="op-link">View case study →</span>
+        </div>
+        <div class="funnel">
+          <h3>A site built to be the first proof point.</h3>
+          <div class="steps"><span>Figma</span><i>→</i><span>Webflow</span><i>+</i><span>Animated logo</span><i>→</i><span class="end">Calendly booking</span><i>+</i><span>NL / EN toggle</span></div>
+          <p>The identity was built out in Figma and developed in Webflow, with the animated logo, a Calendly-integrated booking flow and bilingual Dutch and English support via a translate toggle, backed by SEO, page speed, analytics and ad-pixel tracking.</p>
+        </div>
+      </section>
+
+      <!-- 4b THE MARK -->
+      <section class="s-mark gut" id="mark">
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="ee-mark" viewBox="0 0 141 154"><path d="M59.5884 29.6461C61.1829 29.2321 62.1797 29.6098 71.1336 34.0207C78.7692 37.7823 87.0674 41.5626 96.1822 45.4313C97.4424 45.966 98.8384 46.6949 99.2848 47.0511C102.348 49.4956 101.464 54.7856 97.7308 56.3504C96.8187 56.7326 94.5635 56.7832 93.6653 56.4416C93.0936 56.2244 93.0018 56.2853 92.5399 57.1909C91.7358 58.7671 91.0934 61.6881 91.0934 63.7696C91.0934 66.2486 91.5956 67.545 93.602 70.2442C98.4306 76.7401 101.62 83.7859 103.116 91.2615C107.372 112.529 98.9084 133.379 81.1938 145.264C67.4723 154.47 49.8207 156.519 34.2869 150.709C28.9701 148.72 23.1455 145.374 18.8096 141.817C5.97332 131.285 -1.03514 115.134 0.124284 98.7574C1.02248 86.071 6.04338 75.0086 14.9236 66.1512C23.1654 57.9305 32.3679 53.5309 44.3989 52.0595C46.7317 51.7742 49.3185 51.3211 50.1467 51.0533C53.4309 49.9906 56.2008 47.489 57.7904 44.1493C59.1228 41.3496 59.162 41.0574 58.2573 40.6606C57.3491 40.2621 56.1877 39.1289 55.635 38.102C55.0295 36.9768 55.1024 34.491 55.7857 32.9611C56.6221 31.0888 57.7205 30.1312 59.5884 29.6461ZM26.2804 111.878C24.0627 110.84 21.1399 110.659 18.9795 111.426C16.3983 112.342 14.8049 113.72 13.5362 116.134C12.955 117.24 12.8832 117.644 12.881 119.81C12.8786 122.059 12.939 122.371 13.6791 123.934C16.8975 130.73 24.1831 137.577 32.5843 141.699C43.3823 146.998 55.1047 147.865 66.6082 144.216L69.0056 143.456L67.078 142.899C62.5508 141.592 58.6664 139.722 53.9868 136.597C48.443 132.894 44.706 129.49 37.6973 121.756C32.0936 115.573 29.6406 113.45 26.2804 111.878ZM92.8593 119.934C91.6925 119.941 86.6499 121.998 80.6324 124.923C76.9528 126.711 73.1209 128.494 72.1173 128.885C67.984 130.494 62.3222 132.096 60.7655 132.096C59.7288 132.096 60.456 132.672 63.1979 134.024C66.152 135.48 69.2151 136.396 72.3627 136.765C76.6965 137.274 80.5039 136.212 83.6167 133.626C86.5214 131.213 89.8664 126.748 92.0917 122.314C93.0855 120.334 93.215 119.932 92.8593 119.934ZM67.183 41.8381C67.1086 41.8381 66.8587 42.4127 66.6278 43.1151C65.9622 45.1411 64.4807 48.2143 63.2574 50.1053C61.1584 53.3499 58.5232 55.721 55.1489 57.4021C52.6735 58.6352 51.0728 59.0362 46.8163 59.4892C40.1049 60.2034 35.6612 61.4652 30.5367 64.1111C17.6781 70.7508 9.57337 82.7088 7.8738 97.5495C7.55047 100.374 7.68059 105.782 8.14452 108.793L8.434 110.669L9.85303 109.25C12.2564 106.847 15.1406 105.194 18.1619 104.489C18.55 104.399 18.9176 104.302 19.2015 104.219C20.3465 104.015 24.5455 104.236 26.4266 104.491C26.6623 104.664 27.1395 104.837 28.0539 105.159C31.7958 106.481 36.4868 110.184 41.5271 115.796C46.6207 121.467 48.9326 123.656 50.7085 124.49C53.5751 125.836 55.9486 126.064 59.9712 125.38C64.5259 124.606 70.5282 122.269 77.8347 118.426L80.4408 117.055L86.9824 114.267L86.9687 114.124C86.9767 114.182 86.9823 114.226 86.9866 114.254L88.9792 113.677C90.0749 113.359 92.0118 112.919 93.2829 112.697C94.5541 112.476 95.6661 112.189 95.7536 112.061C95.8413 111.932 96.1131 110.613 96.358 109.128C97.0138 105.153 96.9611 97.4848 96.251 93.6139C94.935 86.4381 91.7202 79.4878 87.0845 73.797C85.7637 72.1755 85.2936 71.2974 84.4976 68.9638C83.9918 67.4813 83.9175 66.8201 83.924 63.855C83.9333 59.7508 84.424 57.6155 86.2298 53.8172L87.4169 51.3211L86.6397 50.9866C85.9322 50.682 83.5633 49.5618 71.3601 43.7598C69.1379 42.7032 67.2588 41.8387 67.183 41.8381Z" fill-rule="evenodd" clip-rule="evenodd" style="fill:var(--ee-body, #F9F4E3)"/><path d="M79.7778 75.417C80.7012 75.7402 82.5753 76.7743 82.6863 78.3255L86.98 114.268L80.8166 116.969L77.4924 86.082L57.8937 102.772C59.2096 103.857 61.8135 106.886 61.7027 110.321C61.5674 114.515 59.5157 118.709 53.4823 119.611C53.1942 119.654 52.9013 119.661 52.6127 119.621C49.5524 119.198 44.1979 116.869 44.2507 110.321C44.1814 108.866 44.8188 105.32 47.9213 102.772L28.3918 86.359L26.4405 104.493C24.409 104.216 20.4064 104.157 19.8047 104.157L23.1288 78.3255C23.4521 77.4943 24.4862 75.791 26.0373 75.6248L79.7778 75.417ZM52.9078 106.996C52.0075 107.712 50.2621 109.49 50.4837 110.875C50.7607 112.606 52.6308 113.368 52.9078 113.368C53.1854 113.368 55.1928 112.882 55.4005 110.875C55.5667 109.268 53.8081 107.62 52.9078 106.996ZM33.4473 82.0653L52.7691 98.3398L72.3677 81.9961L33.4473 82.0653Z" fill-rule="evenodd" clip-rule="evenodd" style="fill:var(--ee-accent, #5D8E35)"/><path d="M121.111 3.88895C121.429 2.03733 121.764 0.40345 121.853 0.257967C122.057 -0.0721671 123.367 -0.090903 123.567 0.233392C123.649 0.365494 123.93 1.7612 124.191 3.33524C125.546 11.4888 127.724 15.4972 131.962 17.631C133.633 18.4725 137.74 19.6899 138.93 19.6965C139.216 19.6982 139.705 19.9054 140.016 20.1575C140.499 20.5484 140.543 20.701 140.314 21.2024C140.082 21.7113 139.729 21.8485 137.647 22.237C134.806 22.7669 132.371 23.5496 130.925 24.3974C129.66 25.1384 127.903 26.9738 127.034 28.4612C126.016 30.2021 124.941 33.7679 124.311 37.4891C123.735 40.8948 123.544 41.34 122.663 41.3478C122.01 41.3534 121.588 40.4311 121.271 38.3105C120.465 32.9069 118.865 28.6461 116.773 26.33C115.23 24.6224 112.533 23.2965 108.973 22.4954C107.501 22.1643 106.118 21.8923 105.9 21.8911C105.301 21.8877 104.885 21.2406 105.053 20.5713C105.179 20.0718 105.426 19.9349 106.601 19.7128C107.37 19.5673 108.875 19.2274 109.946 18.9571C116.751 17.2388 119.439 13.6117 121.111 3.88895Z" fill-rule="evenodd" clip-rule="evenodd" style="fill:var(--ee-accent, #5D8E35)"/><path d="M72.6382 17.4378L68.5625 29.1555L94.7402 41.2748C100.779 32.8536 101.504 29.0401 101.111 28.186C100.142 24.1001 80.5044 16.1216 77.8424 15.3742C76.1643 14.903 74.7994 15.2813 73.8787 15.7883C73.2549 16.1317 72.8722 16.7653 72.6382 17.4378Z" fill-rule="evenodd" clip-rule="evenodd" style="fill:var(--ee-cork, #482E0F)"/></symbol></defs></svg>
+        <div class="eyebrow"><h2>A formula, <em class="ser">sealed with care.</em></h2><span class="paren">(The mark)</span></div>
+        <p class="intro-p">A potion bottle with an envelope at its heart: the whole promise of tailored emails and magical results, held in one small, crafted mark.</p>
+        <div class="mark-grid">
+          <figure class="mark-hero"><svg viewBox="-14 -14 169 182" role="img" aria-label="The Email Elixir potion-bottle mark"><use href="#ee-mark" x="0" y="0" width="141" height="154"/><path class="mark-trace" pathLength="1" d="M59.5884 29.6461C61.1829 29.2321 62.1797 29.6098 71.1336 34.0207C78.7692 37.7823 87.0674 41.5626 96.1822 45.4313C97.4424 45.966 98.8384 46.6949 99.2848 47.0511C102.348 49.4956 101.464 54.7856 97.7308 56.3504C96.8187 56.7326 94.5635 56.7832 93.6653 56.4416C93.0936 56.2244 93.0018 56.2853 92.5399 57.1909C91.7358 58.7671 91.0934 61.6881 91.0934 63.7696C91.0934 66.2486 91.5956 67.545 93.602 70.2442C98.4306 76.7401 101.62 83.7859 103.116 91.2615C107.372 112.529 98.9084 133.379 81.1938 145.264C67.4723 154.47 49.8207 156.519 34.2869 150.709C28.9701 148.72 23.1455 145.374 18.8096 141.817C5.97332 131.285 -1.03514 115.134 0.124284 98.7574C1.02248 86.071 6.04338 75.0086 14.9236 66.1512C23.1654 57.9305 32.3679 53.5309 44.3989 52.0595C46.7317 51.7742 49.3185 51.3211 50.1467 51.0533C53.4309 49.9906 56.2008 47.489 57.7904 44.1493C59.1228 41.3496 59.162 41.0574 58.2573 40.6606C57.3491 40.2621 56.1877 39.1289 55.635 38.102C55.0295 36.9768 55.1024 34.491 55.7857 32.9611C56.6221 31.0888 57.7205 30.1312 59.5884 29.6461ZM26.2804 111.878C24.0627 110.84 21.1399 110.659 18.9795 111.426C16.3983 112.342 14.8049 113.72 13.5362 116.134C12.955 117.24 12.8832 117.644 12.881 119.81C12.8786 122.059 12.939 122.371 13.6791 123.934C16.8975 130.73 24.1831 137.577 32.5843 141.699C43.3823 146.998 55.1047 147.865 66.6082 144.216L69.0056 143.456L67.078 142.899C62.5508 141.592 58.6664 139.722 53.9868 136.597C48.443 132.894 44.706 129.49 37.6973 121.756C32.0936 115.573 29.6406 113.45 26.2804 111.878ZM92.8593 119.934C91.6925 119.941 86.6499 121.998 80.6324 124.923C76.9528 126.711 73.1209 128.494 72.1173 128.885C67.984 130.494 62.3222 132.096 60.7655 132.096C59.7288 132.096 60.456 132.672 63.1979 134.024C66.152 135.48 69.2151 136.396 72.3627 136.765C76.6965 137.274 80.5039 136.212 83.6167 133.626C86.5214 131.213 89.8664 126.748 92.0917 122.314C93.0855 120.334 93.215 119.932 92.8593 119.934ZM67.183 41.8381C67.1086 41.8381 66.8587 42.4127 66.6278 43.1151C65.9622 45.1411 64.4807 48.2143 63.2574 50.1053C61.1584 53.3499 58.5232 55.721 55.1489 57.4021C52.6735 58.6352 51.0728 59.0362 46.8163 59.4892C40.1049 60.2034 35.6612 61.4652 30.5367 64.1111C17.6781 70.7508 9.57337 82.7088 7.8738 97.5495C7.55047 100.374 7.68059 105.782 8.14452 108.793L8.434 110.669L9.85303 109.25C12.2564 106.847 15.1406 105.194 18.1619 104.489C18.55 104.399 18.9176 104.302 19.2015 104.219C20.3465 104.015 24.5455 104.236 26.4266 104.491C26.6623 104.664 27.1395 104.837 28.0539 105.159C31.7958 106.481 36.4868 110.184 41.5271 115.796C46.6207 121.467 48.9326 123.656 50.7085 124.49C53.5751 125.836 55.9486 126.064 59.9712 125.38C64.5259 124.606 70.5282 122.269 77.8347 118.426L80.4408 117.055L86.9824 114.267L86.9687 114.124C86.9767 114.182 86.9823 114.226 86.9866 114.254L88.9792 113.677C90.0749 113.359 92.0118 112.919 93.2829 112.697C94.5541 112.476 95.6661 112.189 95.7536 112.061C95.8413 111.932 96.1131 110.613 96.358 109.128C97.0138 105.153 96.9611 97.4848 96.251 93.6139C94.935 86.4381 91.7202 79.4878 87.0845 73.797C85.7637 72.1755 85.2936 71.2974 84.4976 68.9638C83.9918 67.4813 83.9175 66.8201 83.924 63.855C83.9333 59.7508 84.424 57.6155 86.2298 53.8172L87.4169 51.3211L86.6397 50.9866C85.9322 50.682 83.5633 49.5618 71.3601 43.7598C69.1379 42.7032 67.2588 41.8387 67.183 41.8381Z M79.7778 75.417C80.7012 75.7402 82.5753 76.7743 82.6863 78.3255L86.98 114.268L80.8166 116.969L77.4924 86.082L57.8937 102.772C59.2096 103.857 61.8135 106.886 61.7027 110.321C61.5674 114.515 59.5157 118.709 53.4823 119.611C53.1942 119.654 52.9013 119.661 52.6127 119.621C49.5524 119.198 44.1979 116.869 44.2507 110.321C44.1814 108.866 44.8188 105.32 47.9213 102.772L28.3918 86.359L26.4405 104.493C24.409 104.216 20.4064 104.157 19.8047 104.157L23.1288 78.3255C23.4521 77.4943 24.4862 75.791 26.0373 75.6248L79.7778 75.417ZM52.9078 106.996C52.0075 107.712 50.2621 109.49 50.4837 110.875C50.7607 112.606 52.6308 113.368 52.9078 113.368C53.1854 113.368 55.1928 112.882 55.4005 110.875C55.5667 109.268 53.8081 107.62 52.9078 106.996ZM33.4473 82.0653L52.7691 98.3398L72.3677 81.9961L33.4473 82.0653Z M121.111 3.88895C121.429 2.03733 121.764 0.40345 121.853 0.257967C122.057 -0.0721671 123.367 -0.090903 123.567 0.233392C123.649 0.365494 123.93 1.7612 124.191 3.33524C125.546 11.4888 127.724 15.4972 131.962 17.631C133.633 18.4725 137.74 19.6899 138.93 19.6965C139.216 19.6982 139.705 19.9054 140.016 20.1575C140.499 20.5484 140.543 20.701 140.314 21.2024C140.082 21.7113 139.729 21.8485 137.647 22.237C134.806 22.7669 132.371 23.5496 130.925 24.3974C129.66 25.1384 127.903 26.9738 127.034 28.4612C126.016 30.2021 124.941 33.7679 124.311 37.4891C123.735 40.8948 123.544 41.34 122.663 41.3478C122.01 41.3534 121.588 40.4311 121.271 38.3105C120.465 32.9069 118.865 28.6461 116.773 26.33C115.23 24.6224 112.533 23.2965 108.973 22.4954C107.501 22.1643 106.118 21.8923 105.9 21.8911C105.301 21.8877 104.885 21.2406 105.053 20.5713C105.179 20.0718 105.426 19.9349 106.601 19.7128C107.37 19.5673 108.875 19.2274 109.946 18.9571C116.751 17.2388 119.439 13.6117 121.111 3.88895Z M72.6382 17.4378L68.5625 29.1555L94.7402 41.2748C100.779 32.8536 101.504 29.0401 101.111 28.186C100.142 24.1001 80.5044 16.1216 77.8424 15.3742C76.1643 14.903 74.7994 15.2813 73.8787 15.7883C73.2549 16.1317 72.8722 16.7653 72.6382 17.4378Z"/></svg></figure>
+          <ol class="mark-points">
+            <li><span class="n">01</span><div><b>The bottle</b><p>A round potion flask: email treated as a formula, mixed carefully for each brand rather than poured from a template.</p></div></li>
+            <li><span class="n">02</span><div><b>The envelope inside</b><p>At the heart of the bottle sits a letter. The email is the ingredient that makes the elixir work.</p></div></li>
+            <li><span class="n">03</span><div><b>The sparkle</b><p>A four-point star just off the neck, the small spark of magic in “magical results”.</p></div></li>
+            <li><span class="n">04</span><div><b>The cork</b><p>A hand-finished stopper in Cafe Noir: boutique, considered and sealed with care.</p></div></li>
+          </ol>
+        </div>
+        <div class="mark-ways">
+          <figure style="--bg:#222F17;--ee-body:#F6F6E2;--ee-accent:#5D8E35;--ee-cork:#AA7A41"><svg viewBox="0 0 141 154" aria-hidden="true"><use href="#ee-mark" width="141" height="154"/></svg><figcaption class="mono">Full colour on Darkest Forest</figcaption></figure>
+          <figure style="--bg:#0C0E0A;--ee-body:#F6F6E2;--ee-accent:#5D8E35;--ee-cork:#AA7A41"><svg viewBox="0 0 141 154" aria-hidden="true"><use href="#ee-mark" width="141" height="154"/></svg><figcaption class="mono">Full colour on Black Wash</figcaption></figure>
+          <figure style="--bg:#F6F6E2;--ee-body:#222F17;--ee-accent:#5D8E35;--ee-cork:#4A3722"><svg viewBox="0 0 141 154" aria-hidden="true"><use href="#ee-mark" width="141" height="154"/></svg><figcaption class="mono">Darkest Forest on Star Shine</figcaption></figure>
+          <figure style="--bg:#5D8E35;--ee-body:#F6F6E2;--ee-accent:#F6F6E2;--ee-cork:#F6F6E2"><svg viewBox="0 0 141 154" aria-hidden="true"><use href="#ee-mark" width="141" height="154"/></svg><figcaption class="mono">Star Shine on Maximum Green</figcaption></figure>
+        </div>
+      </section>
+
+      <!-- 5 FLOW BUILDER -->
+      <section class="s-flow gut">
+        <div class="eyebrow"><h2>Depth, <em class="ser">not breadth.</em></h2><span class="paren">(The craft)</span></div>
+        <p class="intro-p">Email Elixir writes Klaviyo email and SMS flows for e-commerce brands. Tap a step in this example flow to see how each touch is considered.</p>
+        <div class="fb" id="fb">
+          <div class="fb-list" role="group" aria-label="Example flow steps"><div class="fb-line" aria-hidden="true"><i></i></div><button type="button" class="fb-node" data-i="0" aria-pressed="true"><span class="ic">01</span><span><span class="k">Trigger</span><b>Joins the list</b></span></button><button type="button" class="fb-node" data-i="1" aria-pressed="false"><span class="ic">02</span><span><span class="k">Email 01</span><b>Welcome</b></span></button><button type="button" class="fb-node" data-i="2" aria-pressed="false"><span class="ic">03</span><span><span class="k">Wait</span><b>2 days</b></span></button><button type="button" class="fb-node" data-i="3" aria-pressed="false"><span class="ic">04</span><span><span class="k">SMS</span><b>A quick nudge</b></span></button><button type="button" class="fb-node" data-i="4" aria-pressed="false"><span class="ic">05</span><span><span class="k">Email 02</span><b>Story and proof</b></span></button><button type="button" class="fb-node" data-i="5" aria-pressed="false"><span class="ic">06</span><span><span class="k">Split</span><b>Purchased?</b></span></button></div>
+          <div class="fb-panel"><div class="fb-body" id="fb-body" aria-live="polite"></div><div class="fb-viz" id="fb-viz" aria-hidden="true"></div><span class="mono fb-note">An example flow to show the craft, not a client’s real automation</span></div>
+        </div>
+      </section>
+
+      <!-- 6 PALETTE + TYPE -->
+      <section class="s-brand gut">
+        <div class="eyebrow"><h2>Colour, straight <em class="ser">from the styleguide.</em></h2><span class="paren">(Black Wash to Star Shine)</span></div>
+        <div class="swatches">
+          <div class="sw"><div class="chip" style="--c:#0C0E0A">#0C0E0A</div><b>Black Wash</b><p>A sleek, grounding base adding depth and elegance.</p></div>
+          <div class="sw"><div class="chip" style="--c:#222F17">#222F17</div><b>Darkest Forest</b><p>A deep forest green for eco-conscious, long-term, organic growth.</p></div>
+          <div class="sw"><div class="chip" style="--c:#4A3722">#4A3722</div><b>Cafe Noir</b><p>A rich, earthy brown with a crafted, boutique warmth.</p></div>
+          <div class="sw"><div class="chip" style="--c:#AA7A41">#AA7A41</div><b>Blonde Wood</b><p>A softer golden brown with natural, handcrafted calm.</p></div>
+          <div class="sw"><div class="chip" style="--c:#5D8E35">#5D8E35</div><b>Maximum Green</b><p>The spark of vitality: momentum and transformation.</p></div>
+          <div class="sw"><div class="chip" style="--c:#F6F6E2;--t:#222F17">#F6F6E2</div><b>Star Shine</b><p>The lightest tone, giving every visual a soft, magical glow.</p></div>
+        </div>
+        <div class="type">
+          <figure class="spec"><span class="mono role">Headings</span><div class="spec-card"><svg viewBox="0 0 203 57" role="img" aria-label="Olivea" preserveAspectRatio="xMinYMid meet"><path d="M25.2701 6.16C39.8301 6.16 50.5401 17.5 50.5401 31.5C50.5401 45.5 39.8301 56.84 25.2701 56.84C10.7101 56.84 9.77516e-05 45.5 9.77516e-05 31.5C9.77516e-05 17.5 10.7101 6.16 25.2701 6.16ZM33.5301 54.18C40.7401 51.59 43.8201 44.52 43.8201 36.82C43.8201 33.04 43.0501 29.12 41.7901 25.48C38.3601 16.38 30.8001 7.98 21.9801 7.98C20.3701 7.98 18.6901 8.26 17.0101 8.82C9.7301 11.55 6.6501 18.62 6.6501 26.32C6.6501 30.03 7.4201 33.95 8.7501 37.52C12.1101 46.69 19.6701 55.09 28.4901 55.09C30.1001 55.09 31.7801 54.81 33.5301 54.18ZM65.9833 51.73C65.9833 54.67 67.5233 56 68.7833 56H55.4833C56.7433 56 58.3533 54.67 58.3533 51.73V4.76C58.3533 2.73 56.8833 0.699999 55.4833 0.559996C55.4833 0.559996 55.8333 0.629999 56.4633 0.629999C58.0733 0.629999 61.2933 0.559996 64.3033 0C64.3733 0 64.4433 0 64.5133 0C65.2133 0 65.9833 0.699999 65.9833 1.4V51.73ZM75.1517 11.62C75.1517 9.45 76.8317 7.77 79.0017 7.77C81.1717 7.77 82.9217 9.45 82.9217 11.62C82.9217 13.79 81.1717 15.47 79.0017 15.47C76.8317 15.47 75.1517 13.79 75.1517 11.62ZM83.5517 51.73C83.5517 54.67 85.0917 56 86.3517 56H73.0517C74.3117 56 75.9217 54.67 75.9217 51.73V25.27C75.9217 23.24 74.4517 21.14 73.0517 21C73.0517 21 73.6817 21.07 74.7317 21.07C76.4817 21.07 79.2817 21 81.8717 20.51C81.9417 20.51 82.0117 20.51 82.0817 20.51C82.8517 20.51 83.5517 21.14 83.5517 21.84V51.73ZM127.526 21C127.526 21 122.766 26.18 119.266 34.37L109.606 56.84H104.706C104.706 56.84 95.6064 21.91 89.9364 21H97.7764C99.5964 21 101.206 22.12 101.766 23.87L110.166 52.78L118.006 34.37C118.706 32.76 119.336 30.73 119.336 28.77C119.336 25.27 117.236 21.84 109.746 21H127.526ZM162.096 40.32C162.376 41.51 162.586 42.63 162.586 43.75C162.586 50.54 157.126 56.84 147.676 56.84C136.616 56.84 128.636 48.65 128.636 38.5C128.636 28.35 135.496 20.16 146.976 20.16C157.826 20.16 161.396 27.02 161.396 27.02L139.556 47.11C142.286 50.96 146.136 53.06 150.336 53.06C150.476 53.06 150.616 53.06 150.756 52.99C156.636 52.85 162.026 48.93 162.026 40.53C162.026 40.46 162.026 40.39 162.026 40.32H162.096ZM143.056 21.63C138.156 23.1 135.846 28.35 135.846 34.44C135.846 36.47 136.056 38.64 136.616 40.74C137.106 42.77 137.946 44.66 138.926 46.2L147.116 38.64C150.756 35.21 152.226 31.71 152.226 28.77C152.226 24.43 149.006 21.35 145.156 21.35C144.456 21.35 143.756 21.42 143.056 21.63ZM192.29 42.56V39.69C186.2 39.76 175.49 42.21 175.49 48.37C175.49 51.24 177.8 52.5 180.67 52.5C185.64 52.5 192.29 48.86 192.29 42.56ZM192.29 32.62C192.29 24.71 188.51 21.35 185.64 21.35C183.75 21.35 182.28 22.75 182.28 25.13C182.28 28.21 184.8 32.97 192.29 38.71L175.7 29.47C175.7 29.47 178.15 20.16 186.9 20.16C194.25 20.16 199.85 23.73 199.85 33.6V51.73C199.85 54.67 201.46 54.88 202.72 54.88C202.72 54.88 201.74 56 199.85 56H196.07C193.69 56 192.29 54.53 192.29 52.22V46.48C190.4 53.06 182.77 56.91 176.47 56.91C171.71 56.91 167.79 54.67 167.79 49.84C167.79 38.78 186.48 38.71 192.08 38.71H192.29V32.62Z"/></svg></div><p>An elegant, handwritten display face: soft, personal and a little magical. The human element in a world of automation, for headlines and brand moments.</p></figure>
+          <figure class="spec"><span class="mono role">Body</span><div class="spec-card"><svg viewBox="0 0 160 34" role="img" aria-label="Haurora" preserveAspectRatio="xMinYMid meet"><path d="M3.3076 32.3999H9.77516e-05V-9.91821e-05H3.3076V14.6024H21.2176V-9.91821e-05H24.5026V32.3999H21.2176V17.7749H3.3076V32.3999ZM49.2333 12.2849C49.7133 13.4549 49.9533 15.1274 49.9533 17.3024V32.3999H47.0058V28.3724C46.0608 29.9174 44.8008 31.0874 43.2258 31.8824C41.6508 32.6774 39.8283 33.0749 37.7583 33.0749C35.9883 33.0749 34.4733 32.7524 33.2133 32.1074C31.9683 31.4624 31.0308 30.5924 30.4008 29.4974C29.7708 28.4024 29.4558 27.1949 29.4558 25.8749C29.4558 23.9849 30.0033 22.4624 31.0983 21.3074C32.1933 20.1524 33.7083 19.3199 35.6433 18.8099C36.8283 18.5249 38.1483 18.2699 39.6033 18.0449C41.0733 17.8199 42.7683 17.5799 44.6883 17.3249L46.7133 17.0549C46.6833 14.8199 46.1583 13.1774 45.1383 12.1274C44.1333 11.0774 42.4983 10.5524 40.2333 10.5524C38.5233 10.5524 37.0983 10.9349 35.9583 11.6999C34.8333 12.4649 34.0458 13.6424 33.5958 15.2324L30.3783 14.2874C30.9483 12.0974 32.0733 10.4099 33.7533 9.2249C35.4483 8.0249 37.6233 7.4249 40.2783 7.4249C42.4983 7.4249 44.3808 7.8449 45.9258 8.6849C47.4858 9.5249 48.5883 10.7249 49.2333 12.2849ZM38.1408 30.2174C39.6408 30.2174 40.9758 29.9474 42.1458 29.4074C43.3158 28.8524 44.2533 28.0949 44.9583 27.1349C45.6783 26.1599 46.1433 25.0574 46.3533 23.8274C46.5633 22.8974 46.6683 21.6074 46.6683 19.9574C46.0833 20.0174 45.6633 20.0699 45.4083 20.1149C43.3683 20.3549 41.7108 20.5724 40.4358 20.7674C39.1608 20.9474 38.0058 21.1799 36.9708 21.4649C34.1658 22.2899 32.7633 23.7599 32.7633 25.8749C32.7633 26.6249 32.9433 27.3299 33.3033 27.9899C33.6783 28.6499 34.2708 29.1899 35.0808 29.6099C35.8908 30.0149 36.9108 30.2174 38.1408 30.2174ZM72.9331 8.0999H76.2406V32.3999H73.2706V29.0249C72.3706 30.3299 71.2231 31.3199 69.8281 31.9949C68.4331 32.6699 66.8581 33.0074 65.1031 33.0074C62.8081 33.0074 60.9331 32.4524 59.4781 31.3424C58.0231 30.2324 56.9731 28.8074 56.3281 27.0674C55.6831 25.3124 55.3606 23.4449 55.3606 21.4649V8.0999H58.6906V20.4974C58.6906 23.3624 59.2606 25.6424 60.4006 27.3374C61.5406 29.0174 63.3181 29.8574 65.7331 29.8574C68.0431 29.8574 69.8206 29.0849 71.0656 27.5399C72.3106 25.9949 72.9331 23.8349 72.9331 21.0599V8.0999ZM87.3894 9.6974C88.0644 9.0974 88.8669 8.6474 89.7969 8.3474C90.7419 8.0474 91.6944 7.8974 92.6544 7.8974C93.2994 7.8974 93.9069 7.9649 94.4769 8.0999V11.2049C93.8319 11.0549 93.2094 10.9799 92.6094 10.9799C91.0494 10.9799 89.7369 11.4224 88.6719 12.3074C87.5619 13.1774 86.8119 14.2874 86.4219 15.6374C86.0319 16.9874 85.8369 18.5324 85.8369 20.2724V32.3999H82.5294V8.0999H85.4994V11.9474C86.0244 11.0174 86.6544 10.2674 87.3894 9.6974ZM108.453 33.0749C106.083 33.0749 104.028 32.5349 102.288 31.4549C100.563 30.3599 99.2433 28.8449 98.3283 26.9099C97.4133 24.9749 96.9558 22.7474 96.9558 20.2274C96.9558 17.6924 97.4208 15.4574 98.3508 13.5224C99.2808 11.5874 100.608 10.0874 102.333 9.0224C104.073 7.9574 106.113 7.4249 108.453 7.4249C110.838 7.4249 112.893 7.9649 114.618 9.0449C116.358 10.1249 117.686 11.6324 118.601 13.5674C119.516 15.5024 119.973 17.7224 119.973 20.2274C119.973 22.7774 119.508 25.0199 118.578 26.9549C117.663 28.8899 116.336 30.3974 114.596 31.4774C112.871 32.5424 110.823 33.0749 108.453 33.0749ZM108.453 29.9024C110.208 29.9024 111.686 29.5049 112.886 28.7099C114.086 27.8999 114.978 26.7749 115.563 25.3349C116.163 23.8799 116.463 22.1774 116.463 20.2274C116.463 17.2274 115.781 14.8724 114.416 13.1624C113.066 11.4524 111.078 10.5974 108.453 10.5974C105.813 10.5974 103.818 11.4674 102.468 13.2074C101.133 14.9324 100.466 17.2724 100.466 20.2274C100.466 22.1924 100.766 23.9024 101.366 25.3574C101.981 26.8124 102.881 27.9374 104.066 28.7324C105.266 29.5124 106.728 29.9024 108.453 29.9024ZM129.797 9.6974C130.472 9.0974 131.274 8.6474 132.204 8.3474C133.149 8.0474 134.102 7.8974 135.062 7.8974C135.707 7.8974 136.314 7.9649 136.884 8.0999V11.2049C136.239 11.0549 135.617 10.9799 135.017 10.9799C133.457 10.9799 132.144 11.4224 131.079 12.3074C129.969 13.1774 129.219 14.2874 128.829 15.6374C128.439 16.9874 128.244 18.5324 128.244 20.2724V32.3999H124.937V8.0999H127.907V11.9474C128.432 11.0174 129.062 10.2674 129.797 9.6974ZM158.701 12.2849C159.181 13.4549 159.421 15.1274 159.421 17.3024V32.3999H156.474V28.3724C155.529 29.9174 154.269 31.0874 152.694 31.8824C151.119 32.6774 149.296 33.0749 147.226 33.0749C145.456 33.0749 143.941 32.7524 142.681 32.1074C141.436 31.4624 140.499 30.5924 139.869 29.4974C139.239 28.4024 138.924 27.1949 138.924 25.8749C138.924 23.9849 139.471 22.4624 140.566 21.3074C141.661 20.1524 143.176 19.3199 145.111 18.8099C146.296 18.5249 147.616 18.2699 149.071 18.0449C150.541 17.8199 152.236 17.5799 154.156 17.3249L156.181 17.0549C156.151 14.8199 155.626 13.1774 154.606 12.1274C153.601 11.0774 151.966 10.5524 149.701 10.5524C147.991 10.5524 146.566 10.9349 145.426 11.6999C144.301 12.4649 143.514 13.6424 143.064 15.2324L139.846 14.2874C140.416 12.0974 141.541 10.4099 143.221 9.2249C144.916 8.0249 147.091 7.4249 149.746 7.4249C151.966 7.4249 153.849 7.8449 155.394 8.6849C156.954 9.5249 158.056 10.7249 158.701 12.2849ZM147.609 30.2174C149.109 30.2174 150.444 29.9474 151.614 29.4074C152.784 28.8524 153.721 28.0949 154.426 27.1349C155.146 26.1599 155.611 25.0574 155.821 23.8274C156.031 22.8974 156.136 21.6074 156.136 19.9574C155.551 20.0174 155.131 20.0699 154.876 20.1149C152.836 20.3549 151.179 20.5724 149.904 20.7674C148.629 20.9474 147.474 21.1799 146.439 21.4649C143.634 22.2899 142.231 23.7599 142.231 25.8749C142.231 26.6249 142.411 27.3299 142.771 27.9899C143.146 28.6499 143.739 29.1899 144.549 29.6099C145.359 30.0149 146.379 30.2174 147.609 30.2174Z"/></svg></div><p>Clean, calm and effortlessly modern, keeping strategy and storytelling readable and grounded across body copy and UI.</p></figure>
+          <figure class="glyphs"><img src="img/ee/t-glyphs-clean.webp" alt="Large Aa Bb Cc in Olivea, in soft green" width="2000" height="376" loading="lazy"></figure>
+          <p class="mono type-note">Specimens set in the real Olivea and Haurora, straight from the 2025 styleguide</p>
+        </div>
+      </section>
+
+      <!-- 7 BRANDBOOK -->
+      <section class="s-book gut">
+        <div class="eyebrow"><h2>The <em class="ser">styleguide.</em></h2><span class="paren">(Three spreads from the guidelines)</span></div>
+        <div class="spreads">
+          <figure class="spread"><img src="img/ee/bb-cover.webp" alt="Styleguide cover: a leafy background with the potion-bottle-and-envelope mark" width="1200" height="854" loading="lazy"><b>Cover</b><p>The potion-bottle-and-envelope mark on leaves: tailored emails, magical results.</p></figure>
+          <figure class="spread"><img src="img/ee/bb-colours.webp" alt="Styleguide colour palette over a leafy background" width="1200" height="854" loading="lazy"><b>Colour palette</b><p>Black Wash through Star Shine, over a leafy background.</p></figure>
+          <figure class="spread"><img src="img/ee/bb-fonts.webp" alt="Styleguide fonts page with Olivea and Haurora beside a wax-sealed envelope" width="1200" height="854" loading="lazy"><b>Typography</b><p>Olivea’s handwritten script over a wax-seal envelope, paired with Haurora.</p></figure>
+        </div>
+      </section>
+
+      <!-- 8 TAKEAWAY -->
+      <section class="s-take gut">
+        <div class="take-grid">
+          <div>
+            <span class="mono kicker">The takeaway</span>
+            <h2>The brand was <em class="ser">the first proof point.</em></h2>
+            <p>Email Elixir couldn’t sell “tailored emails, magical results” from behind a brand that looked like everyone else’s. The identity and the site had to be evidence, before a single pitch, of a studio that understands exactly what makes an inbox convert.</p>
+            <div class="actions"><a class="btn" href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a call →</a><a class="link" href="https://emailelixir.com/" target="_blank" rel="noopener">Visit the live site</a></div>
           </div>
-        </a>
-        <a class="op-card" href="/work/ionlybookvip/">
-          <div class="op-img"><img src="../assets/iv-cd-lounge.png" alt="iOnlyBookVIP case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Hospitality</span>
-            <div class="op-title">iOnlyBookVIP</div>
-            <p class="op-desc">A premium identity for a luxury travel concierge.</p>
-            <span class="op-link">View case study →</span>
+          <div class="take-art" aria-hidden="true">
+            <svg viewBox="0 0 440 460">
+              <rect class="ws-card" x="0" y="0" width="440" height="460" rx="12"/>
+              <text class="ws-k" x="32" y="46">EMAIL ELIXIR · SENT WITH CARE</text>
+              <g transform="translate(0 10)">
+                <rect class="ws-env" x="70" y="128" width="300" height="190" rx="6"/>
+                <path class="ws-fold" d="M70 318 L200 222 M370 318 L240 222"/>
+                <path class="ws-flap" d="M70 128 H370 L220 246 Z"/>
+                <g transform="translate(220 240)"><g class="ws-seal"><circle class="ws-wax" r="40"/><circle class="ws-wax2" r="33"/><g transform="translate(-21 -23) scale(.3)" style="--ee-body:#3F6624;--ee-accent:#2B4718;--ee-cork:#2B4718"><use href="#ee-mark" width="141" height="154"/></g></g></g>
+                <path class="ws-spark" d="M300 170 l5 14 l14 5 l-14 5 l-5 14 l-5 -14 l-14 -5 l14 -5 z"/>
+              </g>
+              <text class="ws-line" x="32" y="406">Tailored emails,</text>
+              <text class="ws-line2" x="32" y="436">magical results.</text>
+            </svg>
           </div>
+        </div>
+      </section>
+
+      <!-- 9 NEXT -->
+      <section class="s-next gut" id="next">
+        <div class="eyebrow"><h2>Next <em class="ser">project.</em></h2><span class="paren">(08 / 08)</span></div>
+        <a class="next-big" href="/work/baliwithflow/">
+          <img src="img/covers/pc-baliwithflow.webp" alt="BaliwithFlow brand cover" loading="lazy">
+          <div><span class="mono">Curated travel experiences · 2025</span><h3>Where the real Bali <em class="ser">begins.</em></h3><span class="btn">View BaliwithFlow →</span></div>
         </a>
-        <a class="op-card" href="/work/cza-bouwbedrijf/">
-          <div class="op-img"><img src="../assets/cza-mockup-building.png" alt="CZA Bouwbedrijf case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Construction</span>
-            <div class="op-title">CZA Bouwbedrijf</div>
-            <p class="op-desc">Identity and brand strategy for a Dutch construction company.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
-        <a class="op-card" href="/work/vanessa-nantes/">
-          <div class="op-img"><img src="../assets/vn-mockup-storefront.png" alt="Vanessa Nantes case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Product Design</span>
-            <div class="op-title">Vanessa Nantes</div>
-            <p class="op-desc">Brand identity and packaging for a fashion and lifestyle label.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
-        <a class="op-card" href="/work/baliwithflow/">
-          <div class="op-img"><img src="../assets/bwf-mockup-sign.png" alt="Bali With Flow case study preview" loading="lazy"></div>
-          <div class="op-body">
-            <span class="op-tag">Branding · Product Design</span>
-            <div class="op-title">Bali With Flow</div>
-            <p class="op-desc">A calm, considered identity for a boutique wellness retreat brand.</p>
-            <span class="op-link">View case study →</span>
-          </div>
-        </a>
-      </div>
+        <div class="more">
+          <a href="/work/peakspring/"><img src="img/covers/pc-peakspring.webp" alt="" loading="lazy"><b>PeakSpring</b><span class="mono">Functional hydration</span></a>
+          <a href="/work/viva-fashion/"><img src="img/covers/pc-viva-fashion.webp" alt="" loading="lazy"><b>Viva Fashion</b><span class="mono">Womenswear retail</span></a>
+          <a href="/work/van-straaten-trading/"><img src="img/covers/pc-van-straaten.webp" alt="" loading="lazy"><b>Van Straaten</b><span class="mono">Trading education</span></a>
+          <a href="/work/ionlybookvip/"><img src="img/covers/pc-ionlybookvip-c.webp" alt="" loading="lazy"><b>IOnlyBookVIP</b><span class="mono">Luxury travel</span></a>
+          <a href="/work/cza-bouwbedrijf/"><img src="img/covers/pc-cza.webp" alt="" loading="lazy"><b>CZA Bouwbedrijf</b><span class="mono">Construction</span></a>
+          <a href="/work/vanessa-nantes/"><img src="img/covers/pc-vanessa-nantes.webp" alt="" loading="lazy"><b>Vanessa Nantes</b><span class="mono">Fashion</span></a>
+        </div>
+      </section>
+
+      <!-- 10 FOOTER -->
+      <section class="s-foot gut">
+        <span class="mono">(Let’s talk)</span>
+        <h2>Got a brand <em class="ser">worth</em> building?</h2>
+        <div class="actions"><a class="btn" href="https://tidycal.com/thatsblindsay" target="_blank" rel="noopener">Book a call</a><a class="link wa" href="https://wa.me/447360677245?text=Hi%20Hannah%2C%20I%20saw%20your%20site%20and%20I%27d%20love%20to%20chat%20about%20my%20brand." target="_blank" rel="noopener">or WhatsApp me →</a></div>
+        <div class="wordmark" aria-hidden="true">that’sblindsay</div>
+      </section>
+
     </div>
-    <a class="back-link" href="/#work">Back to the full portfolio</a>
-    <div class="foot-note">(c) 2026 That's B Lindsay. Creative Direction and Brand Strategy.</div>
   </div>
-</footer>
-
-<script>
-(function(){
-  var track = document.querySelector('.other-projects-track-wrap');
-  var prevBtn = document.querySelector('.op-prev');
-  var nextBtn = document.querySelector('.op-next');
-  if(!track || !prevBtn || !nextBtn) return;
-  function cardStep(){
-    var card = track.querySelector('.op-card');
-    var gap = 24;
-    return card ? card.offsetWidth + gap : 314;
-  }
-  function updateButtons(){
-    prevBtn.disabled = track.scrollLeft <= 4;
-    nextBtn.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
-  }
-  prevBtn.addEventListener('click', function(){ track.scrollBy({ left: -cardStep()*2, behavior:'smooth' }); });
-  nextBtn.addEventListener('click', function(){ track.scrollBy({ left: cardStep()*2, behavior:'smooth' }); });
-  track.addEventListener('scroll', updateButtons);
-  window.addEventListener('load', updateButtons);
-  window.addEventListener('resize', updateButtons);
-  updateButtons();
-})();
-</script>
-
-
-
-<div class="lightbox-overlay" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
-  <img id="lightboxImg" src="" alt="">
-  <div class="lightbox-caption" id="lightboxCaption"></div>
 </div>
 
 <script>
-(function(){
-  var overlay = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lightboxImg');
-  var lbCaption = document.getElementById('lightboxCaption');
-  var closeBtn = document.getElementById('lightboxClose');
-  var triggers = document.querySelectorAll('.spread-card img, .deliverable-card img');
-
-  triggers.forEach(function(img){
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', function(){
-      lbImg.src = img.getAttribute('src');
-      lbImg.alt = img.getAttribute('alt') || '';
-      lbCaption.textContent = img.getAttribute('alt') || '';
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-
-  function closeLightbox(){
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
+/* Flow builder: an example retention flow; each step shows what that touch does. */
+(function () {
+  var nodes = [["Trigger", "Joins the list", "The flow starts the moment someone signs up, while their interest is at its highest."], ["Email 01", "Welcome", "A warm introduction to the brand in its own voice, written like a person, not a discount blast."], ["Wait", "2 days", "Space to breathe. Timing is part of the craft, so the next touch lands when it is wanted."], ["SMS", "A quick nudge", "A short, personal text for subscribers who opted in to SMS, the channel that gets read."], ["Email 02", "Story and proof", "Reviews and the story behind the product, building trust before the ask."], ["Split", "Purchased?", "Buyers move into a post-purchase flow; everyone else gets a gentle win-back instead of the same email twice."]];
+  var viz = ["<div class=\"fv-card\"><div class=\"fv-row\"><span class=\"fv-av\"><svg viewBox=\"0 0 141 154\"><use href=\"#ee-mark\" width=\"141\" height=\"154\"/></svg></span><span class=\"fv-from\">Email Elixir<span>Sign-up form</span></span></div><div class=\"fv-subj\">Join the list</div><div class=\"fv-ln m\"></div><div class=\"fv-input\"><span>you@email.com</span><b>Subscribe</b></div></div>", "<div class=\"fv-card\"><div class=\"fv-row\"><span class=\"fv-av\"><svg viewBox=\"0 0 141 154\"><use href=\"#ee-mark\" width=\"141\" height=\"154\"/></svg></span><span class=\"fv-from\">The brand<span>Email 01 \u00b7 Welcome</span></span></div><div class=\"fv-subj\">A warm welcome, from us to you</div><div class=\"fv-ln\"></div><div class=\"fv-ln m\"></div><div class=\"fv-ln s\"></div><span class=\"fv-btn\">Read our story</span></div>", "<div class=\"fv-time\"><div class=\"fv-track\"><i></i></div><div class=\"fv-dots\"><span class=\"on\">Day 0</span><span>Day 1</span><span class=\"on\">Day 2</span></div><p class=\"fv-cap\">Next touch, when it\u2019s wanted.</p></div>", "<div class=\"fv-phone\"><span class=\"top\">Text message \u00b7 now</span><div class=\"fv-bub\">The new linen set just landed. Want us to hold one in your size?</div><div class=\"fv-bub me\">Yes please, a medium.</div><div class=\"fv-bub\">Done. It’s waiting in your basket.</div></div>", "<div class=\"fv-card\"><div class=\"fv-row\"><span class=\"fv-av\"><svg viewBox=\"0 0 141 154\"><use href=\"#ee-mark\" width=\"141\" height=\"154\"/></svg></span><span class=\"fv-from\">The brand<span>Email 02 \u00b7 Story and proof</span></span></div><div class=\"fv-stars\">\u2605\u2605\u2605\u2605\u2605</div><div class=\"fv-thumb\"><i><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8.5\" r=\"4.2\"/><path d=\"M3.8 21c.6-4.4 4-7.2 8.2-7.2s7.6 2.8 8.2 7.2z\"/></svg></i><div style=\"display:grid;gap:8px\"><div class=\"fv-ln\"></div><div class=\"fv-ln m\"></div><div class=\"fv-ln s\"></div></div></div><span class=\"fv-btn\">See why they love it</span></div>", "<div class=\"fv-split\"><span class=\"q\">Purchased?</span><svg viewBox=\"0 0 200 46\" preserveAspectRatio=\"none\"><path d=\"M100 0 V14 Q100 22 92 22 H28 Q20 22 20 30 V46 M100 14 Q100 22 108 22 H172 Q180 22 180 30 V46\"/></svg><div class=\"fv-branches\"><div><span>Yes</span>Post-purchase flow</div><div><span>Not yet</span>Gentle win-back</div></div></div>"];
+  var btns = document.querySelectorAll('#fb .fb-node'), body = document.getElementById('fb-body'), vz = document.getElementById('fb-viz');
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function set(i) {
+    var n = nodes[i];
+    body.innerHTML = '<span class="k">Step 0' + (i + 1) + ' · ' + esc(n[0]) + '</span><h3>' + esc(n[1]) + '</h3><p>' + esc(n[2]) + '</p>';
+    vz.innerHTML = viz[i];
+    [body, vz].forEach(function (el) { el.style.animation = 'none'; void el.offsetWidth; el.style.animation = ''; });
+    btns.forEach(function (b, k) { b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
   }
-
-  closeBtn.addEventListener('click', closeLightbox);
-  overlay.addEventListener('click', function(e){
-    if(e.target === overlay){ closeLightbox(); }
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape'){ closeLightbox(); }
-  });
-})();
-</script>
-
-<script>
-(function(){
-  var tab = document.getElementById('navGTab');
-  var panel = document.getElementById('navG');
-  var scrim = document.getElementById('navGScrim');
-  if(!tab || !panel || !scrim) return;
-  var isOpen = false;
-
-  function updateVisibility(){
-    var past = window.scrollY > 420;
-    tab.classList.toggle('visible', past);
-    if(!past){ closePanel(); }
-  }
-  function openPanel(){
-    isOpen = true;
-    tab.classList.add('open');
-    panel.classList.add('open');
-    scrim.classList.add('open');
-  }
-  function closePanel(){
-    isOpen = false;
-    tab.classList.remove('open');
-    panel.classList.remove('open');
-    scrim.classList.remove('open');
-  }
-  tab.addEventListener('click', function(){ isOpen ? closePanel() : openPanel(); });
-  scrim.addEventListener('click', closePanel);
-  window.addEventListener('scroll', updateVisibility);
-  window.addEventListener('load', updateVisibility);
+  btns.forEach(function (b) { b.addEventListener('click', function () { set(+b.dataset.i); }); });
+  set(0);
 })();
 </script>
 </body>
