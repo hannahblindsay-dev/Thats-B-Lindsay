@@ -518,15 +518,13 @@ a.btn { text-decoration: none; }
 
 /* D · index rows */
 .rows { margin-top: 6cqi; border-top: 2px solid var(--ink); }
-.irow { display: grid; grid-template-columns: 90px 1.3fr 1fr 40px; gap: 3cqi; align-items: center; padding: 2.6cqi 1.4cqi; border-bottom: 1px solid rgba(42,17,9,.25); transition: background .25s, color .25s, padding .25s; }
+.irow { display: grid; grid-template-columns: 90px 1.3fr 1fr; gap: 3cqi; align-items: center; padding: 2.6cqi 1.4cqi; border-bottom: 1px solid rgba(42,17,9,.25); transition: background .25s, color .25s, padding .25s; }
 .irow:hover { background: var(--spritz); color: var(--ink); padding-inline: 2.6cqi; }
 .irow .n { font-family: var(--f-mono); font-size: 13px; }
 .irow b { font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(40px, 6.6cqi, 92px); line-height: .88; }
 .irow b small { display: block; font-family: var(--f-serif); font-style: italic; font-weight: 400; text-transform: none; font-variation-settings: normal; font-size: 22px; line-height: 1.1; color: var(--heat); margin-top: 4px; }
 .irow:hover b small { color: var(--vanilla); }
 .irow p { font-size: 15px; line-height: 1.5; }
-.irow .arr { font-size: 26px; justify-self: end; transition: transform .25s; }
-.irow:hover .arr { transform: translateX(6px); }
 
 /* ===== 9 FOOTER ===== */
 .s-foot { background: var(--deep); color: var(--vanilla); padding-block: 7cqi 0; }
@@ -625,9 +623,8 @@ a.btn { text-decoration: none; }
   .svc-more { grid-template-columns: 1fr; padding: 18px 14px 22px; }
   .svc-more .foot .link { margin-left: 0; }
   .p-head h2 { font-size: 14cqi; }
-  .irow { grid-template-columns: 40px 1fr 24px; padding: 18px 4px; }
+  .irow { grid-template-columns: 40px 1fr; padding: 18px 4px; }
   .irow p { grid-column: 2 / 3; }
-  .irow .arr { grid-row: 1; grid-column: 3; }
   .irow b { font-size: 12cqi; }
   .s-foot h2 { font-size: 14cqi; }
   .foot-row { grid-template-columns: 1fr; }
@@ -881,10 +878,10 @@ body { background: #FFF3E6 !important; padding: 0 !important; margin: 0; }
         <div>
           <div class="p-head"><h2>Four decisions, <em>made in order.</em></h2><p>Brands fail when someone skips a step because it felt slow. We don’t.</p></div>
           <div class="rows">
-            <div class="irow"><span class="n">01</span><b>Discover<small>Sit inside it</small></b><p>Founder story, market context and the psychology of the person on the other end.</p><span class="arr" aria-hidden="true">→</span></div>
-            <div class="irow"><span class="n">02</span><b>Position<small>Choose out loud</small></b><p>Decide who you are not for. Trying to please everyone is how brands disappear.</p><span class="arr" aria-hidden="true">→</span></div>
-            <div class="irow"><span class="n">03</span><b>Design<small>Make it visible</small></b><p>Identity, voice and a system built for the real world, not just the deck.</p><span class="arr" aria-hidden="true">→</span></div>
-            <div class="irow"><span class="n">04</span><b>Deliver<small>Stay till it works</small></b><p>Guidelines your team can run, a site that earns its keep, then social and ads.</p><span class="arr" aria-hidden="true">→</span></div>
+            <div class="irow"><span class="n">01</span><b>Discover<small>Sit inside it</small></b><p>Founder story, market context and the psychology of the person on the other end.</p></div>
+            <div class="irow"><span class="n">02</span><b>Position<small>Choose out loud</small></b><p>Decide who you are not for. Trying to please everyone is how brands disappear.</p></div>
+            <div class="irow"><span class="n">03</span><b>Design<small>Make it visible</small></b><p>Identity, voice and a system built for the real world, not just the deck.</p></div>
+            <div class="irow"><span class="n">04</span><b>Deliver<small>Stay till it works</small></b><p>Guidelines your team can run, a site that earns its keep, then social and ads.</p></div>
           </div>
         </div>
       </section>
