@@ -140,13 +140,15 @@ em.ser { font-family: var(--f-serif); font-style: italic; font-weight: 400; font
 .s-deliv { padding-block: 7cqi; background: radial-gradient(ellipse at 30% 20%, #FFFDF6 0%, var(--vanilla) 40%, var(--peach) 100%); }
 .intro-p { font-size: 17px; line-height: 1.55; max-width: 60ch; margin: -1cqi 0 4cqi; }
 /* Each image grows by its own aspect ratio, so the row is one exact height with nothing cropped. */
-.bento { display: flex; gap: 1.8cqi; align-items: flex-start; }
-.pair { display: contents; }
+.bento { display: flex; flex-direction: column; gap: 1.8cqi; }
+.pair { display: flex; gap: 1.8cqi; align-items: flex-start; width: 100%; }
 .tile { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
 .tile img { width: 100%; border-radius: var(--r); background: var(--card); }
 .tile figcaption { display: flex; justify-content: space-between; gap: 10px; }
 .tile figcaption b { color: var(--sangria); font-weight: 500; }
 .t-a { flex: .6017 1 0; } .t-b { flex: .7528 1 0; } .t-c { flex: 1 1 0; } .t-d { flex: .8882 1 0; }
+.t-e { flex: .6452 1 0; }
+.t-f { flex: 1.5035 1 0; }
 
 /* 5 · Campaign */
 .s-camp { padding-block: 7cqi; }
@@ -450,8 +452,10 @@ body { background: #FFF3E6 !important; padding: 0 !important; margin: 0; }
           <div class="pair">
             <figure class="tile t-a"><img src="img/ps/n-bottle-blk.webp" alt="A hand holding a dark PeakSpring bottle against a blue sky" width="1000" height="1662" loading="lazy"><figcaption class="mono"><b>Packaging</b><span>Summit Stone</span></figcaption></figure>
             <figure class="tile t-b"><img src="img/ps/n-bottle-dusty.webp" alt="A gold PeakSpring bottle in a gym with a cyclist behind" width="1200" height="1594" loading="lazy"><figcaption class="mono"><b>In use</b><span>Cedar Dust</span></figcaption></figure>
+            <figure class="tile t-e"><img src="img/ps/n-bottles.webp" alt="Three PeakSpring bottles in teal, gold and black, laid flat on matching backgrounds" width="1000" height="1550" loading="lazy"><figcaption class="mono"><b>Range</b><span>Three colourways</span></figcaption></figure>
           </div>
           <div class="pair">
+            <figure class="tile t-f"><img src="img/ps/n-inuse.webp" alt="Two children at a kitchen sink beside a wall-mounted water ioniser" width="642" height="427" loading="lazy"><figcaption class="mono"><b>At home</b><span>The ioniser</span></figcaption></figure>
             <figure class="tile t-c"><img src="img/ps/n-yoga.webp" alt="A teal PeakSpring bottle in front of a woman doing yoga under a colonnade" width="850" height="850" loading="lazy"><figcaption class="mono"><b>Lifestyle</b><span>Glacial Depth</span></figcaption></figure>
             <figure class="tile t-d"><img src="img/ps/n-tshirt.webp" alt="A white PeakSpring t-shirt held up in a field at sunset" width="755" height="850" loading="lazy"><figcaption class="mono"><b>Apparel</b><span>Team tee</span></figcaption></figure>
           </div>
